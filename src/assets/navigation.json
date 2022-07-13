@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Profile",
+      "routerLink": "login",
+      "url": "#",
+      "active": false
+    },
+    {
+      "title": "News Letter",
+      "routerLink": "subscribe",
+      "url": "#",
+      "active": false
+    },
+    {
+      "title": "Email",
+      "routerLink": "email",
+      "url": "#",
+      "active": false
+    },
+    {
+      "title": "Call",
+      "routerLink": "call",
+      "url": "#",
+      "active": true
+    }
+]
