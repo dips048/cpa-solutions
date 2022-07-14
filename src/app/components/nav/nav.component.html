@@ -1,5 +1,35 @@
-<ul *ngIf="links$ | async as links">
-  <li *ngFor="let link of links">
-    <a [routerLink]="link.routerLink">{{link.title}}</a>
-  </li>
-</ul>
+<!--<nav>
+  <ul *ngIf="links$ | async as links">
+    <li *ngFor="let link of links">
+      <a [routerLink]="link.routerLink">{{link.title}}</a>
+    </li>
+  </ul>
+</nav> -->
+
+<!-- <nav class="navbar sticky-top bg-light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" *ngIf="links$ | async as links">
+        <li class="nav-item" *ngFor="let link of links">
+          <a class="nav-link" href="#">{{link.title}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<mat-toolbar>
+  <mat-toolbar-row class="flex-container" *ngIf="navList$ | async as navList">
+    <div *ngFor="let item of navList" class="flex-item">
+      <!-- <a [routerLink]="link.routerLink">{{link.title}}</a> -->
+      <mat-icon>{{item.icon}}</mat-icon>
+    </div>
+    <div class="flex-item" (click)="toggleDrawer.emit()">
+      <mat-icon>menu</mat-icon>
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="toolbar-2">
+    <h1>Company Name</h1>
+  </mat-toolbar-row>
+</mat-toolbar>

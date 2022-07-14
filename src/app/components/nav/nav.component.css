@@ -1,18 +1,15 @@
-ul {
-  display: flex;
+.flex-container {
+  display: inline-flex;
   flex-direction: row;
+  padding: 0;
 }
 
-ul li {
-  float: left;
-  width: 25%;
-  list-style: none;
-}
-
-ul li a {
-  display: block;
+.flex-item {
   text-align: center;
-  font-weight: 700;
-  padding: .5rem 0;
-  color: #302b27;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.toolbar-2 {
+  background-color: rgb(255, 255, 255);
 }

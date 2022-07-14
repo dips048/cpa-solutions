@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { DataService } from '../../services';
-import { LinkModel } from '../../models';
+import { NavListModel } from '../../models';
 
 @Component({
   selector: 'app-nav',
@@ -10,12 +10,14 @@ import { LinkModel } from '../../models';
 })
 export class NavComponent implements OnInit {
 
-  links$: Observable<Array<LinkModel>>;
+  navList$: Observable<Array<NavListModel>>;
+
+  @Output() toggleDrawer = new EventEmitter();
 
   constructor(
     private dataService: DataService
   ) {
-    this.links$ = this.dataService.getNavigationData();
+    this.navList$ = this.dataService.getNavListTwo();
   }
 
   ngOnInit(): void { }

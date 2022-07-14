@@ -1,0 +1,11 @@
+<div>
+  <mat-drawer-container>
+    <mat-drawer position="end" #drawer>
+      <app-side-nav></app-side-nav>
+    </mat-drawer>
+    <app-nav (toggleDrawer)="drawer.toggle()"></app-nav>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-drawer-container>
+</div>

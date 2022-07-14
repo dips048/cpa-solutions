@@ -1,1 +1,1 @@
-export * from './linkl.model';
+export * from './nav-list.model';

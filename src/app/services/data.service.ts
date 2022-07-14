@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { LinkModel } from '../models/linkl.model';
+import { NavListModel } from '../models/nav-list.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,11 @@ export class DataService {
     private http: HttpClient
   ) { }
 
-  public getNavigationData(): Observable<Array<LinkModel>> {
-    return this.http.get<LinkModel[]>('assets/navigation.json');
+  public getNavListOne(): Observable<Array<any>> {
+    return this.http.get<any[]>('assets/nav-list1.json');
+  }
+
+  public getNavListTwo(): Observable<Array<NavListModel>> {
+    return this.http.get<NavListModel[]>('assets/nav-list2.json');
   }
 }

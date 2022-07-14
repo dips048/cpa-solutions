@@ -1,24 +1,28 @@
 [
     {
       "title": "Profile",
+      "icon": "login",
       "routerLink": "login",
       "url": "#",
       "active": false
     },
     {
       "title": "News Letter",
+      "icon": "wifi",
       "routerLink": "subscribe",
       "url": "#",
       "active": false
     },
     {
       "title": "Email",
+      "icon": "email",
       "routerLink": "email",
       "url": "#",
       "active": false
     },
     {
       "title": "Call",
+      "icon": "call",
       "routerLink": "call",
       "url": "#",
       "active": true
