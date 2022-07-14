@@ -7,16 +7,18 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { components } from './components';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ...components,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    FontAwesomeModule
+    CdkAccordionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

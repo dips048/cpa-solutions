@@ -1,5 +1,56 @@
-<div>
-  <div>
-    <span><h4>Home</h4></span>
-  </div>
+<div class="side-nav-header">
+  <h4>Menu</h4>
+  <mat-icon (click)="closeDrawer.emit()">close</mat-icon>
 </div>
+<cdk-accordion class="accordion" *ngIf="navList$ | async as navList">
+  <cdk-accordion-item
+    *ngFor="let item of navList; let index = index"
+    #accordionItem="cdkAccordionItem"
+    class="accordion-item"
+    role="button"
+    tabindex="0"
+    [attr.id]="'accordion-header-' + index"
+    [attr.aria-expanded]="accordionItem.expanded"
+    [attr.aria-controls]="'accordion-body-' + index"
+  >
+    <div
+      class="accordion-item-header"
+      *ngIf="!item.list.length"
+      [routerLink]="[item.routerLink]"
+      (click)="closeDrawer.emit()"
+    >
+      {{ item.title }}
+    </div>
+    <div class="accordion-item-header" *ngIf="item.list.length">
+      <div
+        class="header-item"
+        [routerLink]="[item.routerLink]"
+        (click)="closeDrawer.emit()"
+        >
+        {{ item.title }}
+      </div>
+      <div
+        (click)="accordionItem.toggle()"
+      >
+        <mat-icon *ngIf="!accordionItem.expanded">keyboard_arrow_down</mat-icon>
+        <mat-icon *ngIf="accordionItem.expanded">keyboard_arrow_up</mat-icon>
+      </div>
+    </div>
+    <div
+      *ngIf="item.list.length"
+      role="region"
+      [style.display]="accordionItem.expanded ? '' : 'none'"
+      [attr.id]="'accordion-body-' + index"
+      [attr.aria-labelledby]="'accordion-header-' + index"
+    >
+      <div
+        class="according-item-content"
+        *ngFor="let listItem of item.list"
+        [routerLink]="[item.routerLink + listItem.routerLink]"
+        (click)="closeDrawer.emit()"
+      >
+        {{ listItem.title }}
+      </div>
+    </div>
+  </cdk-accordion-item>
+</cdk-accordion>

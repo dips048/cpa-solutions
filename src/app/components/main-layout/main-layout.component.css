@@ -1,3 +1,7 @@
+.drawer-container {
+  height: 100vh;
+}
+
 .mat-drawer {
-  width: 300px;
+  width: 70%;
 }

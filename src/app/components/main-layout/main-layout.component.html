@@ -1,7 +1,7 @@
 <div>
-  <mat-drawer-container>
-    <mat-drawer position="end" #drawer>
-      <app-side-nav></app-side-nav>
+  <mat-drawer-container class="drawer-container">
+    <mat-drawer autoFocus="false" position="end" #drawer>
+      <app-side-nav (closeDrawer)="drawer.close()"></app-side-nav>
     </mat-drawer>
     <app-nav (toggleDrawer)="drawer.toggle()"></app-nav>
     <main>

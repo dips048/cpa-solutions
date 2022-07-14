@@ -1,4 +1,4 @@
-export interface NavListModel {
+export interface NavListTwoModel {
   title: string;
   icon: string;
   routerLink: string;
