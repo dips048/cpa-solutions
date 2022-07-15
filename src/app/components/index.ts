@@ -1,3 +1,4 @@
+import { FooterComponent } from "./footer/footer.component";
 import { MainLayoutComponent } from "./main-layout/main-layout.component";
 import { NavListComponent } from "./nav-list/nav-list.component";
 import { NavComponent } from "./nav/nav.component";
@@ -8,4 +9,5 @@ export const components = [
   MainLayoutComponent,
   SideNavComponent,
   NavListComponent,
+  FooterComponent
 ];
