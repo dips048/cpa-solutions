@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './components/about/about.component';
-import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'about',
-    component: AboutComponent,
-    children: []
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
-  }
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+  },
+  { path: 'service', loadChildren: () => import('./service/service.module').then(m => m.ServiceModule) },
+  { path: 'tax-center', loadChildren: () => import('./tax-center/tax-center.module').then(m => m.TaxCenterModule) },
+  { path: 'resources', loadChildren: () => import('./resources/resources.module').then(m => m.ResourcesModule) },
+  { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) }
 ];
 
 @NgModule({

@@ -12,14 +12,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
-import { AboutComponent } from './components/about/about.component';
 import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ...components,
-    AboutComponent,
+    ...components
   ],
   imports: [
     BrowserModule,
