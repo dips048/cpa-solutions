@@ -1,7 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Observable } from 'rxjs';
-import { DataService } from '../../services';
-import { NavListTwoModel } from '../../models';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -10,15 +7,11 @@ import { NavListTwoModel } from '../../models';
 })
 export class NavComponent implements OnInit {
 
-  navList$: Observable<Array<NavListTwoModel>>;
+  @Input() desktopScreen = false;
 
   @Output() toggleDrawer = new EventEmitter();
 
-  constructor(
-    private dataService: DataService
-  ) {
-    this.navList$ = this.dataService.getNavListTwo();
-  }
+  constructor() { }
 
   ngOnInit(): void { }
 

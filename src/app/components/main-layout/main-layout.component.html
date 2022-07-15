@@ -1,4 +1,11 @@
-<div>
+<div *ngIf="desktopScreen else mobileScreen">
+  <app-nav [desktopScreen]="desktopScreen"></app-nav>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+<ng-template #mobileScreen>
   <mat-drawer-container class="drawer-container">
     <mat-drawer autoFocus="false" position="end" #drawer>
       <app-side-nav (closeDrawer)="drawer.close()"></app-side-nav>
@@ -8,4 +15,4 @@
       <router-outlet></router-outlet>
     </main>
   </mat-drawer-container>
-</div>
+</ng-template>

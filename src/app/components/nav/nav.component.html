@@ -1,35 +1,34 @@
-<!--<nav>
-  <ul *ngIf="links$ | async as links">
-    <li *ngFor="let link of links">
-      <a [routerLink]="link.routerLink">{{link.title}}</a>
-    </li>
-  </ul>
-</nav> -->
+<div *ngIf="desktopScreen; else mobileScreen">
+  <mat-toolbar>
+    <mat-toolbar-row class="flex-container-1">
+      <div>
+        <button mat-raised-button>Login</button>
+        <button mat-raised-button>Subscribe</button>
+      </div>
+      <h3 class="contact">Call Us (987) 654 4321</h3>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="flex-container-1 header-bar">
+      <h1>Company Name</h1>
+      <div>
 
-<!-- <nav class="navbar sticky-top bg-light">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" *ngIf="links$ | async as links">
-        <li class="nav-item" *ngFor="let link of links">
-          <a class="nav-link" href="#">{{link.title}}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
 
-<mat-toolbar>
-  <mat-toolbar-row class="flex-container" *ngIf="navList$ | async as navList">
-    <div *ngFor="let item of navList" class="flex-item">
-      <!-- <a [routerLink]="link.routerLink">{{link.title}}</a> -->
-      <mat-icon>{{item.icon}}</mat-icon>
-    </div>
-    <div class="flex-item" (click)="toggleDrawer.emit()">
-      <mat-icon>menu</mat-icon>
-    </div>
-  </mat-toolbar-row>
+<ng-template #mobileScreen>
+  <mat-toolbar>
+    <mat-toolbar-row class="flex-container-2">
+      <mat-icon class="flex-item">lock</mat-icon>
+      <mat-icon class="flex-item">wifi</mat-icon>
+      <mat-icon class="flex-item">email</mat-icon>
+      <mat-icon class="flex-item">call</mat-icon>
+      <mat-icon class="flex-item" (click)="toggleDrawer.emit()">menu</mat-icon>
+    </mat-toolbar-row>
 
-  <mat-toolbar-row class="toolbar-2">
-    <h1>Company Name</h1>
-  </mat-toolbar-row>
-</mat-toolbar>
+    <mat-toolbar-row class="header-bar">
+      <h1>Company Name</h1>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</ng-template>
+

@@ -1,4 +1,9 @@
-.flex-container {
+.flex-container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container-2 {
   display: inline-flex;
   flex-direction: row;
   padding: 0;
@@ -10,6 +15,7 @@
   flex: 1 1 auto;
 }
 
-.toolbar-2 {
+.header-bar {
   background-color: rgb(255, 255, 255);
 }
+

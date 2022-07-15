@@ -2,9 +2,9 @@
   <h4>Menu</h4>
   <mat-icon (click)="closeDrawer.emit()">close</mat-icon>
 </div>
-<cdk-accordion class="accordion" *ngIf="navList$ | async as navList">
+<cdk-accordion class="accordion" *ngIf="navigationList$ | async as navigationList">
   <cdk-accordion-item
-    *ngFor="let item of navList; let index = index"
+    *ngFor="let item of navigationList; let index = index"
     #accordionItem="cdkAccordionItem"
     class="accordion-item"
     role="button"

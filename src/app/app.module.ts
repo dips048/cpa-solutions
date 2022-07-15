@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { AboutComponent } from './components/about/about.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AboutComponent } from './components/about/about.component';
     MatIconModule,
     MatSidenavModule,
     CdkAccordionModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

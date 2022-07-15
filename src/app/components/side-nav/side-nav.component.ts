@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs';
-import { NavListOneModel } from '../../models';
+import { NavigationListModel } from '../../models';
 import { DataService } from '../../services';
 
 @Component({
@@ -12,12 +12,12 @@ export class SideNavComponent implements OnInit {
 
   @Output() closeDrawer = new EventEmitter();
 
-  navList$: Observable<NavListOneModel[]>;
+  navigationList$: Observable<NavigationListModel[]>;
 
   constructor(
     private dataService: DataService
   ) {
-    this.navList$ = this.dataService.getNavListOne();
+    this.navigationList$ = this.dataService.getNavigationList();
   }
 
   ngOnInit(): void {

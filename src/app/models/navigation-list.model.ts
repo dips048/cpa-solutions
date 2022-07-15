@@ -1,4 +1,4 @@
-export interface NavListOneModel {
+export interface NavigationListModel {
   title: string;
   routerLink: string;
   list: any[];
