@@ -1,0 +1,23 @@
+<div *ngIf="navigationList$ | async as navigationList">
+  <div class="nav-list" *ngFor="let item of navigationList">
+    <button
+      mat-button
+      *ngIf="!item.list.length"
+      [routerLink]="[item.routerLink]"
+    >
+    {{ item.title }}
+    </button>
+    <div ngbDropdown class="d-inline-block" *ngIf="item.list.length">
+      <button
+        mat-button
+        [routerLink]="[item.routerLink]"
+        ngbDropdownToggle
+      >
+        {{ item.title }}
+      </button>
+      <div ngbDropdownMenu>
+        <button *ngFor="let listItem of item.list" ngbDropdownItem>{{ listItem.title }}</button>
+      </div>
+    </div>
+</div>
+</div>
