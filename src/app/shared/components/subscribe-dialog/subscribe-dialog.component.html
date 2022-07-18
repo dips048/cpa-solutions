@@ -1,0 +1,21 @@
+
+<form #formDirective="ngForm" (ngSubmit)="subscribe(subscribeForm.value)" [formGroup]="subscribeForm">
+  <h1 mat-dialog-title>Newsletter</h1>
+  <div mat-dialog-content class="d-flex flex-column">
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input formControlName="email" type="email" matInput required>
+        <button matSuffix mat-icon-button type="submit" [disabled]="!formDirective.form.valid" mat-dialog-close>
+          <mat-icon><div class="fa fa-feed"></div></mat-icon>
+        </button>
+        <mat-error *ngIf="subscribeForm.get('email')?.hasError('required')" >
+          Email is required.
+        </mat-error>
+      </mat-form-field>
+
+  </div>
+  <div mat-dialog-actions class="justify-content-end">
+    <button mat-button mat-dialog-close>Cancel</button>
+  </div>
+</form>

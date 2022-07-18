@@ -14,6 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatButtonModule } from '@angular/material/button';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatSidenavModule,
     CdkAccordionModule,
     MatButtonModule,
-    NgbModule
+    NgbModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
