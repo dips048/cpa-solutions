@@ -36,7 +36,29 @@
         {
           "title": "Service For Inividuals",
           "routerLink": "service-for-individuals",
-          "list": []
+          "list": [
+            {
+              "title": "Personal Financial Planning",
+              "routerLink": "personal-financial-planning",
+              "list": []
+            },
+            {
+              "title": "Retirement Planning",
+              "routerLink": "retirement-planning",
+              "list": []
+            }
+          ]
+        },
+        {
+          "title": "Business Services",
+          "routerLink": "business-service",
+          "list": [
+            {
+              "title": "Small Business Accounting",
+              "routerLink": "small-business-accounting",
+              "list": []
+            }
+          ]
         }
       ]
     },

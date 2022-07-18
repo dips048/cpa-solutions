@@ -5,19 +5,27 @@
       *ngIf="!item.list.length"
       [routerLink]="[item.routerLink]"
     >
-    {{ item.title }}
+      {{ item.title }}
     </button>
     <div ngbDropdown class="d-inline-block" *ngIf="item.list.length">
-      <button
-        mat-button
-        [routerLink]="[item.routerLink]"
-        ngbDropdownToggle
-      >
+      <button mat-button [routerLink]="[item.routerLink]" ngbDropdownToggle>
         {{ item.title }}
       </button>
       <div ngbDropdownMenu>
-        <button *ngFor="let listItem of item.list" ngbDropdownItem>{{ listItem.title }}</button>
+        <div *ngFor="let listItem of item.list" ngbDropdownItem>
+          <div *ngIf="!listItem.list.length" [routerLink]="[item.routerLink + listItem.routerLink]">
+            {{ listItem.title }}
+          </div>
+          <div ngbDropdown class="d-inline-block" *ngIf="listItem.list.length">
+            <div ngbDropdownToggle [routerLink]="[item.routerLink + listItem.routerLink]">{{ listItem.title }}</div>
+            <div ngbDropdownMenu>
+              <div *ngFor="let i of listItem.list" ngbDropdownItem>
+                <span [routerLink]="[item.routerLink + listItem.routerLink + i.routerLink]"> {{ i.title }} </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-</div>
+  </div>
 </div>
