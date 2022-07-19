@@ -19,7 +19,7 @@ export class AboutComponent implements OnInit {
   }
 
   initAnimation(): void {
-    gsap.from("#header-1",{y: -200, opacity: 0, duration: 1})
+    gsap.from("#header-1",{y: -100, opacity: 0, duration: 2})
   };
 
   openContactUsDialog() {
