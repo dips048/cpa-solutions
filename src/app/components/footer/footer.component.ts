@@ -26,7 +26,7 @@ export class FooterComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.initAnimation()
+    this.initAnimation();
   }
 
   initAnimation() {
@@ -35,7 +35,6 @@ export class FooterComponent implements OnInit {
         trigger: "#container-2",
         endTrigger: "#container-3",
         end: "bottom 50%+=100px",
-        markers: true,
       }, opacity: 0, y: -200, duration: 1});
   }
 }

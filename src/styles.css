@@ -9,5 +9,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
+.bg-color {
+    background-color: #2d82a1 !important;
+    border-color: #2d82a1 !important;
+    color: #fff !important;
+}
 
+.bg-color-footer {
+  color: #fff;
+  background-color: black;
+  border-color: black
+}
 

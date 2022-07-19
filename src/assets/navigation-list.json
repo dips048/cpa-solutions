@@ -46,6 +46,21 @@
               "title": "Retirement Planning",
               "routerLink": "retirement-planning",
               "list": []
+            },
+            {
+              "title": "Estate Planning",
+              "routerLink": "estate-planning",
+              "list": []
+            },
+            {
+              "title": "Elder Care",
+              "routerLink": "elder-care",
+              "list": []
+            },
+            {
+              "title": "Wealth Management",
+              "routerLink": "wealth-management",
+              "list": []
             }
           ]
         },

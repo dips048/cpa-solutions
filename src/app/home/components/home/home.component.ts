@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { gsap } from 'gsap';
-import { ContactUsDialogComponent } from '../contact-us-dialog/contact-us-dialog.component';
+import { ContactUsDialogComponent } from '../../../shared/components/contact-us-dialog/contact-us-dialog.component';
 
 @Component({
   selector: 'app-home',
