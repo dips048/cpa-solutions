@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { NavigationListModel } from 'src/app/models';
+import { NavigationListModel } from '../../models';
 import { DataService } from '../../services';
 
 @Component({
