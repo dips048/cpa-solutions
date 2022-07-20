@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { filter, Observable } from 'rxjs';
-import { DataService } from '../../services';
-import { NavigationListModel } from '../../models';
+import { DataService } from '../../shared/services';
+import { NavigationListModel } from '../../shared/models';
 
 gsap.registerPlugin(ScrollTrigger);
 

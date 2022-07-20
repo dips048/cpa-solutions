@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs';
-import { NavigationListModel } from '../../models';
-import { DataService } from '../../services';
+import { NavigationListModel } from '../../shared/models';
+import { DataService } from '../../shared/services';
 
 @Component({
   selector: 'app-side-nav',
