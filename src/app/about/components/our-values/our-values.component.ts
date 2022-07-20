@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ContactUsDialogComponent } from '../../../shared/components/contact-us-dialog/contact-us-dialog.component';
 
+gsap.registerPlugin(ScrollTrigger);
+
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: 'app-our-values',
+  templateUrl: './our-values.component.html',
+  styleUrls: ['./our-values.component.css']
 })
-export class AboutComponent implements OnInit {
+export class OurValuesComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog
@@ -20,6 +23,13 @@ export class AboutComponent implements OnInit {
 
   initAnimation(): void {
     gsap.from("#header-1",{y: -100, opacity: 0, duration: 2})
+    gsap.to('#image-container', {
+      scrollTrigger: {
+        trigger: '#image-container',
+        pin: true,
+      }
+    })
+
   };
 
   openContactUsDialog() {
@@ -27,4 +37,5 @@ export class AboutComponent implements OnInit {
       width: '500px'
     });
   };
+
 }
