@@ -1,80 +1,89 @@
-<div class="container">
-  <img src="../../../../assets/images/woman-1.png">
-  <div class="row">
-    <div class="col-md-5 text-center">
+<div class="container d-flex">
+  <img class="order-lg-2" id="img-woman-1" width="260px" height="400px" src="../../../../assets/images/woman-1.png">
+  <div class="row flex-grow-1 order-lg-1">
+    <div class="col-md-8 text-center tagline" id="home-page-tagline">
       <h1>Account On Us</h1>
       <p>
         We offer services for business owners, executives, and individuals.
       </p>
-      <button mat-raised-button>
+      <button mat-raised-button (click)="openContactUsDialog()">
         Free Consultation
       </button>
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row mt-5">
-    <div class="col-lg-8">
-      <h1>Company Name, Accounting</h1>
-      <p>
-        If you are looking for a blend of personal service and expertise, you have come to the right place! We offer a broad range of services for business owners, executives and independent professionals. Our rates are affordable. We are experienced and friendly.
-      </p>
-    </div>
-  </div>
-  <div class="row my-5 align-sm-center">
-    <div class="col-lg-6 col-md-6 col-sm-12 my-4">
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="fa fa-compass fa-3x"></div>
-        </div>
-        <div class="col-sm-10">
-          <h4>Services For Individuals</h4>
-          <p>
-            You get one-on-one guidance that helps manage risk and improve performance.
-            <a [routerLink]="['/service/service-for-individuals']" routerLinkActive="router-link-active" >learn more</a>
-          </p>
-        </div>
+<div class="bg-color">
+  <div class="container py-5">
+    <!-- <div class="pattern-1"></div>
+    <div class="globe">
+      <div class="globe-1"></div>
+      <div class="globe-2"></div>
+      <div class="globe-3"></div>
+      <div class="globe-4"></div>
+    </div> -->
+    <div class="row">
+      <div class="col-lg-8">
+        <h1>Company Name, Accounting</h1>
+        <p>
+          If you are looking for a blend of personal service and expertise, you have come to the right place! We offer a broad range of services for business owners, executives and independent professionals. Our rates are affordable. We are experienced and friendly.
+        </p>
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 my-4">
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="fa fa-briefcase fa-3x"></div>
-        </div>
-        <div class="col-sm-10">
-          <h4>Business Services</h4>
-          <p>
-            We take care of your business for you, so you can get back to the job of running your business.
-            <a [routerLink]="['/service/business-service']" routerLinkActive="router-link-active" >learn more</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 my-4">
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="fa fa-calculator fa-3x"></div>
-        </div>
-        <div class="col-sm-10">
-          <h4>Tax Services</h4>
-          <p>
-            We pride ourselves on being very efficient, affordable, and of course, extremely discreet.
-            <a [routerLink]="['/service/tax-service']" routerLinkActive="router-link-active" >learn more</a>
-          </p>
+    <div class="row my-5 align-sm-center bg-color-2">
+      <div class="col-lg-6 col-md-6 col-sm-12 my-4">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="fa fa-compass fa-3x"></div>
+          </div>
+          <div class="col-sm-10">
+            <h4>Services For Individuals</h4>
+            <p>
+              You get one-on-one guidance that helps manage risk and improve performance.
+              <a [routerLink]="['/service/service-for-individuals']" routerLinkActive="router-link-active" >learn more</a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 my-4">
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="fa fa-book fa-3x"></div>
+      <div class="col-lg-6 col-md-6 col-sm-12 my-4">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="fa fa-briefcase fa-3x"></div>
+          </div>
+          <div class="col-sm-10">
+            <h4>Business Services</h4>
+            <p>
+              We take care of your business for you, so you can get back to the job of running your business.
+              <a [routerLink]="['/service/business-service']" routerLinkActive="router-link-active" >learn more</a>
+            </p>
+          </div>
         </div>
-        <div class="col-sm-10">
-          <h4>QuickBooks Services</h4>
-          <p>
-            QuickBooks is the ideal business accounting software for small to mid-sized business owners.
-            <a [routerLink]="['/service/service-for-quickbook']" routerLinkActive="router-link-active" >learn more</a>
-          </p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 my-4">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="fa fa-calculator fa-3x"></div>
+          </div>
+          <div class="col-sm-10">
+            <h4>Tax Services</h4>
+            <p>
+              We pride ourselves on being very efficient, affordable, and of course, extremely discreet.
+              <a [routerLink]="['/service/tax-service']" routerLinkActive="router-link-active">learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 my-4">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="fa fa-book fa-3x"></div>
+          </div>
+          <div class="col-sm-10">
+            <h4>QuickBooks Services</h4>
+            <p>
+              QuickBooks is the ideal business accounting software for small to mid-sized business owners.
+              <a [routerLink]="['/service/service-for-quickbook']" routerLinkActive="router-link-active" >learn more</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -82,23 +91,28 @@
 </div>
 <div class="container">
   <div class="row my-5">
-    <div class="col-lg-8 col-lg-offset-2">
+    <div class="col-lg-12">
       <h1 class="h1 text-center">Accounting is what we do best, you're busy enough with the rest</h1>
       <div class="col-lg-12 mb-4"><hr></div>
-      <div class="col-lg-5">
-        <p class="lead">
-          Company Name is licensed in VT and specializes in Accounting.  We offer a broad range of services for business owners, executives, and independent professionals. We are professional, experienced, and affordable.
-        </p>
-        <p class="lead">
-          Whether we like it or not, today's tax laws are so complicated that filing a relatively simple return can be confusing. It is just too easy to overlook deductions and credits to which you are entitled. Even if you use a computer software program there's no substitute for the assistance of an experienced tax professional.
-        </p>
-        <p class="lead">
-          We can also assist if you find yourself on the wrong side of the IRS. We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through.
-        </p>
-        <p class="lead fw-bold text-center mt-4">Please call us today at <a href="tel:(800) 896-4500">(800) 896-4500</a>. Thanks for visiting!</p>
-      </div>
-      <div class="col-lg-7">
-        <img src="../../../../assets/images/coffee.png">
+      <div class="col-12 d-flex row">
+        <div class="col-lg-6">
+          <p class="lead">
+            Company Name is licensed in VT and specializes in Accounting.  We offer a broad range of services for business owners, executives, and independent professionals. We are professional, experienced, and affordable.
+          </p>
+          <p class="lead">
+            Whether we like it or not, today's tax laws are so complicated that filing a relatively simple return can be confusing. It is just too easy to overlook deductions and credits to which you are entitled. Even if you use a computer software program there's no substitute for the assistance of an experienced tax professional.
+          </p>
+          <p class="lead">
+            We can also assist if you find yourself on the wrong side of the IRS. We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through.
+          </p>
+          <p class="lead fw-bold text-center mt-4">Please call us today at <a href="tel:(800) 896-4500">(800) 896-4500</a>. Thanks for visiting!</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="../../../../assets/images/coffee.png">
+          <div class="imgScroll">
+            <div class="slide"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

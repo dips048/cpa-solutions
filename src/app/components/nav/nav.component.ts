@@ -1,4 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { SubscribeDialogComponent } from '../../shared/components/subscribe-dialog/subscribe-dialog.component';
+import { LoginDialogComponent } from '../../shared/components/login-dialog/login-dialog.component';
 
 @Component({
   selector: 'app-nav',
@@ -11,8 +14,21 @@ export class NavComponent implements OnInit {
 
   @Output() toggleDrawer = new EventEmitter();
 
-  constructor() { }
+  constructor(
+    private matDilog: MatDialog
+  ) { }
 
   ngOnInit(): void { }
 
+  openLoginDialog(): void {
+    this.matDilog.open(LoginDialogComponent, {
+      width: '500px'
+    })
+  };
+
+  openSubscribeDialog(): void {
+    this.matDilog.open(SubscribeDialogComponent, {
+      width: '500px'
+    })
+  };
 }

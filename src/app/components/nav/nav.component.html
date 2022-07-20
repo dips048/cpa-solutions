@@ -2,10 +2,10 @@
   <mat-toolbar>
     <mat-toolbar-row class="flex-container-1">
       <div>
-        <button mat-raised-button>Login</button>
-        <button mat-raised-button>Subscribe</button>
+        <button mat-raised-button (click)="openLoginDialog()">Login</button>
+        <button mat-raised-button (click)="openSubscribeDialog()">Subscribe</button>
       </div>
-      <h3 class="contact">Call Us (987) 654 4321</h3>
+      <h3><a href="tel:(800) 896-4500" class="strong lead">Call Us (987) 654 4321</a></h3>
     </mat-toolbar-row>
     <mat-toolbar-row class="flex-container-1 header-bar">
       <h1>Company Name</h1>

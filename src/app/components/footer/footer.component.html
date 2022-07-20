@@ -1,20 +1,18 @@
 <div class="container">
   <div class="row my-5 text-center">
-      <div class="col-lg-4">
+      <div class="col-lg-4 footer-card">
           <div class="fa fa-comment-o fa-5x"></div>
           <h3>Ask a Question</h3>
           <p>Find comfort in knowing an Expert in accounting is only an email or phone-call away. </p>
           <p><a href="tel:(800) 896-4500" mat-raised-button>(800) 896-4500</a></p>
       </div>
-      <div class="hidden-lg clearfix"></div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 footer-card">
           <div class="fa fa-calendar-check-o fa-5x"></div>
           <h3>We Are Here to Help</h3>
           <p>We will happily offer you a free consultation to determine how we can best serve you.</p>
-          <p><a mat-raised-button>Contact Us</a></p>
+          <p><a mat-raised-button [routerLink]="'contact'">Contact Us</a></p>
       </div>
-      <div class="visible-xs visible-sm clearfix"></div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 footer-card">
           <div class="fa fa-copy fa-5x"></div>
           <h3>Send us a File</h3>
           <p>Use our convenient SecureSend page to securely deliver a file directly to a member of our firm.</p>
@@ -22,7 +20,7 @@
       </div>
   </div>
 </div>
-<div class="container">
+<div class="container py-5" id="nl-container">
     <div class="row">
         <div class="col-12 text-center align-self-center">
             <h2 class="h1">Newsletter</h2>
@@ -38,57 +36,60 @@
         </div>
     </div>
 </div>
-<div class="container">
-  <div class="row my-5 text-center">
-      <div class="col-md-4">
-          <h3>Resources</h3>
-          <p>
-              <a>Calculators</a><br>
-              <a>Client Portal</a><br>
-              <a>SecureSend</a><br>
-              <a>Internet Links</a><br>
-              <a>Newsletter</a>
-          </p>
-      </div>
-      <div class="col-md-4">
-          <h3>Tax Center</h3>
-          <p>
-              <a>Track Your Refund</a><br>
-              <a>Tax Due Dates</a><br>
-              <a>Tax Rates</a><br>
-              <a>Record Retention Guide</a><br>
-              <a>State Tax Forms</a>
-          </p>
-      </div>
-      <div class="col-md-4">
-          <h3>Contact</h3>
-          <p>
-              Company Name<br>
-              59 Rathe Road<br>
-              Colchester, VT 05408<br>
-              <a href="tel:(800) 896-4500">(800) 896-4500</a><br>
-              <a href="mailto:support@cpasitesolutions.com">support@cpasitesolutions.com</a>
-          </p>
-      </div>
-  </div>
-  <hr>
-  <div class="row my-4">
-      <div class="col-md-10">
-          <p class="m-0">
-              © Company Name 2022
-              <span> &nbsp; • &nbsp; </span>
-              <a>Site Map</a>
-              <span> &nbsp; • &nbsp; </span>
-              <a>Privacy Policy</a>
-              <span> &nbsp; • &nbsp; </span>
-              <a>Disclaimer</a>
-          </p>
-      </div>
-      <div class="col-md-2 social">
-          <a class="fa fa-facebook" title="Facebook" href="https://www.facebook.com"></a>
-          <a class="fa fa-twitter" title="Twitter" href="https://www.twitter.com"></a>
-          <a class="fa fa-linkedin" title="LinkedIn" href="https://www.linkedin.com" primary=""></a>
-          <a class="fa fa-google-plus" title="Google Plus" href=""></a>
-      </div>
+<div class="bg-color-footer">
+  <div class="container" id="container-3">
+    <div class="row py-5 text-center">
+        <div class="col-md-4">
+            <h3>Resources</h3>
+            <p>
+                <a [routerLink]="['resources/financial-calculators']">Calculators</a><br>
+                <a [routerLink]="['resources/client-portal']">Client Portal</a><br>
+                <a [routerLink]="['resources/secure-send']">Secure Send</a><br>
+                <a [routerLink]="['resources/internet-links']">Internet Links</a><br>
+                <a [routerLink]="['resources/newsletter']">Newsletter</a><br>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>Tax Center</h3>
+            <p>
+                <a [routerLink]="['tax-center/track-your-refund']">Track Your Refund</a><br>
+                <a [routerLink]="['tax-center/tax-due-dates']">Tax Due Dates</a><br>
+                <a [routerLink]="['tax-center/tax-rates']">Tax Rates</a><br>
+                <a [routerLink]="['tax-center/record-retention-guide']">Record Retention Guide</a><br>
+                <a [routerLink]="['tax-center/state-tax-forms']">State Tax Forms</a><br>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>Contact</h3>
+            <p>
+                Company Name<br>
+                59 Rathe Road<br>
+                Colchester, VT 05408<br>
+                <a href="tel:(800) 896-4500">(800) 896-4500</a><br>
+                <a href="mailto:support@cpasitesolutions.com">support@cpasitesolutions.com</a>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row py-4">
+        <div class="col-md-10">
+            <p class="m-0 ">
+                © Company Name 2022
+                <span> &nbsp; • &nbsp; </span>
+                <a>Site Map</a>
+                <span> &nbsp; • &nbsp; </span>
+                <a>Privacy Policy</a>
+                <span> &nbsp; • &nbsp; </span>
+                <a>Disclaimer</a>
+            </p>
+        </div>
+        <div class="col-md-2 social text-center">
+            <a class="fa fa-facebook" title="Facebook" href="https://www.facebook.com"></a>
+            <a class="fa fa-twitter" title="Twitter" href="https://www.twitter.com"></a>
+            <a class="fa fa-linkedin" title="LinkedIn" href="https://www.linkedin.com" primary=""></a>
+            <a class="fa fa-google-plus" title="Google Plus" href=""></a>
+        </div>
+    </div>
   </div>
 </div>
+
