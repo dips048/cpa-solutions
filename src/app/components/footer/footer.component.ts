@@ -29,6 +29,7 @@ export class FooterComponent implements OnInit {
     gsap.from('#nl-container', {
       scrollTrigger: {
         trigger: '#nl-container',
+        start: '.nl-container',
       },
       opacity: 0,
       y: -200,
@@ -37,6 +38,7 @@ export class FooterComponent implements OnInit {
     gsap.from('.footer-card', {
       scrollTrigger: {
         trigger: '.footer-card',
+        start: '.footer-card',
       },
       opacity: 0,
       scale: 0,
