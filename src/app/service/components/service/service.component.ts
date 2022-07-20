@@ -26,8 +26,7 @@ export class ServiceComponent implements OnInit {
         start: '#image-container',
         pin: true,
       }
-    })
-    gsap.from("#header-1",{y: -100, opacity: 0, duration: 2})
+    });
   }
 
   openContactUsDialog() {

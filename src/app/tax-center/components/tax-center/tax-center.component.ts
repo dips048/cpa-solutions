@@ -15,7 +15,7 @@ export class TaxCenterComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.initAnimation();
+    // this.initAnimation();
   }
 
   initAnimation(): void {

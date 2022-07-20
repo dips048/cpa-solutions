@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ServiceRoutingModule } from './service-routing.module';
 import { components } from './components';
 import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     CommonModule,
     ServiceRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    SharedModule
   ]
 })
 export class ServiceModule { }

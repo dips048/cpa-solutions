@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ResourcesRoutingModule } from './resources-routing.module';
 import { components } from './components';
 import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     CommonModule,
     ResourcesRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    SharedModule
   ]
 })
 export class ResourcesModule { }

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TaxCenterRoutingModule } from './tax-center-routing.module';
 import { components } from './components';
 import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     TaxCenterRoutingModule,
     MatButtonModule,
+    SharedModule
   ]
 })
 export class TaxCenterModule { }

@@ -26,23 +26,29 @@ export class FooterComponent implements OnInit {
   }
 
   initAnimation() {
-    gsap.from('#nl-container', {
+    gsap.timeline({
       scrollTrigger: {
-        trigger: '#nl-container',
-        start: '.nl-container',
+        trigger: 'top center',
+        start: 'bottom end',
       },
-      opacity: 0,
-      y: -200,
-      duration: 2,
-    });
-    gsap.from('.footer-card', {
-      scrollTrigger: {
-        trigger: '.footer-card',
-        start: '.footer-card',
-      },
+    })
+    .from('.footer-card', {
+      // scrollTrigger: {
+      //   trigger: '.footer-card',
+      //   start: '.footer-card',
+      // },
       opacity: 0,
       scale: 0,
-      duration: 2,
+      duration: 1,
+    })
+    .from('#nl-container', {
+      // scrollTrigger: {
+      //   trigger: '#nl-container',
+      //   start: '.nl-container',
+      // },
+      opacity: 0,
+      y: -200,
+      duration: 1,
     });
   }
 }
