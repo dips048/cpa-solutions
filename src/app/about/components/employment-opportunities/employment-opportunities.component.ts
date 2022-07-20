@@ -4,22 +4,28 @@ import { gsap } from 'gsap';
 import { ContactUsDialogComponent } from '../../../shared/components/contact-us-dialog/contact-us-dialog.component';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: 'app-employment-opportunities',
+  templateUrl: './employment-opportunities.component.html',
+  styleUrls: ['./employment-opportunities.component.css']
 })
-export class AboutComponent implements OnInit {
+export class EmploymentOpportunitiesComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
-    // this.initAnimation();
+    this.initAnimation();
   }
 
   initAnimation(): void {
-    gsap.from("#header-1",{y: -100, opacity: 0, duration: 2});
+    gsap.to('#image-container', {
+      scrollTrigger: {
+        trigger: '#image-container',
+        start: '#image-container',
+        pin: true,
+      }
+    });
   };
 
   openContactUsDialog() {
@@ -27,4 +33,5 @@ export class AboutComponent implements OnInit {
       width: '500px'
     });
   };
+
 }

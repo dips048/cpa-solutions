@@ -22,14 +22,12 @@ export class OurValuesComponent implements OnInit {
   }
 
   initAnimation(): void {
-    gsap.from("#header-1",{y: -100, opacity: 0, duration: 2})
     gsap.to('#image-container', {
       scrollTrigger: {
         trigger: '#image-container',
         pin: true,
       }
-    })
-
+    });
   };
 
   openContactUsDialog() {
