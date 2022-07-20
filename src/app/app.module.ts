@@ -13,7 +13,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatButtonModule } from '@angular/material/button';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -31,7 +30,6 @@ import { SharedModule } from './shared/shared.module';
     MatSidenavModule,
     CdkAccordionModule,
     MatButtonModule,
-    NgbModule,
     SharedModule
   ],
   providers: [],
