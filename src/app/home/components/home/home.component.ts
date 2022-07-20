@@ -19,6 +19,9 @@ export class HomeComponent implements OnInit {
   }
 
   initAnimation(width: number) {
+    gsap.to(".globe-3", {rotation: 360, transformOrigin: "center", ease: "none", duration: 120, repeat: -1});
+    gsap.to(".globe-4", {rotation: -360, transformOrigin: "center", ease: "none", duration: 120, repeat: -1});
+    gsap.to(".img-radius", {rotation: 360, transformOrigin: "center", ease: "none", duration: 120, repeat: -1});
     // gsap.fromTo("#home-page-tagline", {y: -200, x: -180}, {y: 0, x: -180, opacity: 1, duration: 1});
     gsap.from("#home-page-tagline",{y: -200, opacity: 0, duration: 1})
     if(width > 736) {
