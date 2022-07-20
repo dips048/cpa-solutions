@@ -9,5 +9,5 @@ export const components = [
   MainLayoutComponent,
   SideNavComponent,
   NavListComponent,
-  FooterComponent
+  FooterComponent,
 ];
