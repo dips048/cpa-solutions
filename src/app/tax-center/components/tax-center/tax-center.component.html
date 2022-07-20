@@ -1,1 +1,93 @@
-<p>tax-center works!</p>
+<div class="bg-color">
+  <div class="container c-1">
+    <div class="row py-5">
+      <h1 id="header-1">Tax center</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row my-5">
+    <div class="col-lg-7 col-md-7">
+      <div>
+        <a
+          class="fw-bold"
+          [routerLink]="['track-your-refund']"
+          routerLinkActive="router-link-active"
+          >Track Your Refund</a
+        >
+        <p>Find out when you'll receive your federal and state refund.</p>
+      </div>
+      <div>
+        <a
+          class="fw-bold"
+          [routerLink]="['tax-due-dates']"
+          routerLinkActive="router-link-active"
+          >Tax Due Dates</a
+        >
+        <p>
+          Please note the following tax due dates on your calendar, and come
+          back often to keep up with the changes.
+        </p>
+      </div>
+      <div>
+        <a
+          class="fw-bold"
+          [routerLink]="['tax-rates']"
+          routerLinkActive="router-link-active"
+          >Tax Rates</a
+        >
+        <p>
+          Tax rates change every year. Take a look at this year's tax rates.
+        </p>
+      </div>
+      <div>
+        <a
+          class="fw-bold"
+          [routerLink]="['tax-forms-publications']"
+          routerLinkActive="router-link-active"
+          >Tax Forms & Publications</a
+        >
+        <p>
+          Quickly view and print any IRS tax form or publication. Saves a trip
+          to the post office.
+        </p>
+      </div>
+      <div>
+        <a
+          class="fw-bold"
+          [routerLink]="['record-retention-guide']"
+          routerLinkActive="router-link-active"
+          >Record Retention Guide</a
+        >
+        <p>
+          Use this guide to determine how long you need to keep your tax and
+          other financial records.
+        </p>
+      </div>
+      <div>
+        <a
+          class="fw-bold"
+          [routerLink]="['state-tax-forms']"
+          routerLinkActive="router-link-active"
+          >State Tax Forms</a
+        >
+        <p>
+          Quickly print the tax forms you need from any state in the country.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1"></div>
+    <div class="col-lg-4 col-md-4 d-md-flex d-lg-flex flex-column d-none">
+      <img
+        class="mx-auto"
+        id="img-woman-1"
+        width="260px"
+        height="400px"
+        src="../../../../assets/images/woman-1.png"
+      />
+      <button mat-raised-button (click)="openContactUsDialog()">
+        Request A Free Consultation
+      </button>
+    </div>
+  </div>
+</div>
