@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap';
+import { ContactUsDialogComponent } from '../../../shared/components/contact-us-dialog/contact-us-dialog.component';
 
 @Component({
   selector: 'app-service',
@@ -7,9 +11,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
+    this.initAnimation();
   }
 
+  initAnimation(): void {
+    gsap.to('#image-container', {
+      scrollTrigger: {
+        trigger: '#image-container',
+        start: '#image-container',
+        pin: true,
+      }
+    })
+    gsap.from("#header-1",{y: -100, opacity: 0, duration: 2})
+  }
+
+  openContactUsDialog() {
+    this.dialog.open(ContactUsDialogComponent, {
+      width: '500px'
+    });
+  }
 }
