@@ -2,11 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 
 @Component({
-  selector: 'app-title',
-  templateUrl: './title.component.html',
-  styleUrls: ['./title.component.css']
+  selector: 'app-heading',
+  templateUrl: './heading.component.html',
+  styleUrls: ['./heading.component.css']
 })
-export class TitleComponent implements OnInit {
+export class HeadingComponent implements OnInit {
 
   @Input() heading = '';
 
