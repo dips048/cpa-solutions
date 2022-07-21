@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
@@ -9,19 +9,9 @@ import { MatDrawer } from '@angular/material/sidenav';
 export class MainLayoutComponent implements OnInit {
 
   @ViewChild('drawer') public drawer: MatDrawer | undefined;
-  public desktopScreen: boolean;
 
-  constructor() {
-    this.desktopScreen = window.innerWidth > 736;
-    console.log("screenWidth", window.innerWidth);
-  }
+  constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  @HostListener('window:resize', ['$event'])
-  onWindowResize() {
-    this.desktopScreen = window.innerWidth > 736;
-    console.log("screenWidth", window.innerWidth);
-  }
 }

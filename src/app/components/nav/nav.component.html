@@ -1,34 +1,23 @@
-<div *ngIf="desktopScreen; else mobileScreen">
-  <mat-toolbar>
-    <mat-toolbar-row class="flex-container-1">
-      <div>
-        <button mat-raised-button (click)="openLoginDialog()">Login</button>
-        <button mat-raised-button (click)="openSubscribeDialog()">Subscribe</button>
-      </div>
-      <h3><a href="tel:(800) 896-4500" class="strong lead">Call Us (987) 654 4321</a></h3>
-    </mat-toolbar-row>
-    <mat-toolbar-row class="flex-container-1 header-bar">
-      <h1>Company Name</h1>
-      <div>
-        <app-nav-list></app-nav-list>
-      </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</div>
-
-<ng-template #mobileScreen>
-  <mat-toolbar>
-    <mat-toolbar-row class="flex-container-2">
-      <mat-icon class="flex-item">lock</mat-icon>
-      <mat-icon class="flex-item">wifi</mat-icon>
-      <mat-icon class="flex-item">email</mat-icon>
-      <mat-icon class="flex-item">call</mat-icon>
-      <mat-icon class="flex-item" (click)="toggleDrawer.emit()">menu</mat-icon>
-    </mat-toolbar-row>
-
-    <mat-toolbar-row class="header-bar">
-      <h1>Company Name</h1>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</ng-template>
+<mat-toolbar>
+  <mat-toolbar-row class="d-sm-inline-flex flex-row d-lg-none p-0">
+    <mat-icon class="flex-item">lock</mat-icon>
+    <mat-icon class="flex-item">wifi</mat-icon>
+    <mat-icon class="flex-item">email</mat-icon>
+    <mat-icon class="flex-item">call</mat-icon>
+    <mat-icon class="flex-item" (click)="toggleDrawer.emit()">menu</mat-icon>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="d-none d-lg-flex justify-content-lg-between">
+    <div>
+      <button mat-raised-button (click)="openLoginDialog()">Login</button>
+      <button mat-raised-button (click)="openSubscribeDialog()">Subscribe</button>
+    </div>
+    <h3><a href="tel:(800) 896-4500" class="strong lead">Call Us (987) 654 4321</a></h3>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="d-flex justify-content-center justify-content-lg-between header-bar">
+    <h1>Company Name</h1>
+    <div class="d-none d-lg-block">
+      <app-nav-list></app-nav-list>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
 
