@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { MatDialog } from '@angular/material/dialog';
 import { ContactUsDialogComponent } from '../../../shared/components/contact-us-dialog/contact-us-dialog.component';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -19,7 +21,7 @@ export class ContactComponent implements OnInit {
   }
 
   initAnimation(): void {
-    gsap.from("#header-1",{y: -100, opacity: 0, duration: 1})
+    
   };
 
   openContactUsDialog() {
