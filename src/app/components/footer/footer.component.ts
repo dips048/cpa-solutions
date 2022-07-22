@@ -22,33 +22,45 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.initAnimation();
+    this.initAnimation();
   }
 
   initAnimation() {
-    gsap.timeline({
+    gsap.from('.footer-card-1', {
       scrollTrigger: {
-        trigger: 'top center',
-        start: 'bottom end',
+        trigger: '.footer-card-1',
+        start: '.footer-card-1 center',
       },
-    })
-    .from('.footer-card', {
-      // scrollTrigger: {
-      //   trigger: '.footer-card',
-      //   start: '.footer-card',
-      // },
       opacity: 0,
       scale: 0,
-      duration: 1,
+      duration: 2,
     })
-    .from('#nl-container', {
-      // scrollTrigger: {
-      //   trigger: '#nl-container',
-      //   start: '.nl-container',
-      // },
+    gsap.from('.footer-card-2', {
+      scrollTrigger: {
+        trigger: '.footer-card-2',
+        start: '.footer-card-2 center',
+      },
+      opacity: 0,
+      scale: 0,
+      duration: 2,
+    })
+    gsap.from('.footer-card-3', {
+      scrollTrigger: {
+        trigger: '.footer-card-3',
+        start: '.footer-card-3 center',
+      },
+      opacity: 0,
+      scale: 0,
+      duration: 2,
+    })
+    gsap.from('#nl-container', {
+      scrollTrigger: {
+        trigger: '#nl-container',
+        start: '.#nl-container center',
+      },
       opacity: 0,
       y: -200,
-      duration: 1,
+      duration: 2,
     });
   }
 }
