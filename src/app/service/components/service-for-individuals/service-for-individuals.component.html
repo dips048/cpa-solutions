@@ -1,0 +1,92 @@
+<app-heading heading="Services For Individuals"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-lg-7">
+      <div style="text-align: left">
+        <h2>
+          <strong>A Tax Headache Is Only One Mistake Away</strong>
+        </h2>
+        <p>
+          Every year, Congress promises to simplify the tax code, but every
+          year, the tax code seems to become more complicated than ever. If
+          you've tried tax preparation software and found it confusing, you're
+          not alone. As the tax code becomes more complex, so does tax
+          preparation software -- and you might not be getting all of the tax
+          breaks you're entitled to.
+        </p>
+        <p>
+          Here's something else you might not know: When you use tax software,
+          you might not understand what's on those forms you sent to the IRS. If
+          the IRS audits your return, do you know that your tax preparation
+          software is not liable -- you are. Why take a chance?
+        </p>
+        <h2>
+          <strong>How Can We Help You?</strong>
+        </h2>
+        <p>
+          Affordable, experienced, and friendly, you can count on us for all of
+          your tax preparation and accounting needs. Take a look at our tax
+          services for individuals below or give us a call to find out how we
+          can help. You'll be glad you did!
+        </p>
+      </div>
+      <div style="text-align: left">
+        <div class="caption">
+          <strong>
+            <a [routerLink]="['/personal-financial-planning']" routerLinkActive="router-link-active">Personal Financial Planning</a>
+          </strong>
+          <br />
+          You get one-on-one guidance and a comprehensive financial plan that
+          helps manage risk, improve performance, and ensure the growth and
+          longevity of your wealth.
+        </div>
+
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['/retirement-planning']" routerLinkActive="router-link-active" >Retirement Planning</a></strong
+          >
+          <br />
+          Do not put retirement planning on the back burner. Use a tax
+          professional to plan ahead now, and reap the benefits later.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['/estate-planning']" routerLinkActive="router-link-active" >Estate Planning</a></strong>
+          <br />
+          The hassles and red tape associated with estate planning can be
+          daunting, but you don't need to do it alone. Our team is waiting to
+          assist you through every step of the process.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['/elder-care']" routerLinkActive="router-link-active" >Elder Care</a></strong>
+          <br />
+          With our elder care services, you get the help of a caring, honest and
+          knowledgeable professional. Someone on your team, looking out for your
+          loved one's best interest.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/wealth-management']" routerLinkActive="router-link-active" >Wealth Management</a></strong>
+          <br />
+          Wealth management is a high-level professional service that provides
+          an integrated approach to growing and preserving income and assets, as
+          well as determining how much of a client's wealth is to be distributed
+          and for what use.
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-4 d-md-flex flex-column d-none" id="image-container">
+      <img
+        class="mx-auto"
+        id="img-woman-1"
+        width="260px"
+        height="400px"
+        src="../../../../assets/images/woman-1.png"
+      />
+      <button class="mx-auto" mat-raised-button (click)="openContactUsDialog()">
+        Request A Free Consultation
+      </button>
+    </div>
+  </div>
+</div>

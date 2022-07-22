@@ -1,0 +1,73 @@
+<app-heading heading="Industries"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-lg-7">
+      <div style="text-align: left">
+        <div class="caption">
+          <strong><a [routerLink]="['/construction']" routerLinkActive="router-link-active" >Construction</a></strong>
+          <br />
+          If you operate a construction management firm or are a general
+          contractor, subcontractor, residential developer, or own a business in
+          the construction-related trades, you need an accounting firm that
+          understands the business.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/dentists']" routerLinkActive="router-link-active" >Dentists</a></strong>
+          <br />
+          From keeping up with the latest dental techniques to hiring employees
+          and payroll and tax compliance, managing a dental practice is more
+          complicated than ever. With our accounting services for dental
+          practices, you'll have more time to focus on your patients.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/healthcare']" routerLinkActive="router-link-active" >Healthcare</a></strong>
+          <br />
+          Our specialized knowledge of the healthcare industry has helped
+          numerous medical practices thrive, and we're ready to help you. Why
+          not let us take care of your healthcare accounting needs so you can
+          focus on taking care of your patients?
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/hospitality']" routerLinkActive="router-link-active" >Hospitality</a></strong>
+          <br />
+          From assistance with financing options to structuring "the deal" and
+          projecting revenues, it's vital to use a tax and accounting firm that
+          understands the financial and operational challenges faced by
+          businesses in the hospitality industry.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/law-firms']" routerLinkActive="router-link-active" >Law Firms</a></strong>
+          <br />
+          Our team of experienced tax and accounting professionals is ready to
+          help your law firm achieve the financial success it deserves.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/manufacturers']" routerLinkActive="router-link-active" >Manufacturers</a></strong>
+          <br />
+          Our specialized knowledge of the manufacturing industry has helped
+          numerous companies improve their bottom line through increased
+          efficiency of their accounting processes.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/real-estate']" routerLinkActive="router-link-active" >Real Estate</a></strong>
+          <br />
+          Our specialized knowledge of the real estate industry has helped many
+          real estate professionals thrive, and we're ready to help you too.
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-4 d-md-flex flex-column d-none" id="image-container">
+      <img
+        class="mx-auto"
+        id="img-woman-1"
+        width="260px"
+        height="400px"
+        src="../../../../assets/images/woman-1.png"
+      />
+      <button class="mx-auto" mat-raised-button (click)="openContactUsDialog()">
+        Request A Free Consultation
+      </button>
+    </div>
+  </div>
+</div>
