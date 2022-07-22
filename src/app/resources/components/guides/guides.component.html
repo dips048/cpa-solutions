@@ -1,0 +1,77 @@
+<app-heading heading="Guides"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-lg-7 col-md-7">
+      <div style="text-align: left">
+        Click on any of the report categories listed below to find practical,
+        unbiased information to help you reach your financial goals.<br /><br />
+      </div>
+      <div style="text-align: left">
+        <div class="caption">
+          <strong><a [routerLink]="['/life-event']" routerLinkActive="router-link-active" >Life Events</a></strong>
+          <br />
+          Life is full of changes and surprises. Use these guides to help you
+          make sound financial decisions.
+        </div>
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['/business-strategies']" routerLinkActive="router-link-active" >Business Strategies</a></strong
+          >
+          <br />
+          Learn how to start, run and eventually sell a successful business.
+        </div>
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['/investment-strategies']" routerLinkActive="router-link-active"
+              >Investment Strategies</a
+            ></strong
+          >
+          <br />
+          Why leave your money sitting in a bank account earning for other
+          people when you can put it to work for yourself? This section is
+          dedicated to tested and proven investment strategies and concepts.
+        </div>
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['/tax-strategies-for-business-owners']" routerLinkActive="router-link-active"
+              >Tax Strategies for Business Owners</a
+            ></strong
+          >
+          <br />
+          Find tax deductions that you may be missing.
+        </div>
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['/tax-strategies-for-individuals']" routerLinkActive="router-link-active"
+              >Tax Strategies for Individuals</a
+            ></strong
+          >
+          <br />
+          Learn how to lower your taxes with these tax saving strategies.
+        </div>
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['/frequently-asked-questions']" routerLinkActive="router-link-active"
+              >Frequently Asked Questions</a
+            ></strong
+          >
+          <br />
+          Over 500 everyday financial questions answered.
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1"></div>
+    <div class="col-lg-4 col-md-4 d-md-flex d-lg-flex flex-column d-none">
+      <img
+        class="mx-auto"
+        id="img-woman-1"
+        width="260px"
+        height="400px"
+        src="../../../../assets/images/woman-1.png"
+      />
+      <button mat-raised-button (click)="openContactUsDialog()">
+        Request A Free Consultation
+      </button>
+    </div>
+  </div>
+</div>
