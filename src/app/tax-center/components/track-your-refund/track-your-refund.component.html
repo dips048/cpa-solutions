@@ -1,0 +1,59 @@
+<app-heading heading="Track Your Refund"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-lg-7">
+      <div style="text-align: left">
+        <div class="caption">
+          <strong><a [routerLink]="['/track-your-refund']" routerLinkActive="router-link-active" >Track Your Refund</a></strong>
+          <br />
+          Find out when you'll receive your federal and state refund.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/tax-due-dates']" routerLinkActive="router-link-active" >Tax Due Dates</a></strong>
+          <br />
+          Please note the following tax due dates on your calendar, and come
+          back often to keep up with the changes.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/tax-rates']" routerLinkActive="router-link-active" >Tax Rates</a></strong>
+          <br />
+          Tax rates change every year. Take a look at this year's tax rates.
+        </div>
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['/tax-forms']" routerLinkActive="router-link-active"
+              >Tax Forms &amp; Publications</a
+            ></strong
+          >
+          <br />
+          Quickly view and print any IRS tax form or publication. Saves a trip
+          to the post office.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/record-retention-guide']" routerLinkActive="router-link-active" >Record Retention Guide</a></strong>
+          <br />
+          Use this guide to determine how long you need to keep your tax and
+          other financial records.
+        </div>
+        <div class="caption">
+          <strong><a [routerLink]="['/state-tax-forms']" routerLinkActive="router-link-active" >State Tax Forms</a></strong>
+          <br />
+          Quickly print the tax forms you need from any state in the country.
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-4 d-md-flex flex-column d-none" id="image-container">
+      <img
+        class="mx-auto"
+        id="img-woman-1"
+        width="260px"
+        height="400px"
+        src="../../../../assets/images/woman-1.png"
+      />
+      <button class="mx-auto" mat-raised-button (click)="openContactUsDialog()">
+        Request A Free Consultation
+      </button>
+    </div>
+  </div>
+</div>
