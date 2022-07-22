@@ -1,0 +1,8 @@
+.blog-container {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 10px;
+  border: solid 1px #CCCCCC;
+  float: right;
+  width: 200px;
+  border-radius: 0.8em;
+}

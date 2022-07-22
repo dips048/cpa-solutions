@@ -1,0 +1,36 @@
+<app-heading heading="Blog"></app-heading>
+<div class="container c-1">
+  <div class="row my-5">
+    <div class="col-md-7" style="text-align: left">
+      <div class="blog-container">
+        <h2 class="text-center">Recent Posts:</h2>
+        <hr/>
+        <hr/>
+        <div class="d-flex justify-content-between">
+          <a class="d-flex flex-column align-items-center"
+            ><img
+              src="../../../../assets/images/search.png"
+            />View All</a
+          ><a class="d-flex flex-column align-items-center"
+            ><img
+              src="../../../../assets/images/RSS.png"
+            />Subscribe</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-md-flex flex-column d-none" id="image-container">
+      <img
+        class="mx-auto"
+        id="img-woman-1"
+        width="260px"
+        height="400px"
+        src="../../../../assets/images/woman-1.png"
+      />
+      <button class="mx-auto" mat-raised-button (click)="openContactUsDialog()">
+        Request A Free Consultation
+      </button>
+    </div>
+  </div>
+</div>

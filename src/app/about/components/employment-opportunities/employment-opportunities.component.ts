@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ContactUsDialogComponent } from '../../../shared/components/contact-us-dialog/contact-us-dialog.component';
 
+gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-employment-opportunities',
   templateUrl: './employment-opportunities.component.html',
@@ -19,11 +21,20 @@ export class EmploymentOpportunitiesComponent implements OnInit {
   }
 
   initAnimation(): void {
+    // ScrollTrigger.create({
+    //   trigger: '#image-container',
+    //   start: 'top',
+    //   end: 'bottom',
+    //   pin: true,
+    //   markers: true,
+    // })
     gsap.to('#image-container', {
       scrollTrigger: {
-        trigger: '#image-container',
-        start: '#image-container',
+        trigger: '.c-1',
+        start: '#image-container top',
+        end: "+=300 bottom",
         pin: true,
+        markers: true,
       }
     });
   };
