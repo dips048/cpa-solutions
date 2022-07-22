@@ -258,7 +258,18 @@
         {
           "title": "Newsletter",
           "routerLink": "/newsletter",
-          "list": []
+          "list": [
+            {
+              "title": "This Months Newsletter",
+              "routerLink": "/newsletter",
+              "list": []
+            },
+            {
+              "title": "Previous Newsletter",
+              "routerLink": "/previous-newsletter",
+              "list": []
+            }
+          ]
         },
         {
           "title": "Guides",

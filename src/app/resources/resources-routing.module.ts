@@ -5,6 +5,7 @@ import { FinancialCalculatorsComponent } from './components/financial-calculator
 import { GuidesComponent } from './components/guides/guides.component';
 import { InternetLinksComponent } from './components/internet-links/internet-links.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { PreviousNewsletterComponent } from './components/previous-newsletter/previous-newsletter.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 
 const routes: Routes = [
@@ -14,10 +15,11 @@ const routes: Routes = [
   { path: 'financial-calculators', component: FinancialCalculatorsComponent },
   { path: 'client-portal', component: ClientPortalComponent },
   { path: 'internet-links', component: InternetLinksComponent },
+  { path: 'newsletter/previous-newsletter', component: PreviousNewsletterComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class ResourcesRoutingModule { }
+export class ResourcesRoutingModule {}
