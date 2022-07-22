@@ -1,12 +1,3 @@
-.tagline {
-  text-align: center;
-  padding: 60px 15px 20px;
-}
-
-/* img {
-  align-self: center;
-} */
-
 .conatiner-2 {
   z-index: 1;
 }
@@ -63,16 +54,32 @@
   opacity: .5;
 }
 
-.img-radius {
+.coffee {
+  position: relative;
+  max-width: 512px;
+  height: 494px;
+  margin: 0 auto;
+}
+
+.coffee img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -256px;
+}
+
+.img-scroll {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  margin-left: -168px;
   overflow: hidden;
   height: 335px;
   width: 335px;
-  border-radius: 170px;
-  margin: 9% 16%;
-  opacity: .8;
+  border-radius: 175px;
 }
 
-.img-radius .slide {
+.img-scroll .slide {
   background-image: url("../../../../assets/images/slide.png");
   height: 335px;
   width: 1695px;
