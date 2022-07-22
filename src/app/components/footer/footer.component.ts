@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.initAnimation();
+    // this.initAnimation();
   }
 
   initAnimation() {
