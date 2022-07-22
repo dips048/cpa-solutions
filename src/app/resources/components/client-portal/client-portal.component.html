@@ -1,0 +1,103 @@
+<app-heading heading="Client Portal"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-lg-7 col-md-7">
+      <div id="Text" style="text-align: left">
+        <div id="loginform">
+          <form #form name="form" method="post" action="">
+            <legend>Portal Login</legend>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <label for="username">E-Mail<em>*</em></label>
+                  </th>
+                  <td>
+                    <input
+                      id="Username"
+                      name="Username"
+                      type="text"
+                      class="box"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <label for="password">Password<em>*</em></label>
+                  </th>
+                  <td>
+                    <input
+                      id="Password"
+                      name="Password"
+                      type="password"
+                      class="box"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <input
+                      onclick="form.submit();"
+                      value="Login"
+                      type="button"
+                    />
+                  </th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <input type="hidden" name="Submit" value="clicked" />
+          </form>
+        </div>
+
+        <p>
+          As a valued client, you get a secure, password-protected portal to
+          store and access your important financial documents from anywhere at
+          any time.
+        </p>
+
+        <p>
+          Whether you're at work, at home, or on vacation, you always have
+          access to your tax returns, financial work papers, or accounting
+          database.
+        </p>
+
+        <p>
+          This portal also allows us to work together efficiently by securely
+          exchanging working documents, scanned receipts, and very large
+          QuickBooks files.
+        </p>
+
+        <p>
+          Check out this video to see the portal in action. See how to use the
+          SecureSend feature to quickly and easily send files to the secure
+          portal environment. (View client portal
+          <a href="">security measures</a>.)
+        </p>
+
+        <p>
+          To start using the client portal please log in above or
+          <a href="">register here</a>.<br />
+        </p>
+
+        <p>
+          To send a file without creating an account use the
+          <a href="">SecureSend page</a>. <br />
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1"></div>
+    <div class="col-lg-4 col-md-4 d-md-flex d-lg-flex flex-column d-none">
+      <img
+        class="mx-auto"
+        id="img-woman-1"
+        width="260px"
+        height="400px"
+        src="../../../../assets/images/woman-1.png"
+      />
+      <button mat-raised-button (click)="openContactUsDialog()">
+        Request A Free Consultation
+      </button>
+    </div>
+  </div>
+</div>

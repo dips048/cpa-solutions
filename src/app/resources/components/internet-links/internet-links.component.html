@@ -1,0 +1,132 @@
+<app-heading heading="Internet Links"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-lg-7 col-md-7">
+      <div style="text-align: left">
+        <p>
+          Finding what you're looking for on the internet can be quite a
+          daunting task. We've made it a little easier by selecting a few of our
+          favorite sites.
+        </p>
+      </div>
+      <div id="InternetLinks" style="text-align: left">
+        <div id="IL">
+          <div class="cellcolor roundcorner" id="IL_Tabs">
+            <h3>Categories:</h3>
+            <select
+              onchange='showLinks($(this).find("option:selected").val(), null);'
+            >
+              <option selected="selected">New Employee Forms</option>
+              <option>Financial Links</option>
+              <option>Government Links</option>
+              <option>Consumer Advice</option>
+              <option>Internet Resource</option>
+              <option>News And Magazines</option>
+              <option>Software Links</option>
+              <option>Education Links</option>
+              <option>Just For Fun</option>
+            </select>
+            <!-- <ul>
+              <li class="IL_Active">
+                <a
+                  href="#stay"
+                  onclick="showLinks('New Employee Forms', $(this));"
+                  >New Employee Forms</a
+                >
+              </li>
+              <li>
+                <a href="#stay" onclick="showLinks('Financial Links', $(this));"
+                  >Financial Links</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#stay"
+                  onclick="showLinks('Government Links', $(this));"
+                  >Government Links</a
+                >
+              </li>
+              <li>
+                <a href="#stay" onclick="showLinks('Consumer Advice', $(this));"
+                  >Consumer Advice</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#stay"
+                  onclick="showLinks('Internet Resource', $(this));"
+                  >Internet Resource</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#stay"
+                  onclick="showLinks('News And Magazines', $(this));"
+                  >News And Magazines</a
+                >
+              </li>
+              <li>
+                <a href="#stay" onclick="showLinks('Software Links', $(this));"
+                  >Software Links</a
+                >
+              </li>
+              <li>
+                <a href="#stay" onclick="showLinks('Education Links', $(this));"
+                  >Education Links</a
+                >
+              </li>
+              <li>
+                <a href="#stay" onclick="showLinks('Just For Fun', $(this));"
+                  >Just For Fun</a
+                >
+              </li>
+            </ul> -->
+          </div>
+
+          <div>
+            <h2>New Employee Forms</h2>
+            <hr class="cellcolor" style="height: 2px; border-width: 0" />
+            <p>
+              <strong
+                ><a alt="W4" href="http://www.irs.gov/pub/irs-pdf/fw4.pdf"
+                  >W4</a
+                >
+              </strong>
+              <br />Use this form to determine employee's federal income tax
+              withholding. This form requires Adobe PDF Reader. If you do not
+              have it, you may
+              <a href="http://get.adobe.com/reader/">download</a> it here.
+            </p>
+
+            <p>
+              <strong
+                ><a
+                  alt="I9"
+                  href="https://www.uscis.gov/system/files_force/files/form/i-9-paper-version.pdf"
+                  >I9</a
+                >
+              </strong>
+              <br />All employees must complete this form at time of hire for
+              the Immigration and Naturalization Service. This form requires
+              Adobe PDF Reader. If you do not have it, you may
+              <a href="http://get.adobe.com/reader/">download </a>it here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1 col-md-1"></div>
+    <div class="col-lg-4 col-md-4 d-md-flex d-lg-flex flex-column d-none">
+      <img
+        class="mx-auto"
+        id="img-woman-1"
+        width="260px"
+        height="400px"
+        src="../../../../assets/images/woman-1.png"
+      />
+      <button mat-raised-button (click)="openContactUsDialog()">
+        Request A Free Consultation
+      </button>
+    </div>
+  </div>
+</div>

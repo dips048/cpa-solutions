@@ -1,0 +1,14 @@
+#loginform {
+  float: right;
+  padding: 0;
+  margin: 0 0 20px 20px;
+  background: #fff url(/images/galleries/Shared/common/blueformgradient.jpg) 0% 100% repeat-x;
+  font: 10px Trebuchet MS, helvetica, sans-serif;
+  width: 200px;
+  border: #A6C4DE 1px solid;
+  color: #000000;
+}
+
+#loginform input.box {
+    width: 110px;
+}
