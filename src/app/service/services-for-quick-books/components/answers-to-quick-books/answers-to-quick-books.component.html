@@ -1,0 +1,84 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/services-for-quick-books"
+        >Services For QuickBooks</span
+      >
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/services-for-quick-books/why-quick-books"
+        >Answers to QuickBooks Questions</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Answers to QuickBooks Questions"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          <i><b>Questions about QuickBooks?</b></i>
+        </p>
+        <p>
+          QuickBooks users are generally not stumped by the software, they are
+          stumped by the accounting information necessary to complete the
+          transactions. Quick access to correct information is essential to
+          maintain the accuracy of your financial records.
+        </p>
+      </div>
+      <div style="text-align: left">
+        <p>
+          Employees in your accounting department will find comfort in knowing
+          an expert in QuickBooks is only an email or phone call away,
+          preventing many wasted hours of aggravation and embarrassment.
+        </p>
+        <p><strong>How much does it cost?</strong> $20 per question.</p>
+        <p>
+          Questions may be called in, left on voice mail, faxed or sent via
+          email. A Certified Professional Advisor who specializes in working
+          with QuickBooks will respond with a detailed solution to your problem
+          or question, usually within 24 hours.
+        </p>
+        <p>
+          100% Money-Back Guarantee: If we cannot adequately resolve your
+          problem or question, your money will be refunded 100%, guaranteed.
+        </p>
+        <p>
+          <strong
+            >Our Answers to QuickBooks Questions service keeps your employees on
+            task.</strong
+          >
+        </p>
+        <p>Fill out the form below to e-mail us.</p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

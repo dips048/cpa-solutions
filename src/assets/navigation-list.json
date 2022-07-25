@@ -187,32 +187,32 @@
           "list": [
             {
               "title": "Why QuickBooks",
-              "routerLink": "why-quick-books",
+              "routerLink": "/why-quick-books",
+              "list": []
+            },
+            {
+              "title": "Setup for QuickBooks",
+              "routerLink": "/setup-quick-books",
               "list": []
             },
             {
               "title": "Training For QuickBooks",
-              "routerLink": "/training-for-quick-books",
+              "routerLink": "/training-quick-books",
               "list": []
             },
             {
               "title": "Answers To QuickBooks",
-              "routerLink": "answers-to-quick-books",
+              "routerLink": "/answers-to-quick-books",
               "list": []
             },
             {
               "title": "Tune-up For QuickBooks",
-              "routerLink": "/tune-up-for-quick-books",
-              "list": []
-            },
-            {
-              "title": "Tips For QuickBooks",
-              "routerLink": "tips-for-quick-books",
+              "routerLink": "/tune-up-quick-books",
               "list": []
             },
             {
               "title": "Tips For QuickBooks Users",
-              "routerLink": "/tips-for-quick-books-users",
+              "routerLink": "/tips-quick-books",
               "list": []
             }
           ]
@@ -223,7 +223,7 @@
           "list": [
             {
               "title": "Construction",
-              "routerLink": "construction",
+              "routerLink": "/construction",
               "list": []
             },
             {
@@ -233,7 +233,7 @@
             },
             {
               "title": "Healthcare",
-              "routerLink": "healthcare",
+              "routerLink": "/healthcare",
               "list": []
             },
             {
@@ -243,7 +243,7 @@
             },
             {
               "title": "Law Firms",
-              "routerLink": "law-firms",
+              "routerLink": "/law-firms",
               "list": []
             },
             {

@@ -1,0 +1,87 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/services-for-quick-books"
+        >Services For QuickBooks</span
+      >
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/services-for-quick-books/training-quick-books"
+        >Training For QuickBooks</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Training For QuickBooks"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          Once QuickBooks is set up and working properly, we can train you or
+          your employees to properly operate QuickBooks specifically for your
+          business.
+        </p>
+      </div>
+      <div id="Text" style="text-align: left">
+        <p>
+          <strong
+            >Why choose one-on-one attention instead of taking a class?</strong
+          >
+        </p>
+        <ul>
+          <li>
+            <p>We come to your location.</p>
+          </li>
+          <li>
+            <p>We focus on the individual issues facing your business.</p>
+          </li>
+          <li>
+            <p>
+              We will be there to answer your specific questions and concerns.
+            </p>
+          </li>
+          <li>
+            <p>
+              No need to spend time on features that don't impact your business!
+            </p>
+          </li>
+        </ul>
+        <p>
+          <strong
+            >Call today to set up an appointment. We will come to your
+            location!!</strong
+          >
+        </p>
+        <p>Fill out the form below to e-mail us.</p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

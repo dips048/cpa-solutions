@@ -1,0 +1,86 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/services-for-quick-books"
+        >Services For QuickBooks</span
+      >
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/services-for-quick-books/tune-up-quick-books"
+        >Tune-up for QuickBooks</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Tune-up for QuickBooks"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          <strong
+            >Overhaul your accounting system with a Tune-up for
+            QuickBooks.</strong
+          >
+        </p>
+        <p>
+          Whether you need to prepare for tax time, a financial review or you
+          just need to clean up some problem areas, you'll be prepared with a
+          Tune-up for QuickBooks. In four (4) hours, a QuickBooks Professional
+          Advisor will help you clean up and organize your bookkeeping system.
+        </p>
+      </div>
+      <div id="Text" style="text-align: left">
+        <p>
+          <strong>Tune-up Topics:</strong>
+        </p>
+        <ul>
+          <li>Reviewing your transactions for the year</li>
+          <li>Cleaning up stray entries</li>
+          <li>Customizing reports</li>
+          <li>Balancing general ledger to subsidiary records</li>
+          <li>Additional personalized training</li>
+        </ul>
+        <p>
+          A Tune-up for QuickBooks is a smart and affordable way to get a handle
+          on your books. Accurate records allow you to make educated decisions
+          for your business and will save you money!
+        </p>
+        <p>
+          <strong
+            >If you interested in the Tune-up for QuickBooks service, call today
+            and schedule a time to meet.</strong
+          >
+        </p>
+        <p>Fill out the form below to e-mail us.</p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
