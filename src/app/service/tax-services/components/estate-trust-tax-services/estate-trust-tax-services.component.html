@@ -1,0 +1,105 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/estate-trust-tax-services">Estate & Trust Tax Services</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Estate & Trust Tax Services"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >Estate and Trust Tax Preparation Helps Preserve, Protect, and
+            Enhance Your Financial Legacy</strong
+          >
+        </h2>
+        <p>
+          Estate and trust tax preparation and planning are an important part of
+          managing your financial future -- and it's not just for the one
+          percent; it's important for everyone -- especially if you have a
+          spouse or children or own a business.
+        </p>
+        <p>
+          As your trusted advisor, we help you develop an estate and trust plan
+          that protects wealth and minimizes the tax burden on you and your
+          loved ones.
+        </p>
+        <p>
+          Protecting your assets is critical to ensure financial security for
+          your loved ones and we know that estate planning and trust tax return
+          preparation is not easy, often requiring specialized knowledge and
+          expertise.
+        </p>
+        <h3>We Understand Fiduciary Tax Laws</h3>
+        <p>
+          Our tax and accounting professionals have many years of experience
+          helping clients just like you. We work closely with investment
+          advisors, attorneys, and other financial professionals so that we are
+          able to develop a long-term estate plan that meets the individual
+          needs of every client. We also stay current on tax law changes that
+          affect estate and tax trust preparation.
+        </p>
+        <h3>Our Estate and Trust Tax Services Include:</h3>
+        <ul>
+          <li>Allocating assets to spouses, children, trusts, and charities</li>
+          <li>
+            Reviewing your estate plan and trust tax situation to ensure
+            financial goals are met
+          </li>
+          <li>Gift tax returns and strategies</li>
+          <li>Business succession planning</li>
+          <li>Trust administration</li>
+          <li>Trust income tax returns</li>
+          <li>Estate tax returns</li>
+        </ul>
+        <h3>
+          If You Need Assistance With Estate and Trust Tax Preparation We Are
+          Here to Help.
+        </h3>
+        <p>
+          Preparing income tax returns for trusts and estates can be complicated
+          and if you haven't developed an estate plan it's not too late.
+        </p>
+        <p>
+          <strong
+            >Contact us today by filling out the form below. You'll be glad you
+            did.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

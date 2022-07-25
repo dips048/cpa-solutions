@@ -4,16 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { IndustriesComponent } from './components/industries/industries.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ServicesForQuickBooksComponent } from './components/services-for-quick-books/services-for-quick-books.component';
-import { TaxServicesComponent } from './components/tax-services/tax-services.component';
 
 const routes: Routes = [
   { path: '', component: ServiceComponent },
-  // { path: 'business-services', component: BusinessServicesComponent },
-  { path: 'tax-services', component: TaxServicesComponent },
   { path: 'services-for-quick-books', component: ServicesForQuickBooksComponent },
   { path: 'industries', component: IndustriesComponent },
   { path: 'services-for-individuals', loadChildren: () => import('./services-for-individuals/services-for-individuals.module').then(m => m.ServicesForIndividualsModule) },
   { path: 'business-services', loadChildren: () => import('./business-services/business-services.module').then(m => m.BusinessServicesModule) },
+  { path: 'tax-services', loadChildren: () => import('./tax-services/tax-services.module').then(m => m.TaxServicesModule) },
 ];
 
 @NgModule({

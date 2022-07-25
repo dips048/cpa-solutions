@@ -1,0 +1,94 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/individual-tax-preparation"
+        >Individual Tax Preparation</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Individual Tax Preparation"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >Your Source for Trusted Personal Accounting and Tax
+            Preparation</strong
+          >
+        </h2>
+        <p>
+          As your trusted advisors, we evaluate your individual tax situation
+          and guide you through any tax challenges that develop. Our goal is to
+          minimize your tax liability so that you can keep more of your
+          hard-earned money.
+        </p>
+        <p>
+          It's also our job to stay up-to-date on current federal and state tax
+          laws through continuing education and we use our in-depth knowledge of
+          tax codes when we prepare your individual tax returns -- so you don't
+          miss out on any tax credits and deductions that you are entitled to
+          take.
+        </p>
+        <h3>Tax Preparation Services for Individuals</h3>
+        <p>
+          <strong>Here's what else we do for you:</strong>
+        </p>
+        <ul>
+          <li>Prepare accurate tax returns that are filed on time</li>
+          <li>
+            Calculate estimated taxes for self-employed small business owners
+          </li>
+          <li>
+            Develop tax planning strategies that reflect individual financial
+            goals
+          </li>
+          <li>Electronic filing and direct deposit for a faster tax refund</li>
+          <li>
+            File extensions and calculate estimated tax to avoid interest and
+            penalties
+          </li>
+        </ul>
+        <h3>Tax Season Is Just Around the Corner.</h3>
+        <p>
+          <strong
+            >If you need a fast, accurate tax professional to prepare your tax
+            return this year give us a call today or fill out the contact form
+            below.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/tax-preparation-for-business"
+        >Tax Preparation for Businesses</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Tax Preparation for Businesses"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong>We Specialize in Business Tax Preparation</strong>
+        </h2>
+        <p>
+          As a business owner, you're busy developing new products or services
+          and making sure your business runs smoothly. You probably don't have
+          time to reconcile your bank account or generate balance sheets to
+          manage your cash flow, let alone read up on the latest tax laws to
+          find out which tax breaks you can take advantage of.
+        </p>
+        <p>
+          When you first started out, and money was tight, the do-it-yourself
+          method of accounting might have worked just fine. But now that you
+          have employees, pay estimated taxes, and need to manage your cash flow
+          better, it's time to find a trusted advisor to partner with all year
+          long--not just at tax time.
+        </p>
+        <h3>
+          There's no better time than now to discuss tax planning strategies
+          that will help you build a foundation for future success.
+        </h3>
+        <p>
+          <strong>Here is what we do for you:</strong>
+        </p>
+        <ul>
+          <li>State and federal income tax preparation and filing</li>
+          <li>Local and state sales tax compliance</li>
+          <li>State and federal payroll tax</li>
+          <li>
+            Minimize tax liability through the use of proven tax planning
+            strategies
+          </li>
+          <li>Profit and loss statements</li>
+          <li>Mergers and Acquisitions</li>
+          <li>Entity selection and structure (S-Corp, C-Corp, LLC)</li>
+        </ul>
+        <h3>Make Sure You Never Miss a Deadline Again</h3>
+        <p>
+          The IRS, as well as state and local governments, imposes strict
+          deadlines for business tax obligations. Missing these tax deadlines
+          and failing to comply with payroll and sales taxes negatively impacts
+          your bottom line and may result in fines for non-compliance.
+        </p>
+        <p>
+          As your trusted advisor, we make sure you stay on top of your tax
+          obligations and avoid penalties and fees that reduce your
+          profitability.
+        </p>
+        <h3>Experienced Tax and Accounting Professionals You Can Trust</h3>
+        <p>
+          <strong
+            >To find out how our team of experienced tax and accounting
+            professionals can help your small business achieve success call us
+            today or use the contact form below.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

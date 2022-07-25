@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ServiceRoutingModule } from './service-routing.module';
+import { TaxServicesRoutingModule } from './tax-services-routing.module';
 import { components } from './components';
+import { SharedModule } from '../../shared/shared.module';
 import { MatButtonModule } from '@angular/material/button';
-import { SharedModule } from '../shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -12,9 +13,9 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    ServiceRoutingModule,
+    TaxServicesRoutingModule,
+    SharedModule,
     MatButtonModule,
-    SharedModule
   ]
 })
-export class ServiceModule { }
+export class TaxServicesModule { }
