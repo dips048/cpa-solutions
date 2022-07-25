@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, Input, OnInit } from '@angular/core';
 import { NavigationListModel } from '../../shared/models';
-import { DataService } from '../../shared/services';
 
 @Component({
   selector: 'app-nav-list',
@@ -10,15 +8,10 @@ import { DataService } from '../../shared/services';
 })
 export class NavListComponent implements OnInit {
 
-  navigationList$: Observable<NavigationListModel[]>;
+  @Input() navigationList: NavigationListModel[] = []
 
-  constructor(
-    private dataService: DataService
-  ) {
-    this.navigationList$ = this.dataService.getNavigationList();
-  }
+  constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }

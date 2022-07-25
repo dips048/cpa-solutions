@@ -8,14 +8,10 @@
   background-color: rgb(255, 255, 255);
 }
 
-app-side-nav {
-  width: 0;
-  position: fixed;
-  top: 0;
-  height: 100% !important;
-  background-color: #fff;
-  z-index: 4;
-  overflow: auto;
-  box-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
-  margin: 0;
+.offcanvas-header {
+  padding: .5rem;
+}
+
+.offcanvas-body {
+  padding: 0rem;
 }

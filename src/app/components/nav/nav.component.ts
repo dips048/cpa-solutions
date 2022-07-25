@@ -1,8 +1,10 @@
-import { Component, EventEmitter, Inject, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { SubscribeDialogComponent } from '../../shared/components/subscribe-dialog/subscribe-dialog.component';
 import { LoginDialogComponent } from '../../shared/components/login-dialog/login-dialog.component';
-import { DOCUMENT } from '@angular/common';
+import { Observable } from 'rxjs/internal/Observable';
+import { NavigationListModel } from '../../shared/models';
+import { DataService } from '../../shared/services';
 
 @Component({
   selector: 'app-nav',
@@ -15,10 +17,14 @@ export class NavComponent implements OnInit {
 
   @Output() toggleDrawer = new EventEmitter();
 
+  navigationList$: Observable<NavigationListModel[]>;
+
   constructor(
     private matDilog: MatDialog,
-    @Inject(DOCUMENT) private document: Document
-  ) { }
+    private dataService: DataService
+  ) {
+    this.navigationList$ = this.dataService.getNavigationList();
+  }
 
   ngOnInit(): void { }
 
@@ -34,17 +40,4 @@ export class NavComponent implements OnInit {
     })
   };
 
-  openSideNav() {
-    const el1 = this.document.getElementById('app-side-nav');
-    if (el1) {
-      el1.style.width = '300px';
-    }
-  };
-
-  closeSideNav() {
-    const el1 = this.document.getElementById('app-side-nav');
-    if (el1) {
-      el1.style.width = '0';
-    }
-  }
 }

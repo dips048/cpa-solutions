@@ -1,28 +1,25 @@
-.side-nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1em;
-  background-color: #f5f5f5;
-}
-
-.accordion {
-  display: block;
-}
-
-.accordion-item, .according-item-content {
-  display: block;
-  padding: 0.5em 1em;
+.accordion-item {
+  border: none;
 }
 
 .accordion-item-header {
   display: flex;
-  align-content: center;
+  justify-content: space-between;
+  padding: .5rem;
+  border: 1px solid rgba(0,0,0,.125);
 }
 
-.header-item {
-  flex-grow: 1;
+.according-content-item {
+  padding: .5rem 1rem;
+  border: 1px solid rgba(0,0,0,.125);
 }
 
+.accordion-item > .accordion-item-header:hover {
+  cursor: pointer;
+  background-color: #2d82a1;
+}
 
-
+.accordion-item > .according-expanded-content > .according-content-item:hover {
+  cursor: pointer;
+  background-color: #2d82a1;
+}

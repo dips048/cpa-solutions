@@ -1,8 +1,6 @@
-<div class="side-nav-header">
-  <h4>Menu</h4>
-  <mat-icon (click)="closeDrawer.emit()">close</mat-icon>
-</div>
-<cdk-accordion class="accordion" *ngIf="navigationList$ | async as navigationList">
+<cdk-accordion
+  class="accordion"
+>
   <cdk-accordion-item
     *ngFor="let item of navigationList; let index = index"
     #accordionItem="cdkAccordionItem"
@@ -17,37 +15,30 @@
       class="accordion-item-header"
       *ngIf="!item.list.length"
       [routerLink]="[item.routerLink]"
-      (click)="closeDrawer.emit()"
     >
       {{ item.title }}
     </div>
     <div class="accordion-item-header" *ngIf="item.list.length">
-      <div
-        class="header-item"
-        [routerLink]="[item.routerLink]"
-        (click)="closeDrawer.emit()"
-        >
+      <div class="header-item" [routerLink]="[item.routerLink]">
         {{ item.title }}
       </div>
-      <div
-        (click)="accordionItem.toggle()"
-      >
+      <div (click)="accordionItem.toggle()">
         <mat-icon *ngIf="!accordionItem.expanded">keyboard_arrow_down</mat-icon>
         <mat-icon *ngIf="accordionItem.expanded">keyboard_arrow_up</mat-icon>
       </div>
     </div>
     <div
       *ngIf="item.list.length"
+      class="according-expanded-content"
       role="region"
       [style.display]="accordionItem.expanded ? '' : 'none'"
       [attr.id]="'accordion-body-' + index"
       [attr.aria-labelledby]="'accordion-header-' + index"
     >
       <div
-        class="according-item-content"
+        class="according-content-item"
         *ngFor="let listItem of item.list"
         [routerLink]="[item.routerLink + listItem.routerLink]"
-        (click)="closeDrawer.emit()"
       >
         {{ listItem.title }}
       </div>
