@@ -21,20 +21,14 @@ export class EmploymentOpportunitiesComponent implements OnInit {
   }
 
   initAnimation(): void {
-    // ScrollTrigger.create({
-    //   trigger: '#image-container',
-    //   start: 'top',
-    //   end: 'bottom',
-    //   pin: true,
-    //   markers: true,
-    // })
-    gsap.to('#image-container', {
+    gsap.to('#image-container-2', {
       scrollTrigger: {
-        trigger: '.c-1',
-        start: '#image-container top',
-        end: "+=300 bottom",
+        trigger: '#image-container-1',
+        start: "top top",
+        end: "bottom 50%+=140px",
         pin: true,
         markers: true,
+        pinSpacing: false
       }
     });
   };

@@ -18,15 +18,18 @@ export class OurValuesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.initAnimation();
+    this.initAnimation();
   }
 
   initAnimation(): void {
-    gsap.to('#image-container', {
+    gsap.to('#image-container-2', {
       scrollTrigger: {
-        trigger: '#image-container',
-        start: '#image-container',
+        trigger: '#image-container-1',
+        start: "top top",
+        end: "bottom 50%+=140px",
         pin: true,
+        markers: true,
+        pinSpacing: false
       }
     });
   };

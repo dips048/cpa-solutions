@@ -3,36 +3,74 @@
   <div class="row my-5">
     <div class="col-lg-7">
       <p>
-        We strive to provide the best possible service for our clients. Please leave a review to let us know how we are doing and to share your experience with others.      </p>
+        We strive to provide the best possible service for our clients. Please
+        leave a review to let us know how we are doing and to share your
+        experience with others.
+      </p>
       <div>
-        <a class="fw-bold" [routerLink]="['our-values']" routerLinkActive="router-link-active">Our Values</a>
+        <a
+          class="fw-bold"
+          [routerLink]="['/about/our-values']"
+          routerLinkActive="router-link-active"
+          >Our Values</a
+        >
         <p>
-          Our firm provides outstanding service to our clients because of our dedication to the three underlying principles.
+          Our firm provides outstanding service to our clients because of our
+          dedication to the three underlying principles.
         </p>
       </div>
       <div>
-        <a class="fw-bold" [routerLink]="['client-reviews']" routerLinkActive="router-link-active">Client Reviews</a>
+        <a
+          class="fw-bold"
+          [routerLink]="'/about/client-reviews'"
+          routerLinkActive="router-link-active"
+          >Client Reviews</a
+        >
         <p>
-          We strive to provide the best possible service for our clients. Please leave a review to let us know how we are doing and to share your experience with others.
+          We strive to provide the best possible service for our clients. Please
+          leave a review to let us know how we are doing and to share your
+          experience with others.
         </p>
       </div>
       <div>
-        <a class="fw-bold" [routerLink]="['employment-opportunities']" routerLinkActive="router-link-active">Employment Opportunities</a>
+        <a
+          class="fw-bold"
+          [routerLink]="['/about/employment-oppertunities']"
+          routerLinkActive="router-link-active"
+          >Employment Opportunities</a
+        >
         <p>
-          Check this page from time to time for specific employment opportunities.
+          Check this page from time to time for specific employment
+          opportunities.
         </p>
       </div>
       <div>
-        <a class="fw-bold" [routerLink]="['blog']" routerLinkActive="router-link-active">Blog</a>
+        <a
+          class="fw-bold"
+          [routerLink]="['/about/blog']"
+          routerLinkActive="router-link-active"
+          >Blog</a
+        >
         <p>
-          Read our company blog for interesting posts about our activities and thoughts on the latest financial news.
+          Read our company blog for interesting posts about our activities and
+          thoughts on the latest financial news.
         </p>
       </div>
     </div>
     <div class="col-lg-1"></div>
-    <div class="col-lg-4 d-md-flex flex-column d-none">
-      <img class="mx-auto" id="img-woman-1" width="260px" height="400px" src="../../../../assets/images/woman-1.png">
-      <button class="mx-auto" mat-raised-button (click)="openContactUsDialog()">Request A Free Consultation</button>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
     </div>
   </div>
 </div>
