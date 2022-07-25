@@ -1,3 +1,14 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start">
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/services-for-individuals">Service For Individuals</span>
+    </li>
+  </ol>
+</nav>
 <app-heading heading="Services For Individuals"></app-heading>
 <div class="container z-index-1 position-relative">
   <div class="row my-5">
@@ -33,7 +44,11 @@
       <div style="text-align: left">
         <div class="caption">
           <strong>
-            <a [routerLink]="['/personal-financial-planning']" routerLinkActive="router-link-active">Personal Financial Planning</a>
+            <a
+              [routerLink]="['personal-financial-planning']"
+              routerLinkActive="router-link-active"
+              >Personal Financial Planning</a
+            >
           </strong>
           <br />
           You get one-on-one guidance and a comprehensive financial plan that
@@ -43,7 +58,11 @@
 
         <div class="caption">
           <strong
-            ><a [routerLink]="['/retirement-planning']" routerLinkActive="router-link-active" >Retirement Planning</a></strong
+            ><a
+              [routerLink]="['/retirement-planning']"
+              routerLinkActive="router-link-active"
+              >Retirement Planning</a
+            ></strong
           >
           <br />
           Do not put retirement planning on the back burner. Use a tax
@@ -51,7 +70,13 @@
         </div>
 
         <div class="caption">
-          <strong><a [routerLink]="['/estate-planning']" routerLinkActive="router-link-active" >Estate Planning</a></strong>
+          <strong
+            ><a
+              [routerLink]="['/estate-planning']"
+              routerLinkActive="router-link-active"
+              >Estate Planning</a
+            ></strong
+          >
           <br />
           The hassles and red tape associated with estate planning can be
           daunting, but you don't need to do it alone. Our team is waiting to
@@ -59,14 +84,26 @@
         </div>
 
         <div class="caption">
-          <strong><a [routerLink]="['/elder-care']" routerLinkActive="router-link-active" >Elder Care</a></strong>
+          <strong
+            ><a
+              [routerLink]="['/elder-care']"
+              routerLinkActive="router-link-active"
+              >Elder Care</a
+            ></strong
+          >
           <br />
           With our elder care services, you get the help of a caring, honest and
           knowledgeable professional. Someone on your team, looking out for your
           loved one's best interest.
         </div>
         <div class="caption">
-          <strong><a [routerLink]="['/wealth-management']" routerLinkActive="router-link-active" >Wealth Management</a></strong>
+          <strong
+            ><a
+              [routerLink]="['/wealth-management']"
+              routerLinkActive="router-link-active"
+              >Wealth Management</a
+            ></strong
+          >
           <br />
           Wealth management is a high-level professional service that provides
           an integrated approach to growing and preserving income and assets, as
@@ -76,17 +113,19 @@
       </div>
     </div>
     <div class="col-lg-1"></div>
-    <div class="col-lg-4 d-md-flex flex-column d-none" id="image-container">
-      <img
-        class="mx-auto"
-        id="img-woman-1"
-        width="260px"
-        height="400px"
-        src="../../../../assets/images/woman-1.png"
-      />
-      <button class="mx-auto" mat-raised-button (click)="openContactUsDialog()">
-        Request A Free Consultation
-      </button>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
     </div>
   </div>
 </div>
