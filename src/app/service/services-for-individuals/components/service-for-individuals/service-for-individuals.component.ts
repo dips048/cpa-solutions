@@ -34,7 +34,6 @@ export class ServiceForIndividualsComponent implements OnInit {
     });
   };
 
-
   openContactUsDialog() {
     this.dialog.open(ContactUsDialogComponent, {
       width: '500px'

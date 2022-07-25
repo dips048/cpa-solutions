@@ -1,1 +1,122 @@
-<p>personal-financial-planning works!</p>
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item" active>
+      <span routerLink="/service/services-for-individuals"
+        >Service For Individuals</span
+      >
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span
+        routerLink="/service/services-for-individuals/personal-financial-planning"
+        >Personal Financial Planning</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Personal Financial Planning"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >If Your Goal Is Financial Independence, We Will Help You Get
+            There</strong
+          >
+        </h2>
+        <p>
+          Most people have clear financial goals, whether it's having enough
+          money to retire comfortably, saving enough for your children's
+          education, or passing accumulated wealth to future generations. Less
+          clear is how to get there, and you may have questions such as:
+        </p>
+        <ul>
+          <li>How much risk should I take to reach those goals?</li>
+          <li>Will I have enough money to retire?</li>
+          <li>
+            How can I save for my children's education and save for retirement
+            too?
+          </li>
+          <li>Are there ways to minimize taxes on accumulated wealth?</li>
+          <li>Should I convert to a Roth IRA?</li>
+          <li>What impact does social security have on my tax situation?</li>
+        </ul>
+        <p>
+          These are valid concerns. Financial planning is complicated, and
+          you're busy enough with everyday life. The good news is that we have
+          answers. As a premier financial services firm, we know what it takes
+          to make sure our clients achieve the financial independence they
+          deserve after a lifetime of hard work.
+        </p>
+        <p>
+          <strong>What we do for you:</strong>
+        </p>
+        <ul>
+          <li>
+            Develop a comprehensive personal financial plan to achieve your
+            goals
+          </li>
+          <li>
+            Periodically review your personal financial plan as your life
+            situation changes
+          </li>
+          <li>
+            Integrate your financial plan with your tax planning (individual and
+            business)
+          </li>
+          <li>
+            Evaluate estate, gift tax, and trust tax strategies to preserve
+            wealth
+          </li>
+          <li>
+            Review investment strategies (are you paying too much in fees?)
+          </li>
+          <li>
+            Evaluate investment and retirement portfolio risk (more aggressive,
+            less aggressive)
+          </li>
+          <li>
+            Help you understand Required Mandatory Distributions (RMDs) from
+            IRAs
+          </li>
+          <li>Analyze your current budget versus your retirement budget</li>
+          <li>
+            Create a retirement income distribution plan that meets your goals
+          </li>
+        </ul>
+        <h3>Your Partner in Achieving Financial Freedom</h3>
+        <p>
+          <strong
+            >If you're ready to take the next step, please fill out the contact
+            form below, and one of our financial planning advisors will be in
+            touch soon. It's that simple.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

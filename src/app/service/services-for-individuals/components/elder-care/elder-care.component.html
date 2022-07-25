@@ -1,0 +1,115 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item" active>
+      <span routerLink="/service/services-for-individuals"
+        >Service For Individuals</span
+      >
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/services-for-individuals/elder-care"
+        >Elder Care</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Elder Care"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >Helping Your Loved Ones Maintain Financial Independence When They
+            Need It Most</strong
+          >
+        </h2>
+        <p>
+          Do you have an elderly family member who needs help with day-to-day
+          finances such as paying household bills or balancing a checkbook? Are
+          you worried that financial predators might be taking advantage of your
+          elderly parents?
+        </p>
+        <p>If you answered yes, we are here to help.</p>
+        <p>
+          As specialists in elder care accounting services, we provide financial
+          services and support for seniors who might need help handling their
+          finances, whether it's managing assets to maintain wealth or paying
+          household bills on time.
+        </p>
+        <h3>Financial Support Services for Aging Seniors</h3>
+        <p>
+          Most adult children are too busy taking care of their own families,
+          are too far away, or simply lack the specialized knowledge needed to
+          be of much help. Even if you have the time and energy to take care of
+          an elderly parent's day-to-day finances yourself, working with a
+          caring, honest and knowledgeable professional accounting firm like
+          ours means that you have someone on your team who is looking out for
+          your loved one's best interest while keeping you informed every step
+          of the way.
+        </p>
+        <p>
+          When you work with an accounting firm specializing in elder care
+          accounting services, you can rest easy knowing that your elderly
+          family member's needs are being met.
+        </p>
+        <p>
+          <strong>Here is what we do for you:</strong>
+        </p>
+        <ul>
+          <li>Income tax preparation</li>
+          <li>
+            Household budgeting including unexpected expenses (home repairs,
+            emergency medical expenses)
+          </li>
+          <li>Monitor investment, bank, and other financial accounts</li>
+          <li>Manage and review of day-to-day finances</li>
+          <li>
+            Keep track of income and expenses to ensure adequate cash flow
+          </li>
+          <li>
+            Prepare financial statements and reviewing for accuracy and fraud
+            prevention
+          </li>
+          <li>Evaluate financing options for health care</li>
+          <li>Inventory personal assets and investments</li>
+        </ul>
+        <h3>We're on Your Side.</h3>
+        <p>
+          We are dedicated to helping your elderly family members maintain their
+          independence and financial freedom.
+        </p>
+        <p>
+          <strong
+            >If you would like more information about our elder care accounting
+            services or would like to schedule a consultation with an elder care
+            accounting specialist, please contact us.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

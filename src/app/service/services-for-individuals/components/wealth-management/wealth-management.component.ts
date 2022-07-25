@@ -7,11 +7,11 @@ import { ContactUsDialogComponent } from '../../../../shared/components/contact-
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
-  selector: 'app-personal-financial-planning',
-  templateUrl: './personal-financial-planning.component.html',
-  styleUrls: ['./personal-financial-planning.component.css']
+  selector: 'app-wealth-management',
+  templateUrl: './wealth-management.component.html',
+  styleUrls: ['./wealth-management.component.css']
 })
-export class PersonalFinancialPlanningComponent implements OnInit {
+export class WealthManagementComponent implements OnInit {
 
   constructor(
     private dialog: MatDialog
@@ -39,4 +39,5 @@ export class PersonalFinancialPlanningComponent implements OnInit {
       width: '500px'
     });
   }
+
 }

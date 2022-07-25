@@ -31,6 +31,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   z-index: 1;
 }
 
-.max-width-400 {
+.max-w-400 {
   max-width: 400px;
 }
