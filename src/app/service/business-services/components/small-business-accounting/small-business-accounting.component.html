@@ -1,0 +1,100 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start">
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/business-services">Business Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/business-services/small-business-accounting">Small Business Accounting</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Small Business Accounting"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >We Help You Take Control of Your Finances so You Can Focus on Your
+            Business</strong
+          >
+        </h2>
+        <p>
+          We're accountants and we enjoy crunching numbers, but chances are good
+          that as a small business owner, you don't. In fact, you probably
+          started your business because you had a great product or service to
+          offer and not because you were excited about cash flow analysis,
+          profit and loss statements, budget forecasting, and strategic tax
+          planning.&nbsp;
+        </p>
+        <p>That's why we're here.</p>
+        <h3>Leave the Accounting to Us.</h3>
+        <p>
+          When you use our team of experienced tax and accounting professionals,
+          you get all of the benefits of hiring an experienced financial
+          executive without the added expense.
+        </p>
+        <p>
+          Whether we meet with you monthly, quarterly, or once a year, we help
+          you take financial control of your business, enabling you to focus on
+          your core business tasks and make informed decisions about your
+          financial future.
+        </p>
+        <p>
+          <strong>What we do for you:</strong>
+        </p>
+        <ul>
+          <li>Generate reports and analyze financial data</li>
+          <li>Evaluate cash flow and improve profitability</li>
+          <li>Prepare budgets</li>
+          <li>Strategic tax planning and financial forecasting</li>
+          <li>
+            Accounting systems set-up, Chart of Accounts and General Ledger
+          </li>
+          <li>Internal controls for fraud prevention</li>
+          <li>Quarterly, monthly, and annual financial statements</li>
+          <li>Use and sales tax processing</li>
+          <li>Profit statements and balance sheets</li>
+          <li>Custom financial reports</li>
+          <li>Business tax returns</li>
+          <li>Outsourced CFO services</li>
+        </ul>
+        <h3>We're Here to Help You Succeed in Reaching Your Business Goals.</h3>
+        <p>
+          As your trusted financial advisor, our job is to help you succeed. If
+          you're ready to take your business to the next level, improve cash
+          flow, increase the profitability of your company, and focus on growing
+          your business, we are here for you.
+        </p>
+        <p>
+          <strong
+            >Contact us today using the form below if you have any questions.
+            We're happy to help!</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

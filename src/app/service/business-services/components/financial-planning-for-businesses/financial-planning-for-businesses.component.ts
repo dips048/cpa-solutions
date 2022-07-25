@@ -5,13 +5,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ContactUsDialogComponent } from '../../../../shared/components/contact-us-dialog/contact-us-dialog.component';
 
 gsap.registerPlugin(ScrollTrigger);
-
 @Component({
-  selector: 'app-business-services',
-  templateUrl: './business-services.component.html',
-  styleUrls: ['./business-services.component.css']
+  selector: 'app-financial-planning-for-businesses',
+  templateUrl: './financial-planning-for-businesses.component.html',
+  styleUrls: ['./financial-planning-for-businesses.component.css']
 })
-export class BusinessServicesComponent implements OnInit {
+export class FinancialPlanningForBusinessesComponent implements OnInit {
 
   constructor(
     private dialog: MatDialog
@@ -39,4 +38,5 @@ export class BusinessServicesComponent implements OnInit {
       width: '500px'
     });
   };
+
 }

@@ -1,0 +1,100 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/business-services">Business Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/business-services/non-profit-organizations"
+        >Non-Profit Organizations</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Non-Profit Organizations"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >Specializing in Nonprofit Accounting Services and Tax
+            Compliance</strong
+          >
+        </h2>
+        <p>
+          As a nonprofit organization, you face unique challenges that
+          for-profit businesses don't, such as the annual submission of Form
+          990, compliance with (OMB) Circular A-133 requirements or paying taxes
+          on unrelated business income. That's why it pays to have a dedicated
+          team of tax and accounting professionals that specializes in nonprofit
+          accounting and tax compliance on your side.
+        </p>
+        <h3>
+          Make Us Your Go-to for Outsourced Nonprofit Accounting Services.
+        </h3>
+        <p>
+          Using state-of-the-art technology designed for nonprofits, as well as
+          effective communication and proactive tax planning techniques, we make
+          sure that every financial decision you undertake complies with your
+          organization's bylaws, maximizes your existing funding sources, and
+          reduces costs. Whether you're an established nonprofit organization,
+          association, foundation, charity, or other service organization or are
+          just getting started turning your idea into reality, we can help.
+        </p>
+        <p>
+          <strong>Here's what else we do for you:</strong>
+        </p>
+        <ul>
+          <li>Conduct annual audits</li>
+          <li>Prepare quarterly and annual financial statements</li>
+          <li>Prepare reviewed or compiled financial statements</li>
+          <li>Submit annual Forms 990 and 990-T</li>
+          <li>
+            Prepare supporting documents (income, program and functional
+            expenses, balance sheets, revenue support schedules)
+          </li>
+          <li>Comply with state laws affecting nonprofits</li>
+          <li>
+            Apply for tax-exempt status under (Section 501(c)(3) - including
+            filing Form 1023
+          </li>
+        </ul>
+        <h3>
+          Isn't It Time You Turned Your Struggling Nonprofit Into a Thriving
+          Organization?
+        </h3>
+        <p>
+          <strong
+            >If you're ready to take your nonprofit to the next level, fill out
+            the contact form today to get started. What do you have to
+            lose?</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

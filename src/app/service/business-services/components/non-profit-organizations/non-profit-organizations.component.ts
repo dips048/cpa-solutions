@@ -7,11 +7,11 @@ import { ContactUsDialogComponent } from '../../../../shared/components/contact-
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
-  selector: 'app-business-services',
-  templateUrl: './business-services.component.html',
-  styleUrls: ['./business-services.component.css']
+  selector: 'app-non-profit-organizations',
+  templateUrl: './non-profit-organizations.component.html',
+  styleUrls: ['./non-profit-organizations.component.css']
 })
-export class BusinessServicesComponent implements OnInit {
+export class NonProfitOrganizationsComponent implements OnInit {
 
   constructor(
     private dialog: MatDialog
@@ -39,4 +39,5 @@ export class BusinessServicesComponent implements OnInit {
       width: '500px'
     });
   };
+
 }

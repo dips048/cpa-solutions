@@ -7,11 +7,11 @@ import { ContactUsDialogComponent } from '../../../../shared/components/contact-
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
-  selector: 'app-business-services',
-  templateUrl: './business-services.component.html',
-  styleUrls: ['./business-services.component.css']
+  selector: 'app-part-time-cfo-services',
+  templateUrl: './part-time-cfo-services.component.html',
+  styleUrls: ['./part-time-cfo-services.component.css']
 })
-export class BusinessServicesComponent implements OnInit {
+export class PartTimeCFOServicesComponent implements OnInit {
 
   constructor(
     private dialog: MatDialog

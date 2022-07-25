@@ -1,0 +1,96 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/business-services">Business Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/business-services/bank-financing"
+        >Bank Financing</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Bank Financing"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong>If You Need Bank Financing, It Pays to Be Prepared.</strong>
+        </h2>
+        <p>
+          The US Department of the Treasury has invested more than $3.9 billion
+          in community banks across 47 states and the District of Columbia as
+          part of the Small Business Lending Fund. Despite the availability of
+          these funds, however, many small business owners have discovered the
+          hard way that securing bank financing is not an easy task. If you've
+          tried - and been unsuccessful at - obtaining bank financing for your
+          small business without the help of a trusted advisor like us, you may
+          be wondering where you went wrong.
+        </p>
+        <p>
+          Banks are not in the business of handing out money to everyone who
+          asks. When you apply for a loan, they are evaluating your ability to
+          pay back that loan by examining a number of factors. Whether you need
+          money for startup costs or expanding your business, understanding what
+          a bank wants and how to prepare for it can mean the difference between
+          securing the financing you need or having to scrape together cash from
+          other sources.&nbsp;
+        </p>
+        <h3>How We Help You Secure Bank Financing:</h3>
+        <p>
+          The first step we take is to make sure we understand your business and
+          what you are trying to achieve. Next, we take a look at financial
+          performance and projections and identify potential sources for
+          financing. The final step is to work with you to prepare a successful
+          business loan proposal that includes the following services:
+        </p>
+        <ul>
+          <li>Executive summary</li>
+          <li>Pro forma cash budgets</li>
+          <li>Business financial statements</li>
+          <li>Owner's personal financial statements</li>
+          <li>Lender introductions</li>
+          <li>Representation</li>
+        </ul>
+        <h3>Are You Ready to Get the Financing You Deserve?</h3>
+        <p>
+          Obtaining bank financing for your small business is a major decision,
+          but if you're ready to take the next step, we are here to help you
+          achieve your goal.
+        </p>
+        <p>
+          <strong
+            >Call today or fill out the contact form below to speak with an
+            experienced Accounting firm you can trust. You'll be glad you
+            did!</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

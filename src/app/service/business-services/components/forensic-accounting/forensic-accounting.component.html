@@ -1,0 +1,105 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/business-services">Business Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/business-services/forensic-accounting">Forensic Accounting</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Forensic Accounting"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong>You've Got Questions - We Have Answers</strong>
+        </h2>
+        <p>
+          If you're considering our forensic accounting services, there's
+          probably a reason. You could be a victim of fraud, and we can help you
+          find out if your suspicions are true. Consider the following: &nbsp;
+        </p>
+        <ul>
+          <li>
+            Do you feel like your business is making plenty of money, but you
+            can barely pay your bills?
+          </li>
+          <li>
+            Have you ever had a nagging suspicion that a trusted member of your
+            team has committed fraud, but you can't prove it?
+          </li>
+          <li>
+            Is your soon-to-be ex-spouse claiming there are no matrimonial
+            assets, but you know there are?
+          </li>
+          <li>Do you suspect some of your employees are taking kickbacks?</li>
+          <li>
+            Have you discovered missing inventory that can't be accounted for?
+          </li>
+        </ul>
+        <h3>A Fraud Investigation Team You Can Count On</h3>
+        <p>
+          Forensic accountants are more than just number crunchers. It takes a
+          unique combination of skill, intuition, perseverance, diligence, and
+          integrity to do what we do and to do it successfully. We'll help you
+          get to the bottom of complex financial matters no matter how long it
+          takes.
+        </p>
+        <p>
+          <strong>Our forensic services include:</strong>
+        </p>
+        <ul>
+          <li>Quantifying losses due to fraud</li>
+          <li>Records examination and reconstruction</li>
+          <li>Analyzing bookkeeping and accounting systems</li>
+          <li>Investigation of financial reporting irregularities</li>
+          <li>Analyzing insurance claims</li>
+          <li>Searching for unreported income and assets</li>
+          <li>Investigating bribery and kickback schemes</li>
+          <li>Identifying weaknesses in your accounting processes</li>
+          <li>
+            Developing procedures that enable you to detect -- and deter --
+            fraud better
+          </li>
+        </ul>
+        <h3>Isn't It Time You Uncovered the Truth?</h3>
+        <p>
+          If you believe that you've been a victim of fraud including
+          embezzlement or any other white-collar crime, we can help.
+        </p>
+        <p>
+          <strong
+            >Call or email a member of our forensic accounting team today to
+            schedule a consultation. You won't be sorry.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

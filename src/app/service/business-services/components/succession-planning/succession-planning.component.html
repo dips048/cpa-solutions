@@ -1,0 +1,103 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/business-services">Business Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/business-services/succession-planning"
+        >Succession Planning</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Succession Planning"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >Providing Strategies for Transferring Business Ownership to the
+            Next Generation - or New Leadership</strong
+          >
+        </h2>
+        <p>
+          Developing and implementing a well-designed succession plan is
+          essential to the survival of any family business. Yet, while
+          eighty-five percent of family-owned firms have identified a family
+          member as a successor, just one in eight has a succession plan in
+          place.
+        </p>
+        <p>Are you one of them?</p>
+        <p>
+          If you already have a succession plan in place, then you're already on
+          your way to a secure financial future, but if you don't, we are here
+          to help.
+        </p>
+        <h3>Succession Planning: The Cornerstone of Your Financial Future.</h3>
+        <p>
+          As trusted advisors, we assist business owners in securing financial
+          independence by structuring their business in a way that promotes
+          long-term success and stability. We work with business owners and
+          their families to develop plans for transferring business ownership to
+          the next generation or to new leadership.
+        </p>
+        <p>
+          If you decide to sell, we work with you to identify the financial
+          strengths and weaknesses of your business and develop a plan to
+          maximize its value in preparation for sale. If you decide to keep the
+          business in the family, we work with you to prepare your successor to
+          take over the business or identify one if you haven't already done so.
+        </p>
+        <p>
+          <strong>Succession planning services include:</strong>
+        </p>
+        <ul>
+          <li>Assist with the internal transfer to a family member</li>
+          <li>Identify a potential buyer(s)</li>
+          <li>Business valuations in preparation for sale</li>
+          <li>Buy and sell agreements</li>
+          <li>Estate and trust tax planning</li>
+          <li>Gift tax planning</li>
+          <li>Retirement planning and tax projections</li>
+          <li>Business restructuring</li>
+        </ul>
+        <h3>
+          It's Never Too Early to Start Planning an Effective Business Exit
+          Strategy.
+        </h3>
+        <p>
+          <strong
+            >If you need assistance figuring out which exit strategy is best for
+            you and your business, simply fill out the contact form below or
+            give us a call right now.
+          </strong>
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

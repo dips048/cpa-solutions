@@ -1,0 +1,113 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/business-services">Business Services</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/business-services/business-valuation"
+        >Business Valuation</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Business Valuation"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >Business Valuation Services: What's Your Business Worth?</strong
+          >
+        </h2>
+        <p>
+          Many business owners have no idea what their business is worth; some
+          may underestimate whereas others overestimate - sometimes
+          significantly. Obtaining a third-party business valuation allows
+          business owners to set a price that is realistic, yet still, achieves
+          maximum value.
+        </p>
+        <p>
+          There are many reasons a business owner might want to obtain a
+          business valuation:
+        </p>
+        <ul>
+          <li>Selling a business</li>
+          <li>Obtaining seed money from investors</li>
+          <li>Annual or quarterly reports to investors</li>
+          <li>Divorce proceedings</li>
+          <li>  Estate, gift and trust planning</li>
+          <li>Shareholder disputes</li>
+          <li>
+            Litigation support for bankruptcy, fraud, and business disputes
+          </li>
+          <li>Mergers and acquisitions</li>
+        </ul>
+        <h3>Our Team of Business Valuation Analysts Is Here to Help.</h3>
+        <p>
+          Highly trained and experienced, when we conduct a business evaluation
+          here's what you can expect:&nbsp;
+        </p>
+        <ul>
+          <li>
+            Use of recognized and generally accepted methodologies to determine
+            the value of your business assets- both tangible and intangible.
+          </li>
+          <li>
+            A detailed report that discusses methodologies, analyses, and
+            conclusions for your specific needs.
+          </li>
+          <li>
+            An assessment of your business financials including financial
+            history and future predictions.
+          </li>
+          <li>
+            A thorough examination of operational, management and marketing
+            issues.
+          </li>
+          <li>
+            An evaluation of every possible factor - internal and external -
+            that could affect the valuation analysis.
+          </li>
+        </ul>
+        <h3>Business Valuation Experts You Can Count On.</h3>
+        <p>
+          Business valuation is a complex process, incorporating specialized
+          knowledge about accounting, finance, economics, and taxation as well
+          as business principles.
+        </p>
+        <p>
+          <strong
+            >If you have any questions or would like more information about our
+            business valuation services, please give us a call or contact us
+            using the form below. You'll be glad you did.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
