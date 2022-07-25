@@ -3,53 +3,23 @@
   <div class="row my-5">
     <div class="col-lg-7 col-md-7">
       <div class="col-md-6 mx-auto">
-        <form>
-          <div class="mb-3">
-            <label for="" class="form-label">Name</label>
-            <input type="text" class="form-control" />
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Email address</label>
-            <input type="email" class="form-control" />
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" />
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Best Time To Call</label>
-            <input type="email" class="form-control" />
-          </div>
-          <div class="mb-3">
-            <label for="">Comments</label>
-            <textarea class="form-control" placeholder="Leave a comment here"></textarea>
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" />
-            <label class="form-check-label" for="">CAPTCHA Image</label>
-          </div>
-          <div class="mb-3">
-            <input type="" class="form-control" />
-          </div>
-          <div class="d-flex justify-content-between">
-            <a id="captcha_refresh" href="#">[ Show a different Image ]</a>
-            <button type="submit" class="btn btn-primary">Send</button>
-          </div>
-        </form>
+        <app-detail-form></app-detail-form>
       </div>
     </div>
     <div class="col-lg-1 col-md-1"></div>
-    <div class="col-lg-4 col-md-4 d-md-flex d-lg-flex flex-column d-none">
-      <img
-        class="mx-auto"
-        id="img-woman-1"
-        width="260px"
-        height="400px"
-        src="../../../../assets/images/woman-1.png"
-      />
-      <button mat-raised-button (click)="openContactUsDialog()">
-        Request A Free Consultation
-      </button>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
     </div>
   </div>
 </div>
