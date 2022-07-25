@@ -1,10 +1,20 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <app-nav-list></app-nav-list>
+  </div>
+</div>
+<app-side-nav id="app-side-nav" class="d-lg-none" (closeDrawer)="closeSideNav();"></app-side-nav>
 <mat-toolbar>
   <mat-toolbar-row class="d-sm-inline-flex flex-row d-lg-none p-0">
     <mat-icon class="flex-item">lock</mat-icon>
     <mat-icon class="flex-item">wifi</mat-icon>
     <mat-icon class="flex-item">email</mat-icon>
     <mat-icon class="flex-item">call</mat-icon>
-    <mat-icon class="flex-item" (click)="toggleDrawer.emit()">menu</mat-icon>
+    <mat-icon class="flex-item" (click)="toggleDrawer.emit(); openSideNav();" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">menu</mat-icon>
   </mat-toolbar-row>
   <mat-toolbar-row class="d-none d-lg-flex justify-content-lg-between">
     <div>
