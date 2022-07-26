@@ -19,8 +19,8 @@
           "list": []
         },
         {
-          "title": "Employment Oppertunities",
-          "routerLink": "/employment-oppertunities",
+          "title": "Employment Opportunities",
+          "routerLink": "/employment-opportunities",
           "list": []
         },{
           "title": "Blog",

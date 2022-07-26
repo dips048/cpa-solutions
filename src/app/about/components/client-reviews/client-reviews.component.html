@@ -1,3 +1,19 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/about">About</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/about/client-reviews">Client Reviews</span>
+    </li>
+  </ol>
+</nav>
 <app-heading heading="Client Reviews"></app-heading>
 <div class="container z-index-1 position-relative">
   <div class="row my-5">
@@ -35,7 +51,7 @@
       <div>
         <a
           class="fw-bold"
-          [routerLink]="['/about/employment-oppertunities']"
+          [routerLink]="['/about/employment-opportunities']"
           routerLinkActive="router-link-active"
           >Employment Opportunities</a
         >
