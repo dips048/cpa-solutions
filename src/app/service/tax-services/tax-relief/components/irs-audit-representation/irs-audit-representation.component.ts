@@ -5,12 +5,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ContactUsDialogComponent } from '../../../../../shared/components/contact-us-dialog/contact-us-dialog.component';
 
 gsap.registerPlugin(ScrollTrigger);
+
 @Component({
-  selector: 'app-tax-relief',
-  templateUrl: './tax-relief.component.html',
-  styleUrls: ['./tax-relief.component.css']
+  selector: 'app-irs-audit-representation',
+  templateUrl: './irs-audit-representation.component.html',
+  styleUrls: ['./irs-audit-representation.component.css']
 })
-export class TaxReliefComponent implements OnInit {
+export class IRSAuditRepresentationComponent implements OnInit {
 
   constructor(
     private dialog: MatDialog

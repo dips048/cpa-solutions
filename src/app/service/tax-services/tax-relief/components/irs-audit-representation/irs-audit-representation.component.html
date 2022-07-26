@@ -1,0 +1,109 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/irs-audit-representation">IRS Audit Representation</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="IRS Audit Representation"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >When It Comes to Tax and Audit Representation, We're in Your
+            Corner</strong
+          >
+        </h2>
+        <p>
+          With the IRS auditing less than one percent of tax returns in recent
+          years, you may be thinking it can't happen to you. But you could be
+          wrong. Especially if you have a lot of business expenses, your tax
+          return is complicated, or you're in a higher income bracket.
+        </p>
+        <p>
+          The good news is that nearly 75 percent of those audits are notices or
+          letters sent by the IRS requesting additional information or
+          clarification. The rest are actual field audits.
+        </p>
+        <p>
+          While you may be tempted to respond to a letter or notice from the
+          IRS, it's not always a good idea even if you have a firm grasp of tax
+          law. Because as friendly as IRS auditors might seem, they represent
+          the IRS -- not you.
+        </p>
+        <h3>Make the Smart Choice</h3>
+        <p>
+          Sure, taxpayers can and do prevail during IRS audits, but without an
+          experienced tax professional on your side, it's less likely that it
+          will happen...and you just might end up owing the IRS money instead of
+          getting a refund.
+        </p>
+        <p>
+          <strong
+            >When you hire us to represent you during an audit, here's what we
+            do for you:</strong
+          >
+        </p>
+        <ul>
+          <li>Take care of all audit correspondence</li>
+          <li>
+            Make sure you take the steps needed to minimize your tax liability
+          </li>
+          <li>
+            Handle all discussions with auditors to reduce the risk of
+            additional liability
+          </li>
+          <li>Appeal a decision, if necessary</li>
+        </ul>
+        <h3>Why Take a Chance?</h3>
+        <p>
+          The importance of being represented by a qualified tax professional
+          during an IRS or State tax audit or tax dispute cannot be stressed
+          enough.
+        </p>
+        <p>
+          <strong
+            >If you've received a letter or notice from the IRS or are involved
+            in a tax dispute with the IRS, call us today or submit the contact
+            form below. We're here to help.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block">
+      <div class="text-center postion-sticky-top">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -177,7 +177,13 @@
             {
               "title": "Tax Relief",
               "routerLink": "/tax-relief",
-              "list": []
+              "list": [
+                {
+                  "title": "IRS Audit Representation",
+                  "routerLink": "/irs-audit-representation",
+                  "list": []
+                }
+              ]
             }
           ]
         },
