@@ -2,7 +2,6 @@ import { EstateTrustTaxServicesComponent } from "./estate-trust-tax-services/est
 import { IndividualTaxPreparationComponent } from "./individual-tax-preparation/individual-tax-preparation.component";
 import { TaxPlanningComponent } from "./tax-planning/tax-planning.component";
 import { TaxPreparationForBusinessComponent } from "./tax-preparation-for-business/tax-preparation-for-business.component";
-import { TaxReliefComponent } from "./tax-relief/tax-relief.component";
 import { TaxServicesComponent } from "./tax-services/tax-services.component";
 
 export const components = [
@@ -10,6 +9,5 @@ export const components = [
   IndividualTaxPreparationComponent,
   TaxPreparationForBusinessComponent,
   TaxPlanningComponent,
-  EstateTrustTaxServicesComponent,
-  TaxReliefComponent
+  EstateTrustTaxServicesComponent
 ];

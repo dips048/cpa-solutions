@@ -4,7 +4,6 @@ import { EstateTrustTaxServicesComponent } from './components/estate-trust-tax-s
 import { IndividualTaxPreparationComponent } from './components/individual-tax-preparation/individual-tax-preparation.component';
 import { TaxPlanningComponent } from './components/tax-planning/tax-planning.component';
 import { TaxPreparationForBusinessComponent } from './components/tax-preparation-for-business/tax-preparation-for-business.component';
-import { TaxReliefComponent } from './components/tax-relief/tax-relief.component';
 import { TaxServicesComponent } from './components/tax-services/tax-services.component';
 
 const routes: Routes = [
@@ -13,7 +12,7 @@ const routes: Routes = [
   { path: 'tax-preparation-for-business', component: TaxPreparationForBusinessComponent },
   { path: 'tax-planning', component: TaxPlanningComponent },
   { path: 'estate-trust-tax-services', component: EstateTrustTaxServicesComponent },
-  { path: 'tax-relief', component: TaxReliefComponent }
+  { path: 'tax-relief', loadChildren: () => import('./tax-relief/tax-relief.module').then(m => m.TaxReliefModule) }
 ];
 
 @NgModule({

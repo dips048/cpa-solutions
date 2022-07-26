@@ -22,9 +22,9 @@ export class ServiceComponent implements OnInit {
   }
 
   initAnimation(): void {
-    gsap.to('#image-container-2', {
+    gsap.to('.image-container-2', {
       scrollTrigger: {
-        trigger: '#image-container-1',
+        trigger: '.image-container-1',
         start: "top top",
         end: "bottom 50%+=140px",
         pin: true,
