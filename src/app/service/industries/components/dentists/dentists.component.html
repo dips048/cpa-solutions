@@ -1,0 +1,95 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/industries">Industries</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/dentists">Dentists</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Dentists"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong
+            >Specialized Accounting Services for the Dental Industry</strong
+          >
+        </h2>
+        <p>
+          From keeping up with the latest dental techniques to hiring employees
+          and payroll and tax compliance, managing a dental practice is more
+          complicated than ever. With the right team in place, you'll have more
+          time to focus on your patients.
+        </p>
+        <p>
+          While you may already have an HR professional on staff to take care of
+          that side of the business, chances are you've been struggling with the
+          financial side. If so, then maybe it's time to hire an accounting firm
+          that specializes in dental practices.
+        </p>
+        <h3>Accounting Services for Dental Practices</h3>
+        <p>
+          As your financial partner, we help you minimize your tax liability by
+          taking advantage of tax credits and deductions, enhance your profits,
+          and improve your cash flow. If you suspect employee fraud or
+          embezzlement, we are available to audit financial statements and
+          accounts. We also help you plan for the future - whether it's planning
+          for succession, conducting a business valuation in preparation for
+          sale, or helping you figure out the best retirement plan for your
+          employees.
+        </p>
+        <p>
+          <strong>Here's what else we do for you:</strong>
+        </p>
+        <ul>
+          <li>Tax planning strategies</li>
+          <li>Tax credits and deductions</li>
+          <li>Tax return preparation</li>
+          <li>Payroll tax compliance</li>
+          <li>Succession planning</li>
+          <li>Business valuation</li>
+          <li>Forensic accounting (embezzlement and fraud)</li>
+          <li>Virtual CFO services</li>
+        </ul>
+        <h3>Take Your Dental Practice to the Next Level</h3>
+        <p>
+          <strong
+            >If you would like more information about our accounting services
+            for dental practices, please contact us using the form below. You'll
+            be glad you did!</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

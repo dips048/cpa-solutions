@@ -1,0 +1,123 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/industries">Industries</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/manufacturers">Manufacturers</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Manufacturers"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>Tax and Accounting Services for the Real Estate Industry</h2>
+        <p>
+          If your business is the fast-paced world of real estate, you already
+          know you're in an industry with&nbsp;complex transactions and
+          reporting requirements. You also know how competitive it is and that
+          economic downturns, however unpredictable, may cause your business to
+          be less profitable than you imagined. The good news is that we are
+          here to help you navigate the financial challenges you face in
+          building a profitable real estate business. &nbsp;
+        </p>
+        <h4>How we help you:</h4>
+        <p>
+          Whether you're a residential builder, a commercial land developer, a
+          property manager, or a real estate investor, as experienced real
+          estate accounting professionals we provide a customized approach to
+          each and every client with the goal of improving profitability,
+          managing cash flow better, and improving operational efficiency -
+          everything your business needs to stay ahead of the competition.
+        </p>
+        <p>
+          Real estate tax law is complicated, but our knowledge of current real
+          estate tax law enables us to work with your company in developing
+          innovative tax planning strategies that minimize your tax liability.
+          We'll also help you evaluate potential land and property acquisitions
+          and dispositions and assist you in understanding the implications of
+          various methods of financing should you need it.
+        </p>
+        <h4>What we do for you:</h4>
+        <p>
+          We provide business consulting and outsourced CFO services&nbsp;such
+          as&nbsp;cash flow and budgeting analysis, payroll and bookkeeping
+          services, sales and use tax exemptions and credits, tax compliance and
+          tax planning, and financial statement audits and review.
+        </p>
+        <h3>Specialized Real Estate Accounting Services:</h3>
+        <p>
+          In addition to our business consulting and outsourced CFO services, we
+          are also available to assist you with the following specialized real
+          estate accounting services:
+        </p>
+        <ul>
+          <li>Dispositions of real estate</li>
+          <li>Section 1031 Exchange assistance</li>
+          <li>Due diligence for proposed real estate transactions</li>
+          <li>Lease audits</li>
+          <li>Real estate investment trust consulting</li>
+          <li>Bank Financing</li>
+          <li>
+            Tax credits - energy, solar, enterprise zones, and low-income and
+            affordable housing
+          </li>
+          <li>Business and real estate valuations</li>
+          <li>Internal control audits</li>
+          <li>Succession planning</li>
+          <li>Litigation Support and Fraud investigation</li>
+          <li>Capital acquisition and disposal</li>
+        </ul>
+        <h4>Our Clients:&nbsp;</h4>
+        <ul>
+          <li>Private equity real estate funds</li>
+          <li>REITs (real estate investment trusts)</li>
+          <li>Hotel operators</li>
+          <li>Residential commercial and retail land developers</li>
+          <li>Building owners</li>
+          <li>Property managers</li>
+          <li>Agents/brokers</li>
+          <li>Property investors</li>
+          <li>Commercial and residential builders</li>
+        </ul>
+        <h3>Leave the accounting to us.</h3>
+        <p>
+          Our specialized knowledge of the real estate industry has helped many
+          real estate professionals thrive, and we're ready to help you too. If
+          you'd like to learn more about our real estate accounting services,
+          don't hesitate to call or fill out the contact form below. It's that
+          easy!
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

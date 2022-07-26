@@ -1,0 +1,101 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/industries">Industries</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/law-firms">Law Firms</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Law Firms"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong>Tax and Accounting Services for Lawyers and Law Firms</strong>
+        </h2>
+        <p>
+          For many professionals, time is money and attorneys are no exception.
+          Whether you operate as a solo practitioner or are a member of a
+          partnership-based law firm chances are good that you simply don't have
+          time to handle the tax and accounting aspects of your
+          practice&nbsp;and&nbsp;keep your practice running smoothly.
+        </p>
+        <h3>We Are Here to Help You Stay Ahead of the Competition.</h3>
+        <p>
+          Our dedicated and experienced team of tax and accounting professionals
+          specialize in tax and accounting services for law firms and lawyers
+          and offer a range of accounting and advisory services for established
+          firms and business start-ups, as well as mergers and acquisitions.
+        </p>
+        <p>
+          Our outsourced CFO services include reviewing your firm's accounting
+          processes, streamlining your accounting systems to manage your cash
+          flow better, implementing tax planning strategies that minimize your
+          firm's tax liability, and evaluating your financial statements - all
+          of which enable you to make smart business decisions that increase
+          your bottom line. &nbsp;
+        </p>
+        <p>
+          <strong>What we do for you:</strong>
+        </p>
+        <ul>
+          <li>Business Start-ups</li>
+          <li>Merger and acquisition advisory</li>
+          <li>Outsourced CFO services</li>
+          <li>Accounting and bookkeeping</li>
+          <li>Payroll services</li>
+          <li>Financial statements</li>
+          <li>Cash flow management</li>
+          <li>Tax return preparation</li>
+          <li>Strategic tax planning</li>
+          <li>Business valuations</li>
+          <li>Litigation support services</li>
+          <li>Succession planning</li>
+        </ul>
+        <h3>Take Your Law Practice to the Next Level</h3>
+        <p>
+          Our team of experienced tax and accounting professionals is ready to
+          help your law firm achieve the financial success it deserves.
+        </p>
+        <p>
+          <strong
+            >For more information about our tax and accounting services for
+            lawyers and law firms, please fill out the contact form below and
+            one of our tax and accounting professionals will be in touch
+            shortly.</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

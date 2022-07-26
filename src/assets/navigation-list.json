@@ -247,8 +247,13 @@
               "list": []
             },
             {
-              "title": "Menufacturers",
-              "routerLink": "/menufacturers",
+              "title": "Manufacturers",
+              "routerLink": "/manufacturers",
+              "list": []
+            },
+            {
+              "title": "Real Estate",
+              "routerLink": "/real-estate",
               "list": []
             }
           ]

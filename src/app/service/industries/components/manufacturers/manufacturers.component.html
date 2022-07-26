@@ -1,0 +1,94 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/industries">Industries</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/manufacturers">Manufacturers</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Manufacturers"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong>Tax and Accounting Services for Manufacturers</strong>
+        </h2>
+        <p>
+          The manufacturing industry is highly competitive. Not only are there
+          complex regulations to comply with; technological changes are numerous
+          and frequent. With customers demanding better products at lower prices
+          and a faster turnaround, you need solutions fast.
+        </p>
+        <p>
+          The good news is that we are here to help. As your trusted advisor our
+          job is to help you stay competitive. We'll work with you to
+          streamline&nbsp;your accounting procedures and processes as well as
+          identify opportunities that help you improve your bottom line by
+          reducing operational costs and manage your facilities more
+          cost-effectively.
+        </p>
+        <h3>Manufacturing Accounting Services:</h3>
+        <ul>
+          <li>Outsourced accounting and CFO services</li>
+          <li>Research and Development Tax Credit</li>
+          <li>Sales &amp; use tax</li>
+          <li>State and federal economic incentives</li>
+          <li>Inventory management (costs and analysis)</li>
+          <li>Internal controls</li>
+          <li>Financial projections and forecasts</li>
+          <li>Cost Segregation</li>
+          <li>Payroll processing</li>
+          <li>Monthly, quarterly and year-end accounting</li>
+          <li>Tax planning strategies</li>
+          <li>Business advisory services</li>
+          <li>Mergers and acquisitions</li>
+          <li>Business Valuation</li>
+          <li>Exit Strategies</li>
+        </ul>
+        <h3>You Can Count on Us.</h3>
+        <p>
+          Our specialized knowledge of the manufacturing industry has helped
+          numerous companies improve their bottom line through increased
+          efficiency of their accounting processes.
+        </p>
+        <p>
+          <strong
+            >If you'd like to learn more about our manufacturing accounting
+            services, simply fill out the contact form below. It's that
+            easy!</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

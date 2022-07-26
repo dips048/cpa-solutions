@@ -1,0 +1,100 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/industries">Industries</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/healthcare">Healthcare</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Healthcare"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <h2>
+          <strong>Accounting Services for Healthcare Providers</strong>
+        </h2>
+        <p>
+          Healthcare is complicated, and as you may have discovered, it takes
+          much more than medical or healthcare industry expertise to build and
+          maintain a successful medical practice. Fortunately, our team of
+          experienced accounting professionals is here to help. Not only do we
+          work with you to strengthen your accounting procedures and processes
+          to manage your business more effectively, but we also help you improve
+          your bottom line by reducing operational costs and identify
+          opportunities to build your healthcare practice.
+        </p>
+        <p>
+          <strong>Here's what else we do for you:</strong>
+        </p>
+        <ul>
+          <li>Payroll processing</li>
+          <li>
+            Financial reporting and monthly/quarterly statements including
+            profit and loss
+          </li>
+          <li>Tax preparation services</li>
+          <li>Tax planning</li>
+          <li>Cash flow and budgeting analysis</li>
+          <li>Audits, compilations, and reviews</li>
+          <li>Starting a new practice including entity selection</li>
+        </ul>
+        <h3>Our Healthcare Clients Include:</h3>
+        <ul>
+          <li>Outpatient medical facilities</li>
+          <li>Physical Therapists</li>
+          <li>Medical doctors (group practice or sole practitioner)</li>
+          <li>Pharmacies</li>
+          <li>Podiatrists</li>
+          <li>Optometrists</li>
+          <li>Chiropractors</li>
+          <li>Long-term care facilities</li>
+          <li>Medical-related businesses</li>
+        </ul>
+        <h3>Leave the Accounting to Us.</h3>
+        <p>
+          Our specialized knowledge of the healthcare industry has helped
+          numerous medical practices thrive, and we're ready to help you. Why
+          not let us take care of your healthcare accounting needs so you can
+          focus on taking care of your patients?
+        </p>
+        <p>
+          <strong
+            >If you'd like to learn more about our healthcare accounting
+            services, simply fill out the contact form below. It's that
+            easy!</strong
+          >
+        </p>
+      </div>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-none d-md-block" id="image-container-1">
+      <div class="position-relative text-center" id="image-container-2">
+        <img
+          class="mx-auto"
+          id="img-woman-1"
+          width="260px"
+          height="400px"
+          src="../../../../assets/images/woman-1.png"
+        />
+        <button mat-raised-button (click)="openContactUsDialog()">
+          Request A Free Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

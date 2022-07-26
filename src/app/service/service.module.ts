@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ServiceRoutingModule } from './service-routing.module';
-import { components } from './components';
 import { MatButtonModule } from '@angular/material/button';
 import { SharedModule } from '../shared/shared.module';
+import { ServiceComponent } from './service.component';
 
 @NgModule({
   declarations: [
-    ...components
+    ServiceComponent
   ],
   imports: [
     CommonModule,
