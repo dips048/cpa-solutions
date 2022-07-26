@@ -1,0 +1,58 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/get-your-IRS-file"
+        >Get Your IRS File</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Get Your IRS File"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          Did you know that you can obtain a copy of your IRS file? Most people
+          would be surprised to learn how much the IRS knows about them.
+          Obtaining a copy of your IRS file is critical in analyzing the options
+          available to resolve your tax problems.
+        </p>
+      </div>
+      <div style="text-align: left">
+        <p>
+          Requesting copies of your IRS file is best done by a professional who
+          understands how to obtain them without raising any red flags as well
+          as how to interpret the information in your file.
+        </p>
+      </div>
+      <p>
+        We can help you obtain a copy of your IRS file and analyze your options.
+        Please complete the form on the bottom of this page to get a
+        <b>free consultation</b> with our tax specialist.
+      </p>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>

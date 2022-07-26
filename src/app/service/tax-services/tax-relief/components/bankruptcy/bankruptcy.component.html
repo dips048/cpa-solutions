@@ -1,0 +1,54 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/bankruptcy">Bankruptcy</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Bankruptcy"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          Your back taxes, interest, and penalties can be wiped out by filing
+          bankruptcy. If you qualify, bankruptcy can be the best solution to
+          resolve your crushing tax problems.
+        </p>
+        <p>
+          Unfortunately, not everyone qualifies to wipe out their tax debt in
+          bankruptcy. Certain rules have to be met first. If you file bankruptcy
+          and don't meet the rules, the IRS will still be in hot pursuit after
+          your bankruptcy is over. Proper pre-bankruptcy planning is key to
+          determining if bankruptcy is or can be a viable solution.
+        </p>
+      </div>
+      <p>
+        Let us help you determine if Bankruptcy is a viable solution for you by
+        completing the <b>free consultation</b> form on the bottom of this page.
+      </p>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>

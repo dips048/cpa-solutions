@@ -1,0 +1,51 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/innocent-spouse-relief"
+        >Innocent Spouse Relief</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Innocent Spouse Relief"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div id="Text" style="text-align: left">
+        <p>
+          Did you know that you can get out of the tax debt due to the misdeeds
+          or fraud committed by your spouse? Innocent Spouse Relief was designed
+          to alleviate unjust situations where one spouse was clearly the victim
+          of fraud perpetrated by their spouse or ex-spouse.
+        </p>
+      </div>
+      <p>
+        If you qualify for Innocent Spouse Relief, you may not owe any tax.
+        Please complete the <b>free consultation</b> form on the bottom of this
+        page to see if you qualify for Innocent Spouse Relief.
+      </p>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>

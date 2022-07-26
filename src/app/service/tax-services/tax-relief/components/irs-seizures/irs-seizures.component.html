@@ -1,0 +1,66 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/IRS-seizures">IRS Seizures</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="IRS Seizures"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          Unlike the levy, which involves intangible assets such as your bank
+          account, a seizure is the taking of physical assets, such as your home
+          or car. Seizures usually happen in aggravated cases when someone
+          ignores many requests by the IRS over a long period of time to pay
+          their outstanding taxes.
+        </p>
+      </div>
+      <div style="text-align: left">
+        <p>
+          A seizure should not be taken lightly. The IRS will ultimately pursue
+          seizure of your physical assets. Don't think they won't. Many a
+          newspaper or television show has reported citizens being forced out of
+          their homes after it was sold at an IRS auction, often for as little
+          as half its value.
+        </p>
+        <p>
+          When the IRS seizes your assets they want to quickly sell them at
+          auction. They often get less than half your assets value, so they
+          often seize everything you own including your home, cars, boats,
+          jewelry, motorcycles, insurance polices, and even your retirement
+          funds.
+        </p>
+      </div>
+      <p>
+        If you've received an IRS seizure notice, it's time to act now! Please
+        complete the form below to get a <b>free consultation</b> with our tax
+        specialist.
+      </p>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>

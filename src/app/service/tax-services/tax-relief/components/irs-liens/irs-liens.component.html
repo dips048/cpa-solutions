@@ -1,0 +1,69 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/IRS-leins">IRS Liens</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="IRS Liens"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          Federal Tax Liens can really make your life miserable! When your taxes
+          are not paid the IRS establishes a lien against all of your assets
+          (especially real estate). This gives the IRS the legal right to
+          collect taxes from the sale of your assets, which includes just about
+          everything you own.
+        </p>
+      </div>
+      <div style="text-align: left">
+        <p>
+          The lien can be against you, your spouse, or your company. A lien
+          against your company would seize your accounts receivables. At this
+          point everything you own is just one short step away from becoming the
+          property of the United States Government.
+        </p>
+        <p>
+          Liens filed against you by the IRS also show up on your credit report
+          and often prevent you from opening a checking account or borrowing
+          against any assets, like your home. The banks don't want the extra
+          work when the IRS comes in to take your money.
+        </p>
+        <p>
+          With a Federal Tax lien on your record you can't get a reasonable loan
+          to purchase a car. Think about paying 18-22% interest on a car that is
+          already too expensive. You definitely cannot buy or sell any real
+          estate. The list is endless.
+        </p>
+      </div>
+      <p>
+        Get a <b>free consultation</b> on how to resolve your tax lien problems
+        by completing the form below.
+      </p>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>

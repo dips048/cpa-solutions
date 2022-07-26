@@ -1,0 +1,67 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/IRS-wage-garnishment"
+        >IRS Wage Garnishment</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="IRS Wage Garnishment"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          You received an IRS Notice of Intent to Levy 30 days ago and you
+          forgot or ignored it. Now it's Payday. Expecting a check, you open the
+          envelope and find that the IRS has taken most of your money. What's
+          left is not enough to pay the rent, car payment, buy groceries, or pay
+          the rest of the bills. This action will continue on every check due
+          you, until the tax owed is paid in full.
+        </p>
+      </div>
+      <div style="text-align: left">
+        <p>
+          Now you're in big financial trouble. No matter how hard you plead with
+          your employer they cannot give you your money. Once a wage garnishment
+          is filed with your employer, your employer is required by law to
+          collect a large percentage of each of your paychecks.
+        </p>
+        <p>
+          We are regularly retained to negotiate the release of IRS wage
+          garnishments by arranging a payment plan. The payment plan negotiated
+          by us is always more favorable than any IRS wage garnishment. It
+          allows you to receive your whole paycheck without fears of future wage
+          garnishments.
+        </p>
+      </div>
+      <p>
+        Get a <b>free consultation</b> on how to resolve your wage garnishment
+        problems by completing the form below.
+      </p>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>

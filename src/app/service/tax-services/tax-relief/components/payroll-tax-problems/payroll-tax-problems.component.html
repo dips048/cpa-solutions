@@ -1,0 +1,72 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/payroll-tax-problems"
+        >Payroll Tax Problems</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Payroll Tax Problems"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          The IRS views failing to pay payroll taxes as the cardinal sin of tax
+          delinquency because a large portion of the payroll taxes you pay is
+          your employees' withholdings. Not paying your company's payroll taxes
+          is tantamount to stealing your employees' money in the eyes of the
+          IRS.
+        </p>
+      </div>
+      <div style="text-align: left">
+        <p>
+          As a result, penalties for failing to pay your payroll taxes and
+          filing your payroll tax returns on time are much more severe than
+          other types of penalties. They can drastically multiply the amount you
+          owe in a very short time.
+        </p>
+        <p>
+          If you are behind on paying payroll taxes for your company, WATCH
+          OUT!!! The IRS is extremely aggressive pursuing collection of this
+          type of tax. They would rather seize your business assets, close you
+          down, sell your assets at auction, and put you out of business than
+          allow you to continue amassing additional payroll tax liabilities.
+        </p>
+        <p>
+          If you are behind on your payroll taxes, DO NOT meet with the IRS on
+          your own. How you answer their initial questions can determine whether
+          you stay in business or not. It is critical you hire a professional
+          representative who knows how the IRS operates.
+        </p>
+      </div>
+      <p>
+        Get a <b>free consultation</b> on how to resolve your payroll tax
+        problems by completing the form below.
+      </p>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>

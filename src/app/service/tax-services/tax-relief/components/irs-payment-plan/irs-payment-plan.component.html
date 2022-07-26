@@ -1,0 +1,55 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service">Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services">Tax Services</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/service/tax-services/tax-relief">Tax Relief</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/service/tax-services/IRS-payment-plan">IRS Payment Plan</span>
+    </li>
+  </ol>
+</nav>
+<app-heading heading="IRS Payment Plan"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <div style="text-align: left">
+        <p>
+          If you don't qualify for the IRS Offer In Compromise program, a
+          Payment Plan may be the way to resolve your problem. Setting up a
+          payment plan with the IRS gives you a little more time to pay off your
+          tax debts.
+        </p>
+        <p>
+          Unfortunately, penalties and interest will continue to be charged on
+          your outstanding balance as you pay the debt off. You are required by
+          law to pay the interest on your tax debt.
+        </p>
+      </div>
+      <p>
+        The good news is that there's a chance we can get your tax penalties
+        removed. Please complete the <b>free consultation</b> form on the bottom
+        of this page to get a better understanding of how we can resolve your
+        tax problem.
+      </p>
+      <div class="max-w-400 mx-auto">
+        <app-detail-form></app-detail-form>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>

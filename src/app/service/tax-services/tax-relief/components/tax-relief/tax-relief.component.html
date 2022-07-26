@@ -21,7 +21,7 @@
 <div class="container z-index-1 position-relative">
   <div class="row my-5">
     <div class="col-md-7">
-      <div id="Text" style="text-align: left">
+      <div style="text-align: left">
         <h2>
           <strong>If You Owe the IRS Money, We Can Help!</strong>
         </h2>
@@ -78,11 +78,123 @@
           >
         </p>
       </div>
-      <div class="max-w-400 mx-auto">
-        <app-detail-form></app-detail-form>
+      <div style="text-align: left">
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['irs-audit-representation']" routerLinkActive="router-link-active"
+              >IRS Audit Representation</a
+            ></strong
+          >
+          <br />
+          Rarely do our clients have to talk with the IRS. We handle it all for
+          you so that you need not take time off of your job to handle the
+          bureaucracy and paperwork of the IRS.
+        </div>
+
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['non-filed-tax-returns']" routerLinkActive="router-link-active">Non-Filed Tax Returns</a></strong
+          >
+          <br />
+          If you do not file, you can be prosecuted and punished with potential
+          jail time, one year for each year not filed. Why risk potentially
+          losing your freedom for failing to file your tax returns?
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['back-taxes-owed']" routerLinkActive="router-link-active">Back Taxes Owed</a></strong>
+          <br />
+          It's amazing how fast tax penalties and interest add up. Luckily, we
+          offer several options when it comes to resolving unpaid taxes.
+          Complete this form to get a Free Consultation with our tax specialist.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['payroll-tax-problems']" routerLinkActive="router-link-active">Payroll Tax Problems</a></strong>
+          <br />
+          The IRS views failing to pay payroll taxes as the cardinal sin of tax
+          delinquency because a large portion of the payroll taxes you pay as an
+          employer is your employees' tax withholdings.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['IRS-liens']" routerLinkActive="router-link-active">IRS Liens</a></strong>
+          <br />
+          Liens filed against you by the IRS also show up on your credit report
+          and often prevent you from opening a checking account or borrowing
+          against any assets, like your home.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['IRS-levies']" routerLinkActive="router-link-active">IRS Levies</a></strong>
+          <br />
+          We are often able to get levies released and help you get out of a
+          terrible situation.
+        </div>
+
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['IRS-wage-garnishment']" routerLinkActive="router-link-active">IRS Wage Garnishment</a></strong
+          >
+          <br />
+          The payment plan negotiated by us is always more favorable than any
+          IRS wage garnishment. It allows you to receive your whole paycheck
+          without fears of future wage garnishments.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['IRS-seizures']" routerLinkActive="router-link-active">IRS Seizures</a></strong>
+          <br />
+          An IRS seizure should not be taken lightly. The IRS will ultimately
+          pursue seizure of your physical assets; your home, cars, boats,
+          jewelry, motorcycles, insurance policies, and even your retirement
+          funds.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['IRS-payment-plan']" routerLinkActive="router-link-active">IRS Payment Plan</a></strong>
+          <br />
+          If you don't qualify for the IRS Offer In Compromise program, a
+          Payment Plan may be the way to resolve your problem.
+        </div>
+
+        <div class="caption">
+          <strong
+            ><a [routerLink]="['offer-in-compromise']" routerLinkActive="router-link-active">Offer In Compromise</a></strong
+          >
+          <br />
+          Did you know that you can settle your debt with the IRS for just
+          pennies on the dollar with their Offer in Compromise program?
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['bankruptcy']" routerLinkActive="router-link-active" >Bankruptcy</a></strong>
+          <br />
+          Your back taxes, interest, and penalties can be wiped out by filing
+          bankruptcy. If you qualify, bankruptcy can be the best solution to
+          resolve your crushing tax problems.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['innocent-spouse-relief']" routerLinkActive="router-link-active">Innocent Spouse Relief</a></strong>
+          <br />
+          Innocent Spouse Relief was designed to alleviate unjust situations
+          where one spouse was clearly the victim of fraud perpetrated by their
+          spouse or ex-spouse.
+        </div>
+
+        <div class="caption">
+          <strong><a [routerLink]="['get-your-IRS-file']" routerLinkActive="router-link-active">Get Your IRS File</a></strong>
+          <br />
+          Most people would be surprised to learn how much the IRS knows about
+          them. Obtaining a copy of your IRS file is critical in analyzing the
+          options available to resolve your tax problems.
+        </div>
       </div>
     </div>
     <div class="col-md-1"></div>
-    <app-consultaion-img-btn  class="col-md-4 d-none d-md-block"></app-consultaion-img-btn>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
   </div>
 </div>

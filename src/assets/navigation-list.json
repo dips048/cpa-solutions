@@ -182,6 +182,66 @@
                   "title": "IRS Audit Representation",
                   "routerLink": "/irs-audit-representation",
                   "list": []
+                },
+                {
+                  "title": "Non-Filed Tax Returns",
+                  "routerLink": "/non-filed-tax-returns",
+                  "list": []
+                },
+                {
+                  "title": "Back Taxes Owed",
+                  "routerLink": "/back-taxes-owed",
+                  "list": []
+                },
+                {
+                  "title": "Payroll Tax Problems",
+                  "routerLink": "/payroll-tax-problems",
+                  "list": []
+                },
+                {
+                  "title": "IRS Liens",
+                  "routerLink": "/IRS-liens",
+                  "list": []
+                },
+                {
+                  "title": "IRS Levies",
+                  "routerLink": "/IRS-levies",
+                  "list": []
+                },
+                {
+                  "title": "IRS Wage Garnishment",
+                  "routerLink": "/IRS-wage-garnishment",
+                  "list": []
+                },
+                {
+                  "title": "IRS Seizures",
+                  "routerLink": "/IRS-seizures",
+                  "list": []
+                },
+                {
+                  "title": "IRS Payment Plan",
+                  "routerLink": "/IRS-payment-plan",
+                  "list": []
+                },
+                {
+                  "title": "Offer In Compromise",
+                  "routerLink": "/offer-in-compromise",
+                  "list": []
+                },
+                {
+                  "title": "Bankruptcy",
+                  "routerLink": "/bankruptcy",
+                  "list": []
+                },
+                {
+                  "title": "Innocent Spouse Relief",
+                  "routerLink": "/innocent-spouse-relief",
+                  "list": []
+                },
+                {
+                  "title": "Get Your IRS File",
+                  "routerLink": "/get-your-IRS-file",
+                  "list": []
                 }
               ]
             }
