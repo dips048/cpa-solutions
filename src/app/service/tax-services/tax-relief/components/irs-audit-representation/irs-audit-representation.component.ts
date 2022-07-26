@@ -13,16 +13,8 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class IRSAuditRepresentationComponent implements OnInit {
 
-  constructor(
-    private dialog: MatDialog
-  ) { }
+  constructor() { }
 
   ngOnInit(): void { }
-
-  openContactUsDialog() {
-    this.dialog.open(ContactUsDialogComponent, {
-      width: '500px'
-    });
-  };
 
 }

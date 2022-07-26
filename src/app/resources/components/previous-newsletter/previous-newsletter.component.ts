@@ -1,10 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import { ContactUsDialogComponent } from '../../../shared/components/contact-us-dialog/contact-us-dialog.component';
-
-gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-previous-newsletter',
@@ -13,29 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class PreviousNewsletterComponent implements OnInit {
 
-  constructor(
-    public dialog: MatDialog
-  ) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    this.initAnimation();
-  }
-
-  initAnimation(): void {
-    gsap.to('#image-container', {
-      scrollTrigger: {
-        trigger: '#image-container',
-        start: 'end',
-        pin: true,
-        markers: true,
-      }
-    });
-  };
-
-  openContactUsDialog() {
-    this.dialog.open(ContactUsDialogComponent, {
-      width: '500px'
-    });
-  };
+  ngOnInit(): void { }
 
 }

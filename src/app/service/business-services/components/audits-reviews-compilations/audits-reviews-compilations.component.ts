@@ -10,16 +10,8 @@ import { ContactUsDialogComponent } from '../../../../shared/components/contact-
 })
 export class AuditsReviewsCompilationsComponent implements OnInit {
 
-  constructor(
-    private dialog: MatDialog
-  ) { }
+  constructor() { }
 
   ngOnInit(): void { }
-
-  openContactUsDialog() {
-    this.dialog.open(ContactUsDialogComponent, {
-      width: '500px'
-    });
-  };
 
 }

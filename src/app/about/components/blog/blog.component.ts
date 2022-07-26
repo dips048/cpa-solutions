@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ContactUsDialogComponent } from '../../../shared/components/contact-us-dialog/contact-us-dialog.component';
 
 
 @Component({
@@ -11,15 +9,8 @@ import { ContactUsDialogComponent } from '../../../shared/components/contact-us-
 export class BlogComponent implements OnInit {
 
   constructor(
-    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void { }
-
-  openContactUsDialog() {
-    this.dialog.open(ContactUsDialogComponent, {
-      width: '500px'
-    });
-  };
 
 }
