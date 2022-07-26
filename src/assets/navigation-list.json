@@ -385,7 +385,38 @@
         {
           "title": "Guides",
           "routerLink": "/guides",
-          "list": []
+          "list": [
+            {
+              "title": "Life Events",
+              "routerLink": "/life-events",
+              "list": []
+            },
+            {
+              "title": "Business Strategies",
+              "routerLink": "/business-strategies",
+              "list": []
+            },
+            {
+              "title": "Investment Strategies",
+              "routerLink": "/investment-strategies",
+              "list": []
+            },
+            {
+              "title": "Tax Strategies for Business Owners",
+              "routerLink": "/tax-strategies-business-owners",
+              "list": []
+            },
+            {
+              "title": "Tax Strategies for Individuals",
+              "routerLink": "/tax-strategies-individuals",
+              "list": []
+            },
+            {
+              "title": "Frequently Asked Questions",
+              "routerLink": "/frequently-asked-questions",
+              "list": []
+            }
+          ]
         },
         {
           "title": "Financial Calculators",

@@ -1,0 +1,55 @@
+<nav aria-label="breadcrumb">
+  <ol
+    class="breadcrumb px-3 bg-c-nav d-flex justify-content-center justify-content-lg-start"
+  >
+    <li class="breadcrumb-item">
+      <span class="fa fa-home"></span>
+      <span routerLink="/home">Home</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/resources">Resources</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span routerLink="/resources/guides">Guides</span>
+    </li>
+    <li class="breadcrumb-item active" active>
+      <span routerLink="/resources/guides/frequently-asked-questions"
+        >Frequently Asked Questions</span
+      >
+    </li>
+  </ol>
+</nav>
+<app-heading heading="Frequently Asked Questions"></app-heading>
+<div class="container z-index-1 position-relative">
+  <div class="row my-5">
+    <div class="col-md-7">
+      <br />Over 500 every day financial questions answered.<br /><br />
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td>
+              <a><b>Business Owners</b></a
+              ><br /><a><b>Home Owners</b></a
+              ><br /><a><b>Financial Planning</b></a
+              ><br /><a><b>Insurance</b></a
+              ><br /><a><b>Life Events: Frequently Asked Questions</b></a
+              ><br />
+            </td>
+            <td>
+              <a><b>Credit</b></a
+              ><br /><a><b>Banking</b></a
+              ><br /><a><b>Affluent Individuals</b></a
+              ><br /><a><b>Parents</b></a
+              ><br /><a><b>Taxes</b></a
+              ><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-1"></div>
+    <app-consultaion-img-btn
+      class="col-md-4 d-none d-md-block"
+    ></app-consultaion-img-btn>
+  </div>
+</div>
