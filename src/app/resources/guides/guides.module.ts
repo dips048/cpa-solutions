@@ -66,6 +66,20 @@ import { RefinancingMortgageFGComponent } from './components/life-events/compone
 import { HomeEquityLoansFGComponent } from './components/life-events/components/home-equity-loans-fg/home-equity-loans-fg.component';
 import { MortgageLockInsFgComponent } from './components/life-events/components/mortgage-lock-ins-fg/mortgage-lock-ins-fg.component';
 import { FinancingQuestionsFAQComponent } from './components/life-events/components/financing-questions-faq/financing-questions-faq.component';
+import { PlanningForRetirementComponent } from './components/life-events/planning-for-retirement/planning-for-retirement.component';
+import { RetirementPlanFGComponent } from './components/life-events/components/retirement-plan-fg/retirement-plan-fg.component';
+import { RetirementTipsFGComponent } from './components/life-events/components/retirement-tips-fg/retirement-tips-fg.component';
+import { SocialSecurityFGComponent } from './components/life-events/components/social-security-fg/social-security-fg.component';
+import { SocialSecurityBenefitsFGComponent } from './components/life-events/components/social-security-benefits-fg/social-security-benefits-fg.component';
+import { RetirementDistributionFGWhenComponent } from './components/life-events/components/retirement-distribution-fg-when/retirement-distribution-fg-when.component';
+import { RetirementDistributionFGHowComponent } from './components/life-events/components/retirement-distribution-fg-how/retirement-distribution-fg-how.component';
+import { RothIRAsFGComponent } from './components/life-events/components/roth-iras-fg/roth-iras-fg.component';
+import { SimplePlanFGComponent } from './components/life-events/components/simple-plan-fg/simple-plan-fg.component';
+import { SocialSecurityBenefitsFAQComponent } from './components/life-events/components/social-security-benefits-faq/social-security-benefits-faq.component';
+import { RetirementDistributionFAQComponent } from './components/life-events/components/retirement-distribution-faq/retirement-distribution-faq.component';
+import { RetirementAssetsFAQComponent } from './components/life-events/components/retirement-assets-faq/retirement-assets-faq.component';
+import { IRAsFAQComponent } from './components/life-events/components/iras-faq/iras-faq.component';
+import { TraditionalVsRothIRAsFAQComponent } from './components/life-events/components/traditional-vs-roth-iras-faq/traditional-vs-roth-iras-faq.component';
 
 @NgModule({
   declarations: [
@@ -131,7 +145,21 @@ import { FinancingQuestionsFAQComponent } from './components/life-events/compone
     RefinancingMortgageFGComponent,
     HomeEquityLoansFGComponent,
     MortgageLockInsFgComponent,
-    FinancingQuestionsFAQComponent
+    FinancingQuestionsFAQComponent,
+    PlanningForRetirementComponent,
+    RetirementPlanFGComponent,
+    RetirementTipsFGComponent,
+    SocialSecurityFGComponent,
+    SocialSecurityBenefitsFGComponent,
+    RetirementDistributionFGWhenComponent,
+    RetirementDistributionFGHowComponent,
+    RothIRAsFGComponent,
+    SimplePlanFGComponent,
+    SocialSecurityBenefitsFAQComponent,
+    RetirementDistributionFAQComponent,
+    RetirementAssetsFAQComponent,
+    IRAsFAQComponent,
+    TraditionalVsRothIRAsFAQComponent
   ],
   imports: [
     CommonModule,

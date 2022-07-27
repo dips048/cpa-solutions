@@ -68,6 +68,19 @@ import { RefinancingMortgageFGComponent } from './components/life-events/compone
 import { HomeEquityLoansFGComponent } from './components/life-events/components/home-equity-loans-fg/home-equity-loans-fg.component';
 import { MortgageLockInsFgComponent } from './components/life-events/components/mortgage-lock-ins-fg/mortgage-lock-ins-fg.component';
 import { FinancingQuestionsFAQComponent } from './components/life-events/components/financing-questions-faq/financing-questions-faq.component';
+import { RetirementPlanFGComponent } from './components/life-events/components/retirement-plan-fg/retirement-plan-fg.component';
+import { PlanningForRetirementComponent } from './components/life-events/planning-for-retirement/planning-for-retirement.component';
+import { RetirementTipsFGComponent } from './components/life-events/components/retirement-tips-fg/retirement-tips-fg.component';
+import { SocialSecurityFGComponent } from './components/life-events/components/social-security-fg/social-security-fg.component';
+import { SocialSecurityBenefitsFGComponent } from './components/life-events/components/social-security-benefits-fg/social-security-benefits-fg.component';
+import { RetirementDistributionFGWhenComponent } from './components/life-events/components/retirement-distribution-fg-when/retirement-distribution-fg-when.component';
+import { RetirementDistributionFGHowComponent } from './components/life-events/components/retirement-distribution-fg-how/retirement-distribution-fg-how.component';
+import { RothIRAsFGComponent } from './components/life-events/components/roth-iras-fg/roth-iras-fg.component';
+import { SimplePlanFGComponent } from './components/life-events/components/simple-plan-fg/simple-plan-fg.component';
+import { SocialSecurityBenefitsFAQComponent } from './components/life-events/components/social-security-benefits-faq/social-security-benefits-faq.component';
+import { RetirementAssetsFAQComponent } from './components/life-events/components/retirement-assets-faq/retirement-assets-faq.component';
+import { IRAsFAQComponent } from './components/life-events/components/iras-faq/iras-faq.component';
+import { TraditionalVsRothIRAsFAQComponent } from './components/life-events/components/traditional-vs-roth-iras-faq/traditional-vs-roth-iras-faq.component';
 
 const routes: Routes = [
   { path: '', component: GuidesComponent },
@@ -136,6 +149,19 @@ const routes: Routes = [
       { path: 'home-equity-loans-fg', component: HomeEquityLoansFGComponent },
       { path: 'mortgage-alternatives-fg', component: MortgageLockInsFgComponent },
       { path: 'financing-questions-faq', component: FinancingQuestionsFAQComponent },
+      { path: 'planning-for-retirement', component: PlanningForRetirementComponent },
+      { path: 'retirement-plan-fg', component: RetirementPlanFGComponent },
+      { path: 'retirement-tips-fg', component: RetirementTipsFGComponent },
+      { path: 'social-security-fg', component: SocialSecurityFGComponent },
+      { path: 'social-security-benefits-fg', component: SocialSecurityBenefitsFGComponent },
+      { path: 'retirement-distribution-fg-when', component: RetirementDistributionFGWhenComponent },
+      { path: 'retirement-distribution-fg-how', component: RetirementDistributionFGHowComponent },
+      { path: 'roth-iras-fg', component: RothIRAsFGComponent },
+      { path: 'simple-plan-fg', component: SimplePlanFGComponent },
+      { path: 'social-security-benefits-faq', component: SocialSecurityBenefitsFAQComponent },
+      { path: 'retirement-assets-faq', component: RetirementAssetsFAQComponent },
+      { path: 'iras-faq', component: IRAsFAQComponent },
+      { path: 'traditional-vs-roth-iras-faq', component: TraditionalVsRothIRAsFAQComponent },
       { path: '', component: LifeEventsHomeComponent },
       { path: '', component: LifeEventsHomeComponent },
     ]
