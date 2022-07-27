@@ -62,6 +62,12 @@ import { CarInsuranceFAQComponent } from './components/life-events/components/ca
 import { DisabilityInsuranceFAQComponent } from './components/life-events/components/disability-insurance-faq/disability-insurance-faq.component';
 import { LongTermInsuranceFAQComponent } from './components/life-events/components/long-term-insurance-faq/long-term-insurance-faq.component';
 import { AnnuitiesFAQComponent } from './components/life-events/components/annuities-faq/annuities-faq.component';
+import { GettingLoanComponent } from './components/life-events/getting-loan/getting-loan.component';
+import { MortgageAlternativesFGComponent } from './components/life-events/components/mortgage-alternatives-fg/mortgage-alternatives-fg.component';
+import { RefinancingMortgageFGComponent } from './components/life-events/components/refinancing-mortgage-fg/refinancing-mortgage-fg.component';
+import { HomeEquityLoansFGComponent } from './components/life-events/components/home-equity-loans-fg/home-equity-loans-fg.component';
+import { MortgageLockInsFgComponent } from './components/life-events/components/mortgage-lock-ins-fg/mortgage-lock-ins-fg.component';
+import { FinancingQuestionsFAQComponent } from './components/life-events/components/financing-questions-faq/financing-questions-faq.component';
 
 const routes: Routes = [
   { path: '', component: GuidesComponent },
@@ -124,6 +130,12 @@ const routes: Routes = [
       { path: 'disability-insurance-faq', component: DisabilityInsuranceFAQComponent },
       { path: 'long-term-insurance-faq', component: LongTermInsuranceFAQComponent },
       { path: 'annuities-faq', component: AnnuitiesFAQComponent },
+      { path: 'getting-loan', component: GettingLoanComponent },
+      { path: 'mortgage-alternatives-fg', component: MortgageAlternativesFGComponent },
+      { path: 'refinancing-mortgage-fg', component: RefinancingMortgageFGComponent },
+      { path: 'home-equity-loans-fg', component: HomeEquityLoansFGComponent },
+      { path: 'mortgage-alternatives-fg', component: MortgageLockInsFgComponent },
+      { path: 'financing-questions-faq', component: FinancingQuestionsFAQComponent },
       { path: '', component: LifeEventsHomeComponent },
       { path: '', component: LifeEventsHomeComponent },
     ]

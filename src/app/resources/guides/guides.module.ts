@@ -60,6 +60,12 @@ import { CarInsuranceFAQComponent } from './components/life-events/components/ca
 import { DisabilityInsuranceFAQComponent } from './components/life-events/components/disability-insurance-faq/disability-insurance-faq.component';
 import { LongTermInsuranceFAQComponent } from './components/life-events/components/long-term-insurance-faq/long-term-insurance-faq.component';
 import { AnnuitiesFAQComponent } from './components/life-events/components/annuities-faq/annuities-faq.component';
+import { GettingLoanComponent } from './components/life-events/getting-loan/getting-loan.component';
+import { MortgageAlternativesFGComponent } from './components/life-events/components/mortgage-alternatives-fg/mortgage-alternatives-fg.component';
+import { RefinancingMortgageFGComponent } from './components/life-events/components/refinancing-mortgage-fg/refinancing-mortgage-fg.component';
+import { HomeEquityLoansFGComponent } from './components/life-events/components/home-equity-loans-fg/home-equity-loans-fg.component';
+import { MortgageLockInsFgComponent } from './components/life-events/components/mortgage-lock-ins-fg/mortgage-lock-ins-fg.component';
+import { FinancingQuestionsFAQComponent } from './components/life-events/components/financing-questions-faq/financing-questions-faq.component';
 
 @NgModule({
   declarations: [
@@ -119,7 +125,13 @@ import { AnnuitiesFAQComponent } from './components/life-events/components/annui
     CarInsuranceFAQComponent,
     DisabilityInsuranceFAQComponent,
     LongTermInsuranceFAQComponent,
-    AnnuitiesFAQComponent
+    AnnuitiesFAQComponent,
+    GettingLoanComponent,
+    MortgageAlternativesFGComponent,
+    RefinancingMortgageFGComponent,
+    HomeEquityLoansFGComponent,
+    MortgageLockInsFgComponent,
+    FinancingQuestionsFAQComponent
   ],
   imports: [
     CommonModule,
