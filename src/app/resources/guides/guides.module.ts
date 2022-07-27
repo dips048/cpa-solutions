@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { GuidesRoutingModule } from './guides-routing.module';
 import { components } from './components';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 import { LifeEventsHomeComponent } from './components/life-events/life-events-home/life-events-home.component';
 import { GettingMarriedComponent } from './components/life-events/getting-married/getting-married.component';
 import { GettingMarriedFGAComponent } from './components/life-events/components/getting-married-fg-a/getting-married-fg-a.component';
