@@ -35,3 +35,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   max-width: 400px;
 }
 
+a {
+  text-decoration: none;
+  color: #2d82a1;
+}
+ a:hover {
+  text-decoration: underline;
+  color: #23708b;
+ }
