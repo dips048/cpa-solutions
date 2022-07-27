@@ -1,16 +1,21 @@
-.nav-list {
-  display: inline-flex;
+.dropdown-menu {
+  padding: 0;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover > .dropdown-menu {
   display: block;
 }
 
-/* .dropend:hover>.dropdown-menu {
-  display: block;
-} */
+.dropend > .dropdown-menu {
+  top: 0;
+  right: 100%;
+}
 
-.dropdown>.dropdown-toggle:active {
+.dropend:hover >.dropdown-menu {
+  display: block;
+}
+
+/* .dropdown>.dropdown-toggle:active { */
   /* Without this, clicking will make it sticky */
-    /* pointer-events: none; */
-}
+  /* pointer-events: none; */
+/* } */

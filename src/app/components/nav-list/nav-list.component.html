@@ -1,45 +1,76 @@
-<div class="nav-list" *ngFor="let item of navigationList">
-  <button mat-button *ngIf="!item.list.length" [routerLink]="[item.routerLink]">
-    {{ item.title }}
+<div class="d-inline-flex" *ngFor="let i of navigationList">
+  <button
+    mat-button
+    *ngIf="!i.list.length"
+    [routerLink]="[i.routerLink]"
+  >
+    {{ i.title }}
   </button>
-  <div class="dropdown" *ngIf="item.list.length">
+  <div class="dropdown">
     <button
+      *ngIf="i.list.length"
       mat-button
-      [routerLink]="[item.routerLink]"
+      [routerLink]="[i.routerLink]"
       class="dropdown-toggle"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
-      {{ item.title }}
+      {{ i.title }}
     </button>
     <ul class="dropdown-menu">
-      <li *ngFor="let listItem of item.list">
+      <li *ngFor="let j of i.list">
         <a
-          *ngIf="!listItem.list.length"
+          *ngIf="!j.list.length"
           class="dropdown-item"
-          [routerLink]="[item.routerLink + listItem.routerLink]"
+          [routerLink]="[i.routerLink + j.routerLink]"
         >
-          {{ listItem.title }}
+          {{ j.title }}
         </a>
-        <div *ngIf="listItem.list.length" class="dropend">
+        <div class="dropend">
           <a
-            [routerLink]="[item.routerLink + listItem.routerLink]"
+            *ngIf="j.list.length"
+            [routerLink]="[i.routerLink + j.routerLink]"
             class="dropdown-toggle dropdown-item"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            {{ listItem.title }}
+            {{ j.title }}
           </a>
           <ul class="dropdown-menu">
-            <li *ngFor="let i of listItem.list">
+            <li *ngFor="let k of j.list">
               <a
+                *ngIf="!k.list.length"
                 class="dropdown-item"
                 [routerLink]="[
-                  item.routerLink + listItem.routerLink + i.routerLink
+                  i.routerLink + j.routerLink + k.routerLink
                 ]"
               >
-                {{ i.title }}
+                {{ k.title }}
               </a>
+              <div class="dropend">
+                <a
+                  *ngIf="k.list.length"
+                  [routerLink]="[i.routerLink + j.routerLink + k.routerLink]"
+                  class="dropdown-toggle dropdown-item"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {{ k.title }}
+                </a>
+                <ul class="dropdown-menu">
+                  <li *ngFor="let l of k.list">
+                    <a
+                      *ngIf="!l.list.length"
+                      class="dropdown-item"
+                      [routerLink]="[
+                        i.routerLink + j.routerLink + k.routerLink + l.routerLink
+                      ]"
+                    >
+                      {{ l.title }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -47,3 +78,14 @@
     </ul>
   </div>
 </div>
+<!-- <div class="dropdown" *ngFor="let item of navigationList">
+  <button mat-button class="dropbtn">{{ item.title }}</button>
+  <div class="dropdown-content">
+    <a class="sub-dropdown" *ngFor="let subItem of item.list">
+      <div>{{ subItem.title }}</div>
+      <div class="sub-dropdown-content">
+        <a *ngFor="let i of subItem.list">{{ i.title }}</a>
+      </div>
+    </a>
+  </div>
+</div> -->

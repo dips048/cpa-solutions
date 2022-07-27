@@ -9,7 +9,21 @@
   border: 1px solid rgba(0,0,0,.125);
 }
 
-.according-content-item {
+.level-2 {
+  padding: .5rem 1rem;
+}
+
+.level-3 {
+  padding: .5rem 2rem;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.level-3:hover {
+  cursor: pointer;
+  background-color: #2d82a1;
+}
+
+.accordion-content-item {
   padding: .5rem 1rem;
   border: 1px solid rgba(0,0,0,.125);
 }
@@ -19,7 +33,7 @@
   background-color: #2d82a1;
 }
 
-.accordion-item > .according-expanded-content > .according-content-item:hover {
+.accordion-item > .accordion-expanded-content > .accordion-content-item:hover {
   cursor: pointer;
   background-color: #2d82a1;
 }
