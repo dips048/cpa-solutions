@@ -43,6 +43,10 @@ import { CreditCardsFAQComponent } from './components/life-events/components/cre
 import { CreditReportsFAQComponent } from './components/life-events/components/credit-reports-faq/credit-reports-faq.component';
 import { FinancialTroublesFAQComponent } from './components/life-events/components/financial-troubles-faq/financial-troubles-faq.component';
 import { CreditRatingFAQComponent } from './components/life-events/components/credit-rating-faq/credit-rating-faq.component';
+import { ChoosingProfessionalComponent } from './components/life-events/choosing-professional/choosing-professional.component';
+import { LawyersFGComponent } from './components/life-events/components/lawyers-fg/lawyers-fg.component';
+import { FinancialAdviceFGComponent } from './components/life-events/components/financial-advice-fg/financial-advice-fg.component';
+import { ChoosingProfessionalFAQComponent } from './components/life-events/components/choosing-professional-faq/choosing-professional-faq.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +89,11 @@ import { CreditRatingFAQComponent } from './components/life-events/components/cr
     CreditCardsFAQComponent,
     CreditReportsFAQComponent,
     FinancialTroublesFAQComponent,
-    CreditRatingFAQComponent
+    CreditRatingFAQComponent,
+    ChoosingProfessionalComponent,
+    LawyersFGComponent,
+    FinancialAdviceFGComponent,
+    ChoosingProfessionalFAQComponent
   ],
   imports: [
     CommonModule,

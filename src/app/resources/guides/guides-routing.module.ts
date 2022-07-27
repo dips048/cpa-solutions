@@ -45,6 +45,10 @@ import { CreditCardsFAQComponent } from './components/life-events/components/cre
 import { CreditReportsFAQComponent } from './components/life-events/components/credit-reports-faq/credit-reports-faq.component';
 import { FinancialTroublesFAQComponent } from './components/life-events/components/financial-troubles-faq/financial-troubles-faq.component';
 import { CreditRatingFAQComponent } from './components/life-events/components/credit-rating-faq/credit-rating-faq.component';
+import { LawyersFGComponent } from './components/life-events/components/lawyers-fg/lawyers-fg.component';
+import { ChoosingProfessionalComponent } from './components/life-events/choosing-professional/choosing-professional.component';
+import { FinancialAdviceFGComponent } from './components/life-events/components/financial-advice-fg/financial-advice-fg.component';
+import { ChoosingProfessionalFAQComponent } from './components/life-events/components/choosing-professional-faq/choosing-professional-faq.component';
 
 const routes: Routes = [
   { path: '', component: GuidesComponent },
@@ -90,9 +94,10 @@ const routes: Routes = [
       { path: 'credit-reports-faq', component: CreditReportsFAQComponent },
       { path: 'financial-troubles-faq', component: FinancialTroublesFAQComponent },
       { path: 'credit-rating-faq', component: CreditRatingFAQComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
+      { path: 'choosing-professional', component: ChoosingProfessionalComponent },
+      { path: 'lawyers-fg', component: LawyersFGComponent },
+      { path: 'financial-advice-fg', component: FinancialAdviceFGComponent },
+      { path: 'choosing-professional-faq', component: ChoosingProfessionalFAQComponent },
       { path: '', component: LifeEventsHomeComponent },
       { path: '', component: LifeEventsHomeComponent },
       { path: '', component: LifeEventsHomeComponent },
