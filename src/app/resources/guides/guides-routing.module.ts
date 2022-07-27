@@ -49,6 +49,19 @@ import { LawyersFGComponent } from './components/life-events/components/lawyers-
 import { ChoosingProfessionalComponent } from './components/life-events/choosing-professional/choosing-professional.component';
 import { FinancialAdviceFGComponent } from './components/life-events/components/financial-advice-fg/financial-advice-fg.component';
 import { ChoosingProfessionalFAQComponent } from './components/life-events/components/choosing-professional-faq/choosing-professional-faq.component';
+import { BuyingInsuranceComponent } from './components/life-events/buying-insurance/buying-insurance.component';
+import { HomeownersInsuranceFGComponent } from './components/life-events/components/homeowners-insurance-fg/homeowners-insurance-fg.component';
+import { CarInsuranceFGComponent } from './components/life-events/components/car-insurance-fg/car-insurance-fg.component';
+import { DisabilityInsuranceFGComponent } from './components/life-events/components/disability-insurance-fg/disability-insurance-fg.component';
+import { DisabilityBenefitsFGComponent } from './components/life-events/components/disability-benefits-fg/disability-benefits-fg.component';
+import { LongTermInsuranceFGComponent } from './components/life-events/components/long-term-insurance-fg/long-term-insurance-fg.component';
+import { AnnuitiesFGComponent } from './components/life-events/components/annuities-fg/annuities-fg.component';
+import { CareActFGComponent } from './components/life-events/components/care-act-fg/care-act-fg.component';
+import { HomeownersInsuranceFAQComponent } from './components/life-events/components/homeowners-insurance-faq/homeowners-insurance-faq.component';
+import { CarInsuranceFAQComponent } from './components/life-events/components/car-insurance-faq/car-insurance-faq.component';
+import { DisabilityInsuranceFAQComponent } from './components/life-events/components/disability-insurance-faq/disability-insurance-faq.component';
+import { LongTermInsuranceFAQComponent } from './components/life-events/components/long-term-insurance-faq/long-term-insurance-faq.component';
+import { AnnuitiesFAQComponent } from './components/life-events/components/annuities-faq/annuities-faq.component';
 
 const routes: Routes = [
   { path: '', component: GuidesComponent },
@@ -98,10 +111,19 @@ const routes: Routes = [
       { path: 'lawyers-fg', component: LawyersFGComponent },
       { path: 'financial-advice-fg', component: FinancialAdviceFGComponent },
       { path: 'choosing-professional-faq', component: ChoosingProfessionalFAQComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
+      { path: 'buying-insurance', component: BuyingInsuranceComponent },
+      { path: 'homeowners-insurance-fg', component: HomeownersInsuranceFGComponent },
+      { path: 'car-insurance-fg', component: CarInsuranceFGComponent },
+      { path: 'disability-insurance-fg', component: DisabilityInsuranceFGComponent },
+      { path: 'disability-benefits-fg', component: DisabilityBenefitsFGComponent },
+      { path: 'long-term-insurance-fg', component: LongTermInsuranceFGComponent },
+      { path: 'annuities-fg', component: AnnuitiesFGComponent },
+      { path: 'care-act-fg', component: CareActFGComponent },
+      { path: 'homeowners-insurance-faq', component: HomeownersInsuranceFAQComponent },
+      { path: 'car-insurance-faq', component: CarInsuranceFAQComponent },
+      { path: 'disability-insurance-faq', component: DisabilityInsuranceFAQComponent },
+      { path: 'long-term-insurance-faq', component: LongTermInsuranceFAQComponent },
+      { path: 'annuities-faq', component: AnnuitiesFAQComponent },
       { path: '', component: LifeEventsHomeComponent },
       { path: '', component: LifeEventsHomeComponent },
     ]

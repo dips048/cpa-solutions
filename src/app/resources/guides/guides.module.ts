@@ -47,6 +47,19 @@ import { ChoosingProfessionalComponent } from './components/life-events/choosing
 import { LawyersFGComponent } from './components/life-events/components/lawyers-fg/lawyers-fg.component';
 import { FinancialAdviceFGComponent } from './components/life-events/components/financial-advice-fg/financial-advice-fg.component';
 import { ChoosingProfessionalFAQComponent } from './components/life-events/components/choosing-professional-faq/choosing-professional-faq.component';
+import { BuyingInsuranceComponent } from './components/life-events/buying-insurance/buying-insurance.component';
+import { HomeownersInsuranceFGComponent } from './components/life-events/components/homeowners-insurance-fg/homeowners-insurance-fg.component';
+import { CarInsuranceFGComponent } from './components/life-events/components/car-insurance-fg/car-insurance-fg.component';
+import { DisabilityInsuranceFGComponent } from './components/life-events/components/disability-insurance-fg/disability-insurance-fg.component';
+import { DisabilityBenefitsFGComponent } from './components/life-events/components/disability-benefits-fg/disability-benefits-fg.component';
+import { LongTermInsuranceFGComponent } from './components/life-events/components/long-term-insurance-fg/long-term-insurance-fg.component';
+import { AnnuitiesFGComponent } from './components/life-events/components/annuities-fg/annuities-fg.component';
+import { CareActFGComponent } from './components/life-events/components/care-act-fg/care-act-fg.component';
+import { HomeownersInsuranceFAQComponent } from './components/life-events/components/homeowners-insurance-faq/homeowners-insurance-faq.component';
+import { CarInsuranceFAQComponent } from './components/life-events/components/car-insurance-faq/car-insurance-faq.component';
+import { DisabilityInsuranceFAQComponent } from './components/life-events/components/disability-insurance-faq/disability-insurance-faq.component';
+import { LongTermInsuranceFAQComponent } from './components/life-events/components/long-term-insurance-faq/long-term-insurance-faq.component';
+import { AnnuitiesFAQComponent } from './components/life-events/components/annuities-faq/annuities-faq.component';
 
 @NgModule({
   declarations: [
@@ -93,7 +106,20 @@ import { ChoosingProfessionalFAQComponent } from './components/life-events/compo
     ChoosingProfessionalComponent,
     LawyersFGComponent,
     FinancialAdviceFGComponent,
-    ChoosingProfessionalFAQComponent
+    ChoosingProfessionalFAQComponent,
+    BuyingInsuranceComponent,
+    HomeownersInsuranceFGComponent,
+    CarInsuranceFGComponent,
+    DisabilityInsuranceFGComponent,
+    DisabilityBenefitsFGComponent,
+    LongTermInsuranceFGComponent,
+    AnnuitiesFGComponent,
+    CareActFGComponent,
+    HomeownersInsuranceFAQComponent,
+    CarInsuranceFAQComponent,
+    DisabilityInsuranceFAQComponent,
+    LongTermInsuranceFAQComponent,
+    AnnuitiesFAQComponent
   ],
   imports: [
     CommonModule,
