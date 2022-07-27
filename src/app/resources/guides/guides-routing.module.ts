@@ -36,6 +36,15 @@ import { ATMTransactionsFAQComponent } from './components/life-events/components
 import { GettingLoanFAQComponent } from './components/life-events/components/getting-loan-faq/getting-loan-faq.component';
 import { LoanQuestionsFAQComponent } from './components/life-events/components/loan-questions-faq/loan-questions-faq.component';
 import { ImprovingCreditComponent } from './components/life-events/improving-credit/improving-credit.component';
+import { CreditCardsFGComponent } from './components/life-events/components/credit-cards-fg/credit-cards-fg.component';
+import { CreditReportsFGComponent } from './components/life-events/components/credit-reports-fg/credit-reports-fg.component';
+import { MerchantCCAbusesComponent } from './components/life-events/components/merchant-cc-abuses/merchant-cc-abuses.component';
+import { CreditCaredRightsComponent } from './components/life-events/components/credit-cared-rights/credit-cared-rights.component';
+import { FinancialTroublesFGComponent } from './components/life-events/components/financial-troubles-fg/financial-troubles-fg.component';
+import { CreditCardsFAQComponent } from './components/life-events/components/credit-cards-faq/credit-cards-faq.component';
+import { CreditReportsFAQComponent } from './components/life-events/components/credit-reports-faq/credit-reports-faq.component';
+import { FinancialTroublesFAQComponent } from './components/life-events/components/financial-troubles-faq/financial-troubles-faq.component';
+import { CreditRatingFAQComponent } from './components/life-events/components/credit-rating-faq/credit-rating-faq.component';
 
 const routes: Routes = [
   { path: '', component: GuidesComponent },
@@ -43,7 +52,7 @@ const routes: Routes = [
     path: 'life-events',
     component: LifeEventsComponent,
     children: [
-      { path: '', component: LifeEventsHomeComponent},
+      { path: '', component: LifeEventsHomeComponent },
       { path: 'getting-married', component: GettingMarriedComponent },
       { path: 'getting-married-FG-A', component: GettingMarriedFGAComponent },
       { path: 'life-insurance-FG', component: LifeInsuranceFGComponent },
@@ -72,12 +81,24 @@ const routes: Routes = [
       { path: 'getting-loan-faq', component: GettingLoanFAQComponent },
       { path: 'loan-questions-faq', component: LoanQuestionsFAQComponent },
       { path: 'improving-credit', component: ImprovingCreditComponent },
-      { path: '', component: LifeEventsHomeComponent},
-      { path: '', component: LifeEventsHomeComponent},
-      { path: '', component: LifeEventsHomeComponent},
-      { path: '', component: LifeEventsHomeComponent},
-      { path: '', component: LifeEventsHomeComponent},
-      { path: '', component: LifeEventsHomeComponent},
+      { path: 'credit-cards-fg', component: CreditCardsFGComponent },
+      { path: 'credit-reports-fg', component: CreditReportsFGComponent },
+      { path: 'merchant-cc-abuses', component: MerchantCCAbusesComponent },
+      { path: 'credit-cared-rights', component: CreditCaredRightsComponent },
+      { path: 'financial-troubles-fg', component: FinancialTroublesFGComponent },
+      { path: 'credit-cards-faq', component: CreditCardsFAQComponent },
+      { path: 'credit-reports-faq', component: CreditReportsFAQComponent },
+      { path: 'financial-troubles-faq', component: FinancialTroublesFAQComponent },
+      { path: 'credit-rating-faq', component: CreditRatingFAQComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
     ]
   },
   { path: 'business-strategies', component: BusinessStrategiesComponent },

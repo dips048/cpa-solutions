@@ -34,6 +34,15 @@ import { ATMTransactionsFAQComponent } from './components/life-events/components
 import { GettingLoanFAQComponent } from './components/life-events/components/getting-loan-faq/getting-loan-faq.component';
 import { LoanQuestionsFAQComponent } from './components/life-events/components/loan-questions-faq/loan-questions-faq.component';
 import { ImprovingCreditComponent } from './components/life-events/improving-credit/improving-credit.component';
+import { CreditCardsFGComponent } from './components/life-events/components/credit-cards-fg/credit-cards-fg.component';
+import { CreditReportsFGComponent } from './components/life-events/components/credit-reports-fg/credit-reports-fg.component';
+import { MerchantCCAbusesComponent } from './components/life-events/components/merchant-cc-abuses/merchant-cc-abuses.component';
+import { CreditCaredRightsComponent } from './components/life-events/components/credit-cared-rights/credit-cared-rights.component';
+import { FinancialTroublesFGComponent } from './components/life-events/components/financial-troubles-fg/financial-troubles-fg.component';
+import { CreditCardsFAQComponent } from './components/life-events/components/credit-cards-faq/credit-cards-faq.component';
+import { CreditReportsFAQComponent } from './components/life-events/components/credit-reports-faq/credit-reports-faq.component';
+import { FinancialTroublesFAQComponent } from './components/life-events/components/financial-troubles-faq/financial-troubles-faq.component';
+import { CreditRatingFAQComponent } from './components/life-events/components/credit-rating-faq/credit-rating-faq.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +76,16 @@ import { ImprovingCreditComponent } from './components/life-events/improving-cre
     ATMTransactionsFAQComponent,
     GettingLoanFAQComponent,
     LoanQuestionsFAQComponent,
-    ImprovingCreditComponent
+    ImprovingCreditComponent,
+    CreditCardsFGComponent,
+    CreditReportsFGComponent,
+    MerchantCCAbusesComponent,
+    CreditCaredRightsComponent,
+    FinancialTroublesFGComponent,
+    CreditCardsFAQComponent,
+    CreditReportsFAQComponent,
+    FinancialTroublesFAQComponent,
+    CreditRatingFAQComponent
   ],
   imports: [
     CommonModule,
