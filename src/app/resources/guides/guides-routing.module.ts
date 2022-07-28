@@ -112,6 +112,23 @@ import { CharitableDeductionsFAQComponent } from './components/life-events/compo
 import { AvoidingScamsComponent } from './components/life-events/avoiding-scams/avoiding-scams.component';
 import { ConArtistsFGComponent } from './components/life-events/components/con-artists-fg/con-artists-fg.component';
 import { AvoidingScamsFAQComponent } from './components/life-events/components/avoiding-scams-faq/avoiding-scams-faq.component';
+import { GettingDivorceComponent } from './components/life-events/getting-divorce/getting-divorce.component';
+import { MajorIllnessComponent } from './components/life-events/major-illness/major-illness.component';
+import { DeathOfLovedOnesComponent } from './components/life-events/death-of-loved-ones/death-of-loved-ones.component';
+import { ImprovingRetirementComponent } from './components/life-events/improving-retirement/improving-retirement.component';
+import { HandlingSituationsComponent } from './components/life-events/handling-situations/handling-situations.component';
+import { GettingDivorcedFAQComponent } from './components/life-events/components/getting-divorced-faq/getting-divorced-faq.component';
+import { DeathOfSpouseFGComponent } from './components/life-events/components/death-of-spouse-fg/death-of-spouse-fg.component';
+import { FuneralsFGComponent } from './components/life-events/components/funerals-fg/funerals-fg.component';
+import { DeathOfLovedOneFAQComponent } from './components/life-events/components/death-of-loved-one-faq/death-of-loved-one-faq.component';
+import { RetirementMoneyFGComponent } from './components/life-events/components/retirement-money-fg/retirement-money-fg.component';
+import { ReverseMotgagesFGComponent } from './components/life-events/components/reverse-motgages-fg/reverse-motgages-fg.component';
+import { PensionFGComponent } from './components/life-events/components/pension-fg/pension-fg.component';
+import { SurvivorsBenefitsFGComponent } from './components/life-events/components/survivors-benefits-fg/survivors-benefits-fg.component';
+import { OtherSituationFAQComponent } from './components/life-events/components/other-situation-faq/other-situation-faq.component';
+import { DocumnentLocatorSystemFGComponent } from './components/life-events/components/documnent-locator-system-fg/documnent-locator-system-fg.component';
+import { RecordingGuideFGComponent } from './components/life-events/components/recording-guide-fg/recording-guide-fg.component';
+import { SavingMoneyFGComponent } from './components/life-events/components/saving-money-fg/saving-money-fg.component';
 
 const routes: Routes = [
   { path: '', component: GuidesComponent },
@@ -224,13 +241,23 @@ const routes: Routes = [
       { path: 'avoiding-scams', component: AvoidingScamsComponent },
       { path: 'con-artists-fg', component: ConArtistsFGComponent },
       { path: 'avoiding-scams-faq', component: AvoidingScamsFAQComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
-      { path: '', component: LifeEventsHomeComponent },
+      { path: 'getting-divorce', component: GettingDivorceComponent },
+      { path: 'getting-divorced-faq', component: GettingDivorcedFAQComponent },
+      { path: 'major-illness', component: MajorIllnessComponent },
+      { path: 'death-of-loved-ones', component: DeathOfLovedOnesComponent },
+      { path: 'death-of-spouse-fg', component: DeathOfSpouseFGComponent },
+      { path: 'funerals-fg', component: FuneralsFGComponent },
+      { path: 'death-of-loved-one-faq', component: DeathOfLovedOneFAQComponent },
+      { path: 'improving-retirement', component: ImprovingRetirementComponent },
+      { path: 'survivors-benefits-fg', component: SurvivorsBenefitsFGComponent },
+      { path: 'pension-fg', component: PensionFGComponent },
+      { path: 'reverse-mortgages-fg', component: ReverseMotgagesFGComponent },
+      { path: 'retirement-money-fg', component: RetirementMoneyFGComponent },
+      { path: 'handling-situations', component: HandlingSituationsComponent },
+      { path: 'saving-money-fg', component: SavingMoneyFGComponent },
+      { path: 'recording-guide-fg', component: RecordingGuideFGComponent },
+      { path: 'documnent-locator-system-fg', component: DocumnentLocatorSystemFGComponent },
+      { path: 'other-situation-faq', component: OtherSituationFAQComponent },
     ]
   },
   { path: 'business-strategies', component: BusinessStrategiesComponent },

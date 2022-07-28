@@ -112,6 +112,23 @@ import { CharitableContributionsFAQComponent } from './components/life-events/co
 import { CharitableDeductionsFAQComponent } from './components/life-events/components/charitable-deductions-faq/charitable-deductions-faq.component';
 import { ConArtistsFGComponent } from './components/life-events/components/con-artists-fg/con-artists-fg.component';
 import { AvoidingScamsFAQComponent } from './components/life-events/components/avoiding-scams-faq/avoiding-scams-faq.component';
+import { GettingDivorceComponent } from './components/life-events/getting-divorce/getting-divorce.component';
+import { MajorIllnessComponent } from './components/life-events/major-illness/major-illness.component';
+import { DeathOfLovedOnesComponent } from './components/life-events/death-of-loved-ones/death-of-loved-ones.component';
+import { ImprovingRetirementComponent } from './components/life-events/improving-retirement/improving-retirement.component';
+import { HandlingSituationsComponent } from './components/life-events/handling-situations/handling-situations.component';
+import { GettingDivorcedFAQComponent } from './components/life-events/components/getting-divorced-faq/getting-divorced-faq.component';
+import { DeathOfSpouseFGComponent } from './components/life-events/components/death-of-spouse-fg/death-of-spouse-fg.component';
+import { FuneralsFGComponent } from './components/life-events/components/funerals-fg/funerals-fg.component';
+import { DeathOfLovedOneFAQComponent } from './components/life-events/components/death-of-loved-one-faq/death-of-loved-one-faq.component';
+import { SurvivorsBenefitsFGComponent } from './components/life-events/components/survivors-benefits-fg/survivors-benefits-fg.component';
+import { PensionFGComponent } from './components/life-events/components/pension-fg/pension-fg.component';
+import { ReverseMotgagesFGComponent } from './components/life-events/components/reverse-motgages-fg/reverse-motgages-fg.component';
+import { RetirementMoneyFGComponent } from './components/life-events/components/retirement-money-fg/retirement-money-fg.component';
+import { SavingMoneyFGComponent } from './components/life-events/components/saving-money-fg/saving-money-fg.component';
+import { RecordingGuideFGComponent } from './components/life-events/components/recording-guide-fg/recording-guide-fg.component';
+import { DocumnentLocatorSystemFGComponent } from './components/life-events/components/documnent-locator-system-fg/documnent-locator-system-fg.component';
+import { OtherSituationFAQComponent } from './components/life-events/components/other-situation-faq/other-situation-faq.component';
 
 @NgModule({
   declarations: [
@@ -224,6 +241,23 @@ import { AvoidingScamsFAQComponent } from './components/life-events/components/a
     CharitableDeductionsFAQComponent,
     ConArtistsFGComponent,
     AvoidingScamsFAQComponent,
+    GettingDivorceComponent,
+    MajorIllnessComponent,
+    DeathOfLovedOnesComponent,
+    ImprovingRetirementComponent,
+    HandlingSituationsComponent,
+    GettingDivorcedFAQComponent,
+    DeathOfSpouseFGComponent,
+    FuneralsFGComponent,
+    DeathOfLovedOneFAQComponent,
+    SurvivorsBenefitsFGComponent,
+    PensionFGComponent,
+    ReverseMotgagesFGComponent,
+    RetirementMoneyFGComponent,
+    SavingMoneyFGComponent,
+    RecordingGuideFGComponent,
+    DocumnentLocatorSystemFGComponent,
+    OtherSituationFAQComponent,
   ],
   imports: [
     CommonModule,
