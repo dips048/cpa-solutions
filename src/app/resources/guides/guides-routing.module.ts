@@ -101,6 +101,17 @@ import { EstatePlanningFGComponent } from './components/life-events/components/e
 import { LivingTrustFAQComponent } from './components/life-events/components/living-trust-faq/living-trust-faq.component';
 import { WillsFAQComponent } from './components/life-events/components/wills-faq/wills-faq.component';
 import { EstateTaxesFAQComponent } from './components/life-events/components/estate-taxes-faq/estate-taxes-faq.component';
+import { CharitableContributionComponent } from './components/life-events/charitable-contribution/charitable-contribution.component';
+import { CharitableContributionsFGComponent } from './components/life-events/components/charitable-contributions-fg/charitable-contributions-fg.component';
+import { CharitableContributionsPropertyFGComponent } from './components/life-events/components/charitable-contributions-property-fg/charitable-contributions-property-fg.component';
+import { CharitableContributionsRecordsFGComponent } from './components/life-events/components/charitable-contributions-records-fg/charitable-contributions-records-fg.component';
+import { AdvancedCharityTechniquesFGComponent } from './components/life-events/components/advanced-charity-techniques-fg/advanced-charity-techniques-fg.component';
+import { FraudulentCharitiesFGComponent } from './components/life-events/components/fraudulent-charities-fg/fraudulent-charities-fg.component';
+import { CharitableContributionsFAQComponent } from './components/life-events/components/charitable-contributions-faq/charitable-contributions-faq.component';
+import { CharitableDeductionsFAQComponent } from './components/life-events/components/charitable-deductions-faq/charitable-deductions-faq.component';
+import { AvoidingScamsComponent } from './components/life-events/avoiding-scams/avoiding-scams.component';
+import { ConArtistsFGComponent } from './components/life-events/components/con-artists-fg/con-artists-fg.component';
+import { AvoidingScamsFAQComponent } from './components/life-events/components/avoiding-scams-faq/avoiding-scams-faq.component';
 
 const routes: Routes = [
   { path: '', component: GuidesComponent },
@@ -202,6 +213,21 @@ const routes: Routes = [
       { path: 'living-trust-faq', component: LivingTrustFAQComponent },
       { path: 'wills-faq', component: WillsFAQComponent },
       { path: 'estate-taxes-faq', component: EstateTaxesFAQComponent },
+      { path: 'charitable-contributions', component: CharitableContributionComponent },
+      { path: 'charitable-contributions-fg', component: CharitableContributionsFGComponent },
+      { path: 'charitable-contributions-property-fg', component: CharitableContributionsPropertyFGComponent },
+      { path: 'charitable-contributions-Records-fg', component: CharitableContributionsRecordsFGComponent },
+      { path: 'advanced-charity-techniques-fg', component: AdvancedCharityTechniquesFGComponent },
+      { path: 'fraudulent-charities-fg', component: FraudulentCharitiesFGComponent },
+      { path: 'charitable-contributions-faq', component: CharitableContributionsFAQComponent },
+      { path: 'charitable-deductions-faq', component: CharitableDeductionsFAQComponent },
+      { path: 'avoiding-scams', component: AvoidingScamsComponent },
+      { path: 'con-artists-fg', component: ConArtistsFGComponent },
+      { path: 'avoiding-scams-faq', component: AvoidingScamsFAQComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
+      { path: '', component: LifeEventsHomeComponent },
       { path: '', component: LifeEventsHomeComponent },
       { path: '', component: LifeEventsHomeComponent },
       { path: '', component: LifeEventsHomeComponent },
