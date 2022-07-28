@@ -80,6 +80,28 @@ import { RetirementDistributionFAQComponent } from './components/life-events/com
 import { RetirementAssetsFAQComponent } from './components/life-events/components/retirement-assets-faq/retirement-assets-faq.component';
 import { IRAsFAQComponent } from './components/life-events/components/iras-faq/iras-faq.component';
 import { TraditionalVsRothIRAsFAQComponent } from './components/life-events/components/traditional-vs-roth-iras-faq/traditional-vs-roth-iras-faq.component';
+import { BuyingCarComponent } from './components/life-events/buying-car/buying-car.component';
+import { NextCarFGComponent } from './components/life-events/components/next-car-fg/next-car-fg.component';
+import { NextCarFAQComponent } from './components/life-events/components/next-car-faq/next-car-faq.component';
+import { SellingHomeComponent } from './components/life-events/selling-home/selling-home.component';
+import { BuyingHomeFGComponent } from './components/life-events/components/buying-home-fg/buying-home-fg.component';
+import { HomeMortgageFGComponent } from './components/life-events/components/home-mortgage-fg/home-mortgage-fg.component';
+import { DeductibilityPointsFGComponent } from './components/life-events/components/deductibility-points-fg/deductibility-points-fg.component';
+import { SellingHomeFGAComponent } from './components/life-events/components/selling-home-fg-a/selling-home-fg-a.component';
+import { SellingHomeFGBComponent } from './components/life-events/components/selling-home-fg-b/selling-home-fg-b.component';
+import { DeductibleExpensesFGComponent } from './components/life-events/components/deductible-expenses-fg/deductible-expenses-fg.component';
+import { RealEstateDeductionFGComponent } from './components/life-events/components/real-estate-deduction-fg/real-estate-deduction-fg.component';
+import { BuyingHomeFAQComponent } from './components/life-events/components/buying-home-faq/buying-home-faq.component';
+import { MortgagesFAQComponent } from './components/life-events/components/mortgages-faq/mortgages-faq.component';
+import { SellingHomeFAQComponent } from './components/life-events/components/selling-home-faq/selling-home-faq.component';
+import { PlanningMoveFAQComponent } from './components/life-events/components/planning-move-faq/planning-move-faq.component';
+import { EstatePlanningComponent } from './components/life-events/estate-planning/estate-planning.component';
+import { EstatePlanningFGComponent } from './components/life-events/components/estate-planning-fg/estate-planning-fg.component';
+import { PostmortemLetterFGComponent } from './components/life-events/components/postmortem-letter-fg/postmortem-letter-fg.component';
+import { LivingTrustFAQComponent } from './components/life-events/components/living-trust-faq/living-trust-faq.component';
+import { WillsFAQComponent } from './components/life-events/components/wills-faq/wills-faq.component';
+import { EstateTaxesFAQComponent } from './components/life-events/components/estate-taxes-faq/estate-taxes-faq.component';
+import { CharitableContributionComponent } from './components/life-events/charitable-contribution/charitable-contribution.component';
 
 @NgModule({
   declarations: [
@@ -159,7 +181,29 @@ import { TraditionalVsRothIRAsFAQComponent } from './components/life-events/comp
     RetirementDistributionFAQComponent,
     RetirementAssetsFAQComponent,
     IRAsFAQComponent,
-    TraditionalVsRothIRAsFAQComponent
+    TraditionalVsRothIRAsFAQComponent,
+    BuyingCarComponent,
+    NextCarFGComponent,
+    NextCarFAQComponent,
+    SellingHomeComponent,
+    BuyingHomeFGComponent,
+    HomeMortgageFGComponent,
+    DeductibilityPointsFGComponent,
+    SellingHomeFGAComponent,
+    SellingHomeFGBComponent,
+    DeductibleExpensesFGComponent,
+    RealEstateDeductionFGComponent,
+    BuyingHomeFAQComponent,
+    MortgagesFAQComponent,
+    SellingHomeFAQComponent,
+    PlanningMoveFAQComponent,
+    EstatePlanningComponent,
+    EstatePlanningFGComponent,
+    PostmortemLetterFGComponent,
+    LivingTrustFAQComponent,
+    WillsFAQComponent,
+    EstateTaxesFAQComponent,
+    CharitableContributionComponent,
   ],
   imports: [
     CommonModule,
