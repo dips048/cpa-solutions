@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NavigationListModel } from '../../shared/models';
 
 @Component({
@@ -8,12 +8,20 @@ import { NavigationListModel } from '../../shared/models';
 })
 export class SideNavComponent implements OnInit {
 
-  @Input() navigationList: NavigationListModel[] = []
-
-  @Output() closeDrawer = new EventEmitter();
+  @Input() navigationList: NavigationListModel[] = [];
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.navigationList = this.navigationList.map(item => {
+      if(item.list && item.list.length) {
+        item.list = item.list.map(j => {
+          j.routerLink = item.routerLink + j.routerLink
+          return j
+        })
+      }
+      return item
+    })
+  }
 
 }

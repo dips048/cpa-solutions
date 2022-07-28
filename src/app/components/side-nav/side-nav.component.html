@@ -1,22 +1,22 @@
-<cdk-accordion class="accordion">
+<!-- <cdk-accordion class="accordion">
   <cdk-accordion-item
-    *ngFor="let i of navigationList; let index = index"
+    *ngFor="let i of navigationList; let index1 = index"
     #accordionItem="cdkAccordionItem"
     class="accordion-item"
     role="button"
     tabindex="0"
-    [attr.id]="'accordion-header-' + index"
+    [attr.id]="'accordion-header-' + index1"
     [attr.aria-expanded]="accordionItem.expanded"
-    [attr.aria-controls]="'accordion-body-' + index"
+    [attr.aria-controls]="'accordion-body-' + index1"
   >
     <div
-      class="accordion-item-header"
+      class="accordion-item-header level-1"
       *ngIf="!i.list.length"
       [routerLink]="[i.routerLink]"
     >
       {{ i.title }}
     </div>
-    <div class="accordion-item-header" *ngIf="i.list.length">
+    <div class="accordion-item-header level-1" *ngIf="i.list.length">
       <div class="header-item" [routerLink]="[i.routerLink]">
         {{ i.title }}
       </div>
@@ -30,16 +30,9 @@
       class="according-expanded-content"
       role="region"
       [style.display]="accordionItem.expanded ? '' : 'none'"
-      [attr.id]="'accordion-body-' + index"
-      [attr.aria-labelledby]="'accordion-header-' + index"
+      [attr.id]="'accordion-body-' + index1"
+      [attr.aria-labelledby]="'accordion-header-' + index1"
     >
-      <!-- <div
-        class="according-content-item"
-        *ngFor="let listItem of i.list"
-        [routerLink]="[i.routerLink + listItem.routerLink]"
-      >
-        {{ listItem.title }}
-      </div> -->
       <cdk-accordion class="accordion">
         <cdk-accordion-item
           *ngFor="let j of i.list; let index2 = index"
@@ -73,22 +66,104 @@
           </div>
           <div
             *ngIf="j.list.length"
-            class="according-expanded-content"
+            class="accordion-expanded-content"
             role="region"
             [style.display]="accordionItem.expanded ? '' : 'none'"
-            [attr.id]="'accordion-body-' + index"
-            [attr.aria-labelledby]="'accordion-header-' + index"
+            [attr.id]="'accordion-body-' + index2"
+            [attr.aria-labelledby]="'accordion-header-' + index2"
           >
-            <div
-              class="according-content-item level-3"
-              *ngFor="let k of j.list"
-              [routerLink]="[i.routerLink + j.routerLink + k.routerLink]"
-            >
-              {{ k.title }}
-            </div>
+            <cdk-accordion class="accordion">
+              <cdk-accordion-item
+                *ngFor="let k of j.list; let index3 = index"
+                #accordionItem="cdkAccordionItem"
+                class="accordion-item"
+                role="button"
+                tabindex="0"
+                [attr.id]="'accordion-header-' + index3"
+                [attr.aria-expanded]="accordionItem.expanded"
+                [attr.aria-controls]="'accordion-body-' + index3"
+              >
+                <div
+                  class="accordion-item-header level-3"
+                  *ngIf="!k.list.length"
+                  [routerLink]="[i.routerLink + j.routerLink + k.routerLink]"
+                >
+                  {{ k.title }}
+                </div>
+                <div class="accordion-item-header level-3" *ngIf="k.list.length">
+                  <div class="header-item" [routerLink]="[i.routerLink + j.routerLink + k.routerLink]">
+                    {{ k.title }}
+                  </div>
+                  <div (click)="accordionItem.toggle()">
+                    <mat-icon *ngIf="!accordionItem.expanded"
+                      >keyboard_arrow_down</mat-icon
+                    >
+                    <mat-icon *ngIf="accordionItem.expanded"
+                      >keyboard_arrow_up</mat-icon
+                    >
+                  </div>
+                </div>
+                <div
+                  *ngIf="k.list.length"
+                  class="accordion-expanded-content"
+                  role="region"
+                  [style.display]="accordionItem.expanded ? '' : 'none'"
+                  [attr.id]="'accordion-body-' + index3"
+                  [attr.aria-labelledby]="'accordion-header-' + index3"
+                >
+                  <div
+                    class="accordion-content-item level-4"
+                    *ngFor="let l of k.list"
+                    [routerLink]="[i.routerLink + j.routerLink + k.routerLink + l.routerLink]"
+                  >
+                    {{ l.title }}
+                  </div>
+                </div>
+              </cdk-accordion-item>
+            </cdk-accordion>
           </div>
         </cdk-accordion-item>
       </cdk-accordion>
+    </div>
+  </cdk-accordion-item>
+</cdk-accordion> -->
+
+<cdk-accordion class="accordion">
+  <cdk-accordion-item
+    *ngFor="let i of navigationList; let index = index"
+    #accordionItem="cdkAccordionItem"
+    class="accordion-item"
+    role="button"
+    tabindex="0"
+    [attr.id]="'accordion-header-' + index"
+    [attr.aria-expanded]="accordionItem.expanded"
+    [attr.aria-controls]="'accordion-body-' + index"
+  >
+    <span
+      class="accordion-item-header"
+      *ngIf="!i.list.length"
+      [routerLink]="[i.routerLink]"
+    >
+      {{ i.title }}
+    </span>
+    <div class="accordion-item-header" *ngIf="i.list.length">
+      <span [routerLink]="[i.routerLink]">
+        {{ i.title }}
+      </span>
+      <div (click)="accordionItem.toggle()">
+        <mat-icon *ngIf="!accordionItem.expanded">keyboard_arrow_down</mat-icon>
+        <mat-icon *ngIf="accordionItem.expanded">keyboard_arrow_up</mat-icon>
+      </div>
+    </div>
+    <div
+      *ngIf="i.list.length"
+      class="accordion-expanded-content"
+      role="region"
+      [style.display]="accordionItem.expanded ? '' : 'none'"
+      [attr.id]="'accordion-body-' + index"
+      [attr.aria-labelledby]="'accordion-header-' + index"
+    >
+      <app-side-nav [navigationList]="i.list"></app-side-nav>
     </div>
   </cdk-accordion-item>
 </cdk-accordion>
